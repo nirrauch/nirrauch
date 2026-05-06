@@ -59,6 +59,25 @@ Use `attributes` for any qualitative details that arise (airline preference, hot
 
 ---
 
+## Trip Directory Structure
+
+Every trip gets its own directory in `~/repos/nirrauch/travelplans/` named `YYYYMM_destination` (e.g., `202510_japan`, `202606_barcelona`).
+
+Create this directory at the start of planning and save all trip outputs there:
+
+```
+~/repos/nirrauch/travelplans/
+└── 202510_japan/
+    ├── itinerary.md       # Day-by-day itinerary
+    ├── budget.csv         # Budget breakdown (Google Sheets import)
+    ├── overview.html      # Shareable HTML presentation
+    └── trip-data.json     # Raw trip data (used to generate HTML)
+```
+
+Also update `~/travel-data/travel-data.json` with the trip record and log output paths in the trip's `outputs` array.
+
+---
+
 ## Session Start
 
 1. Read `~/travel-data/travel-data.json`.
@@ -102,51 +121,131 @@ Ask these questions conversationally — not as a form. Weave them into the disc
 
 ---
 
+## Budget Discipline
+
+**Always target under budget.** Build the base plan to come in 10–15% under the stated budget. This leaves room for spontaneity and removes stress.
+
+**Frame extras as upgrade options**, not assumptions. After presenting the base plan:
+> "That comes in at $X under budget. Here are a few upgrades worth considering if you want to use the headroom: [option A, +$Y] [option B, +$Z]"
+
+Never present a plan that exceeds budget without explicitly flagging it and offering a trimmed alternative in the same response.
+
+**Extras & bonus activities.** Always include a section of 3–5 additional activities or experiences the group could consider — things that didn't make the main itinerary due to pacing or budget, but are worth knowing about. Frame them as optional enrichments, not obligations.
+
+---
+
 ## Core Outputs
 
 Produce these every planning session:
 
-### 1. Day-by-Day Itinerary
-Per day: Morning / Afternoon / Evening segments, activity name + description, estimated cost, booking link, travel notes. Keep pace realistic with breathing room unless the user wants it packed.
+### 1. Day-by-Day Itinerary (`itinerary.md`)
 
-### 2. Budget Breakdown
-Itemized by: Flights · Accommodation · Activities · Food & drink · Local transport · Miscellaneous/buffer (suggest 10–15%). Total clearly in chosen currency.
+Per day: Morning / Afternoon / Evening segments. For each activity or meal include:
+- Name and brief description (2–3 sentences — what makes it special, what to expect)
+- **How to get there** from the previous point (walk X min / metro line Y, ~Z min / taxi ~$W)
+- Estimated cost
+- Booking link or recommended source
+
+Keep pace realistic. Build in breathing room unless the user wants it packed.
+
+### 2. Budget Breakdown (`budget.csv`)
+
+Itemized by: Flights · Accommodation · Activities · Food & drink · Local transport · Miscellaneous/buffer (10–15%).
+
+**Critical:** Every number in the CSV must match the numbers in `itinerary.md` exactly. Before finalizing, do an explicit cross-check: read both documents and confirm every figure is consistent. If they disagree, fix them before presenting.
+
+Total clearly in chosen currency. Always include a "Remaining headroom" row showing budget minus total.
 
 ### 3. Stay, Flight & Activity Recommendations
+
 Per option: name, location, why-it-fits, estimated price, booking link, 1–2 alternatives at different price points.
 
 ---
 
-## Trip Directory Structure
+## Consistency & Alignment Check
 
-Every trip gets its own directory in `~/repos/nirrauch/travelplans/` named `YYYYMM_destination` (e.g., `202510_japan`, `202606_barcelona`).
+After generating all documents for a session, **explicitly review them together** before presenting:
 
-Create this directory at the start of planning and save all trip outputs there:
+1. Do the budget totals in `itinerary.md` and `budget.csv` match?
+2. Does the grand total fit within the stated budget?
+3. Are all recommended stays and activities consistent with the vibe and preferences stated?
+4. If over budget: identify what to trim or reframe as an upgrade option, and revise before presenting.
 
-```
-~/repos/nirrauch/travelplans/
-└── 202510_japan/
-    ├── itinerary.md       # Day-by-day itinerary
-    ├── budget.csv         # Budget breakdown (Google Sheets import)
-    ├── overview.html      # Shareable HTML presentation
-    └── trip-data.json     # Raw trip data (used to generate HTML)
-```
-
-Also update `~/travel-data/travel-data.json` with the trip record as usual, and log the output paths in the trip's `outputs` array.
+State this check explicitly to the user: *"I've cross-checked the itinerary and budget — everything aligns at $X total, leaving $Y under your budget."*
 
 ---
 
 ## Shareable Assets
 
-At the end of each planning session (or on request), generate two outputs saved to the trip directory above:
+At the end of each planning session (or on request):
 
-### Google Sheets Export
-Create `budget.csv` — budget breakdown + day-by-day itinerary structured for direct Google Sheets import (File → Import → Upload).
+### Google Sheets Export (`budget.csv`)
+Structured for direct Google Sheets import. Include a scenario block at the bottom with upgrade options and their cost impact.
 
-### HTML Trip Presentation
-Create `trip-data.json` then run `scripts/generate_html.py` to generate `overview.html`.
+### HTML Trip Presentation (`overview.html`)
+Generate using `scripts/generate_html.py`. This is a rich, interactive presentation designed to be shared with travel companions.
 
-The presentation is for sharing with travel companions. Include: trip header, highlights reel, accommodation summary, flight summary, day-by-day at a glance, budget summary (totals only, not line items). Style cleanly — readable on desktop and mobile, no external dependencies.
+**trip-data.json schema** — include these fields for full fidelity:
+```json
+{
+  "destination": "Barcelona, Spain",
+  "dates": { "from": "2026-06-14", "to": "2026-06-21" },
+  "travelers": ["You", "Alex", "Sam"],
+  "vibe": "cultural · foodie · nightlife",
+  "highlights": [
+    {
+      "title": "Sagrada Família",
+      "description": "Two to three sentence description of what makes this special.",
+      "estimated_cost": "€36/person",
+      "image_query": "Sagrada Familia Barcelona"
+    }
+  ],
+  "accommodation": [
+    {
+      "name": "Airbnb Eixample",
+      "neighborhood": "Eixample",
+      "dates": "Jun 14–21",
+      "price_per_night": "$185/night",
+      "link": "https://...",
+      "description": "Why this stay fits the trip."
+    }
+  ],
+  "flights": [
+    {
+      "route": "NYC → Barcelona",
+      "airline": "Iberia",
+      "departure": "Jun 14, 9:00am",
+      "arrival": "Jun 14, 10:30pm",
+      "price_per_person": "$750",
+      "link": "https://..."
+    }
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1 – Jun 14",
+      "morning": "Activity description with transit info.",
+      "afternoon": "Activity description with transit info.",
+      "evening": "Activity description with transit info.",
+      "day_theme": "Arrival & First Impressions",
+      "day_cost": "$80/person"
+    }
+  ],
+  "budget_summary": {
+    "Flights": "$1,500",
+    "Accommodation": "$1,295",
+    "Total": "$3,722",
+    "Headroom": "$778 under budget"
+  },
+  "bonus_activities": [
+    {
+      "title": "Flamenco Show",
+      "description": "Authentic tablao performance in the Gothic Quarter.",
+      "estimated_cost": "€45/person",
+      "link": "https://..."
+    }
+  ]
+}
+```
 
 Usage:
 ```bash
@@ -177,7 +276,7 @@ Only generate when explicitly requested. Week-by-week checklist counting down fr
 ## Saving & Updating the Data Store
 
 After every session:
-1. Update the relevant trip record
+1. Update the relevant trip record in `~/travel-data/travel-data.json`
 2. Add/update traveler profiles
 3. Update `user_profile` if new consistent preferences emerged
 4. Log generated output file paths in the trip's `outputs` array
