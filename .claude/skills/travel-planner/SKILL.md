@@ -117,21 +117,42 @@ Per option: name, location, why-it-fits, estimated price, booking link, 1–2 al
 
 ---
 
+## Trip Directory Structure
+
+Every trip gets its own directory in `~/repos/nirrauch/travelplans/` named `YYYYMM_destination` (e.g., `202510_japan`, `202606_barcelona`).
+
+Create this directory at the start of planning and save all trip outputs there:
+
+```
+~/repos/nirrauch/travelplans/
+└── 202510_japan/
+    ├── itinerary.md       # Day-by-day itinerary
+    ├── budget.csv         # Budget breakdown (Google Sheets import)
+    ├── overview.html      # Shareable HTML presentation
+    └── trip-data.json     # Raw trip data (used to generate HTML)
+```
+
+Also update `~/travel-data/travel-data.json` with the trip record as usual, and log the output paths in the trip's `outputs` array.
+
+---
+
 ## Shareable Assets
 
-At the end of each planning session (or on request), generate two outputs:
+At the end of each planning session (or on request), generate two outputs saved to the trip directory above:
 
 ### Google Sheets Export
-Create `~/travel-data/exports/<trip-id>-budget.csv` — budget breakdown + day-by-day itinerary structured for direct Google Sheets import (File → Import → Upload).
+Create `budget.csv` — budget breakdown + day-by-day itinerary structured for direct Google Sheets import (File → Import → Upload).
 
 ### HTML Trip Presentation
-Run `scripts/generate_html.py` to generate a self-contained HTML at `~/travel-data/exports/<trip-id>-overview.html`.
+Create `trip-data.json` then run `scripts/generate_html.py` to generate `overview.html`.
 
 The presentation is for sharing with travel companions. Include: trip header, highlights reel, accommodation summary, flight summary, day-by-day at a glance, budget summary (totals only, not line items). Style cleanly — readable on desktop and mobile, no external dependencies.
 
 Usage:
 ```bash
-python3 <skill-path>/scripts/generate_html.py <trip-data.json> <output.html>
+python3 ~/repos/nirrauch/.claude/skills/travel-planner/scripts/generate_html.py \
+  ~/repos/nirrauch/travelplans/<trip-dir>/trip-data.json \
+  ~/repos/nirrauch/travelplans/<trip-dir>/overview.html
 ```
 
 ---
