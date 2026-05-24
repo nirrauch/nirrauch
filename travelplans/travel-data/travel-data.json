@@ -1,0 +1,71 @@
+{
+  "user_profile": {
+    "interests": ["mountains", "nature", "wildlife", "hiking", "outdoor adventure", "swimming", "social dining", "live music / dancing"],
+    "food_preferences": ["local & unfamiliar dishes", "sharing plates", "seafood", "braised meats", "roasted vegetables", "beer & cocktails", "avoids slimy textures and uncommon meats"],
+    "travel_style": "experience-maximizer — breadth over depth, moves between places, packs it in especially when unlikely to return",
+    "notes": "Survey completed 2026-05-11"
+  },
+  "travelers": [
+    {
+      "id": "nir",
+      "name": "Nir",
+      "relationship": "self",
+      "interests": ["mountains & majestic views", "wildlife encounters", "extreme outdoor activities", "isolated nature", "social dining & nightlife", "swimming"],
+      "dietary_restrictions": ["avoids slimy textures", "avoids uncommon meats"],
+      "mobility_notes": "",
+      "attributes": {
+        "travel_pace": "breadth over depth — maximise experiences, especially in places unlikely to revisit",
+        "morning_energy": "active — runs, swims, outdoor time before the day opens up",
+        "evening_style": "social first (dining out, dancing), comfortable wind-down (game night, movie) to close",
+        "accommodation_priorities": ["view (highest priority)", "bathroom quality", "balcony (big plus)", "clean & well-lit", "free snacks/drinks nice-to-have"],
+        "splurge_preference": "private or exclusive access to a unique experience — not just a room upgrade",
+        "adventure_threshold": "all-or-nothing: either genuinely extreme outdoor activities or real relaxation — no light tourist thrills (explicitly dislikes ziplines and 'mild' activities)",
+        "nature_connection": "mountains and isolation trigger the deepest travel satisfaction; wildlife encounters are emotionally significant",
+        "food_personality": "adventurous but grounded — orders things never tried before, loves sharing plates, seafood and braised/roasted flavors; beer or cocktail always on the table",
+        "arrival_instinct": "coffee or a beer, then quick hits of nearby must-see sights before settling in",
+        "bucket_list": ["Madagascar (unique wildlife & nature)"],
+        "hotel_dealbreakers": ["poor view", "dark/dingy room"],
+        "group_dynamic": "social traveler — enjoys shared experiences, group dining, dancing; also comfortable with intimate wind-down",
+        "home_airport": "Chicago (ORD/MDW)"
+      }
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah",
+      "relationship": "partner / spouse",
+      "interests": ["authentic local food", "coastal & panoramic views", "local culture & community", "coffee shops & bookstores", "snorkeling & sailing", "spa & relaxation", "wildlife & animals"],
+      "dietary_restrictions": [],
+      "mobility_notes": "",
+      "attributes": {
+        "travel_pace": "depth over breadth — prefers 2-3 destinations on a 2-week trip, settles in and nests rather than racing; directly conflicts with Nir's breadth preference — reconcile by choosing 3 stops max with 3+ nights each",
+        "morning_energy": "relaxed start — sleeps in a little, eases into the day (farmers market, coffee, reading)",
+        "evening_style": "dinner with friends or partner, something local and special to close the day",
+        "accommodation_priorities": ["bathroom quality (checks first)", "view", "space to unpack and settle in — unpacks on longer trips, not living out of a suitcase"],
+        "splurge_preference": "luxury relaxation experiences — catamaran charter or spa day; not adventure-access like Nir",
+        "adventure_threshold": "will join activity if already in motion and it flows naturally; resistant to switching modes mid-day ('not getting on a boat just to snorkel if we're not already on it')",
+        "food_personality": "#1 non-negotiable — tons of different local culinary experiences; authenticity above all (hole-in-the-wall family spots, grandma's cooking, what locals eat — not tourist restaurants)",
+        "arrival_instinct": "explore accommodation grounds first, get coffee, settle in before venturing out — opposite of Nir",
+        "aversions": ["tourist-saturated places — says congestion actively detracts from the experience (cited Bangkok, Mykonos)"],
+        "nature_connection": "coastal and panoramic views are her anchor; appreciates urban panoramas too",
+        "cultural_interest": "drawn to genuine authentic moments — real daily life, not the tourist version; notices animals (stray dogs/cats), photographs local culture",
+        "bucket_list": ["Japan / South Korea / Singapore", "Safari", "Hawaii"],
+        "survey_completed": "2026-05-11"
+      }
+    }
+  ],
+  "trips": [
+    {
+      "id": "newzealand-fiji-honeymoon-2027",
+      "destination": "New Zealand + Fiji",
+      "dates": { "from": "TBD (target March–April 2027)", "to": "TBD (~2 weeks)" },
+      "travelers": ["nir", "sarah"],
+      "status": "planning",
+      "vibe": "adventure · cultural · romantic · foodie",
+      "budget": { "total": 10000, "currency": "USD", "breakdown": {} },
+      "summary": "Honeymoon trip. NZ covers Rotorua (Māori culture), Taupo/Tongariro (Alpine Crossing), Queenstown (adventure base, Milford Sound), Kaikōura (wildlife en route). Fiji likely Mamanuca Islands. Flying from Chicago ORD. Leading itinerary: fly into AKL, drive north NI, domestic flight to QZN, end in Fiji.",
+      "outputs": [
+        "~/repos/nirrauch/travelplans/2027_newzealand-fiji/new-zealand-notes.md"
+      ]
+    }
+  ]
+}

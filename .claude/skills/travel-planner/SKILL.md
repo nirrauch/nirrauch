@@ -37,7 +37,7 @@ The primary agent synthesizes subagent results, formats them for the user, and d
 
 ## Data Store
 
-All persistent data lives at `~/travel-data/travel-data.json`. Read this file at the start of every session.
+All persistent data lives at `~/repos/nirrauch/travelplans/travel-data/travel-data.json`. Read this file at the start of every session.
 
 If the file doesn't exist, create it with this structure:
 
@@ -106,7 +106,7 @@ Create this directory at the start of planning and save all trip outputs there:
                               #   NOT traveler profiles (those live in travel-data.json).
 ```
 
-Also update `~/travel-data/travel-data.json` with the trip record and log output paths in the trip's `outputs` array.
+Also update `~/repos/nirrauch/travelplans/travel-data/travel-data.json` with the trip record and log output paths in the trip's `outputs` array.
 
 ---
 
@@ -128,8 +128,8 @@ Two modes — let the user choose:
 | **doc** | `python3 profile_survey.py --mode doc --name "Name"` | User prefers to fill in a file at their own pace |
 
 Output paths:
-- **Web mode** saves automatically to `~/travel-data/surveys/{name}_survey.json`
-- **Doc mode** creates `~/travel-data/surveys/{name}_survey.md` for manual completion
+- **Web mode** saves automatically to `~/repos/nirrauch/travelplans/travel-data/surveys/{name}_survey.json`
+- **Doc mode** creates `~/repos/nirrauch/travelplans/travel-data/surveys/{name}_survey.md` for manual completion
 
 ### Ingesting a completed survey
 
@@ -147,7 +147,7 @@ Map these to the traveler's profile in `travel-data.json` under `attributes` and
 
 ## Session Start
 
-1. Read `~/travel-data/travel-data.json`.
+1. Read `~/repos/nirrauch/travelplans/travel-data/travel-data.json`.
 2. Establish what the user wants: new trip, continue planning, update profiles, or run a survey.
 3. **For any traveler without a completed survey:** run the survey step first (see above). Do not skip this for new travelers — rich profiles are the foundation of good planning.
 4. For a **new trip**: run the intake flow below.
@@ -364,7 +364,7 @@ python3 ~/repos/nirrauch/.claude/skills/travel-planner/scripts/generate_html.py 
 ## Traveler Profile Management
 
 When someone new joins a trip:
-1. Check whether they have a completed survey in `~/travel-data/surveys/`.
+1. Check whether they have a completed survey in `~/repos/nirrauch/travelplans/travel-data/surveys/`.
 2. If not, run the survey script before proceeding: `python3 profile_survey.py --mode web --name "Name"` (or `--mode doc` if they prefer).
 3. Once the survey is complete, ingest it and add the profile to `travel-data.json`.
 
@@ -386,7 +386,7 @@ Only generate when explicitly requested. Week-by-week checklist counting down fr
 ## Saving & Updating the Data Store
 
 After every session:
-1. Update the relevant trip record in `~/travel-data/travel-data.json`
+1. Update the relevant trip record in `~/repos/nirrauch/travelplans/travel-data/travel-data.json`
 2. Add/update traveler profiles
 3. Update `user_profile` if new consistent preferences emerged
 4. Log generated output file paths in the trip's `outputs` array
