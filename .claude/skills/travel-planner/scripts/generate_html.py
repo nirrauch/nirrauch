@@ -17,7 +17,6 @@ from urllib.parse import quote
 
 def img_url(query: str, w: int = 800, h: int = 500) -> str:
     """Return a Picsum-based placeholder; swap for real image URLs in production."""
-    # Use a deterministic seed from the query so the same activity always gets the same image
     seed = abs(hash(query)) % 1000
     return f"https://picsum.photos/seed/{seed}/{w}/{h}"
 
@@ -28,21 +27,31 @@ def render_html(trip: dict) -> str:
     date_range = f"{dates.get('from', '')} – {dates.get('to', '')}" if dates else ""
     travelers = ", ".join(trip.get("travelers", []))
     vibe = trip.get("vibe", "")
+    map_stops = trip.get("map_stops", [])
+    map_stops_json = json.dumps(map_stops)
+    has_map = bool(map_stops)
 
     # --- Highlights ---
     highlights_html = ""
     for h in trip.get("highlights", []):
         img = img_url(h.get("image_query", h.get("title", destination)))
         cost = f"<div class='tag'>{h['estimated_cost']}</div>" if h.get("estimated_cost") else ""
-        highlights_html += f"""
-        <div class="highlight-card">
+        link = h.get("link", "")
+        card_inner = f"""
           <div class="highlight-img" style="background-image:url('{img}')"></div>
           <div class="highlight-body">
-            <div class="highlight-title">{h.get('title','')}</div>
-            <div class="highlight-desc">{h.get('description','')}</div>
+            <div class="highlight-title">{h.get('title', '')}</div>
+            <div class="highlight-desc">{h.get('description', '')}</div>
             {cost}
-          </div>
-        </div>"""
+          </div>"""
+        if link:
+            highlights_html += f"""
+        <a href="{link}" target="_blank" rel="noopener" class="highlight-card">{card_inner}
+          <div class="highlight-link-badge">↗</div>
+        </a>"""
+        else:
+            highlights_html += f"""
+        <div class="highlight-card">{card_inner}</div>"""
 
     # --- Accommodation ---
     accommodation_html = ""
@@ -51,9 +60,9 @@ def render_html(trip: dict) -> str:
         desc = f"<div class='card-desc'>{a['description']}</div>" if a.get("description") else ""
         accommodation_html += f"""
         <div class="card">
-          <div class="card-title"><a href="{link}" target="_blank">{a.get('name','')}</a></div>
-          <div class="card-meta">{a.get('neighborhood','')} &middot; {a.get('dates','')}</div>
-          <div class="card-body">{a.get('price_per_night','')} / night</div>
+          <div class="card-title"><a href="{link}" target="_blank">{a.get('name', '')}</a></div>
+          <div class="card-meta">{a.get('neighborhood', '')} &middot; {a.get('dates', '')}</div>
+          <div class="card-body">{a.get('price_per_night', '')} / night</div>
           {desc}
         </div>"""
 
@@ -64,12 +73,12 @@ def render_html(trip: dict) -> str:
         flights_html += f"""
         <div class="card flight-card">
           <div class="flight-route">
-            <span class="flight-city">{f.get('route','').split('→')[0].strip() if '→' in f.get('route','') else f.get('route','')}</span>
+            <span class="flight-city">{f.get('route', '').split('→')[0].strip() if '→' in f.get('route', '') else f.get('route', '')}</span>
             <span class="flight-arrow">✈</span>
-            <span class="flight-city">{f.get('route','').split('→')[1].strip() if '→' in f.get('route','') else ''}</span>
+            <span class="flight-city">{f.get('route', '').split('→')[1].strip() if '→' in f.get('route', '') else ''}</span>
           </div>
-          <div class="card-meta">{f.get('airline','')} &middot; {f.get('departure','')} → {f.get('arrival','')}</div>
-          <div class="card-body"><a href="{link}" target="_blank">{f.get('price_per_person','')} / person</a></div>
+          <div class="card-meta">{f.get('airline', '')} &middot; {f.get('departure', '')} → {f.get('arrival', '')}</div>
+          <div class="card-body"><a href="{link}" target="_blank">{f.get('price_per_person', '')} / person</a></div>
         </div>"""
 
     # --- Itinerary (accordion) ---
@@ -92,7 +101,7 @@ def render_html(trip: dict) -> str:
           <summary class="day-summary">
             <div class="day-summary-left">
               <span class="day-number">Day {i+1}</span>
-              <span class="day-date">{day.get('day','').split('–')[-1].strip() if '–' in day.get('day','') else day.get('day','')}</span>
+              <span class="day-date">{day.get('day', '').split('–')[-1].strip() if '–' in day.get('day', '') else day.get('day', '')}</span>
               {theme}
             </div>
             <div class="day-summary-right">{cost}</div>
@@ -116,10 +125,85 @@ def render_html(trip: dict) -> str:
         cost = f"<div class='tag'>{b['estimated_cost']}</div>" if b.get("estimated_cost") else ""
         bonus_html += f"""
         <div class="bonus-card">
-          <div class="bonus-title"><a href="{link}" target="_blank">{b.get('title','')}</a></div>
-          <div class="bonus-desc">{b.get('description','')}</div>
+          <div class="bonus-title"><a href="{link}" target="_blank">{b.get('title', '')}</a></div>
+          <div class="bonus-desc">{b.get('description', '')}</div>
           {cost}
         </div>"""
+
+    # --- Map ---
+    leaflet_head = """<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />""" if has_map else ""
+
+    map_section = ""
+    map_script = ""
+    if has_map:
+        map_section = """
+  <section id="map">
+    <h2>Where We're Going</h2>
+    <div id="trip-map" style="height:460px;border-radius:12px;border:1px solid var(--border);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);"></div>
+  </section>"""
+        map_script = f"""<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function() {{
+  const stops = {map_stops_json};
+  const map = L.map('trip-map', {{zoomControl: true, scrollWheelZoom: false}});
+  L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18
+  }}).addTo(map);
+
+  const nzColor = '#0f2a4a';
+  const fijiColor = '#e8a020';
+  const bonusColor = '#94a3b8';
+
+  // Draw route polyline through main stops only
+  const mainStops = stops.filter(s => s.type !== 'bonus');
+  if (mainStops.length > 1) {{
+    L.polyline(mainStops.map(s => [s.lat, s.lng]), {{
+      color: '#94a3b8', weight: 2, dashArray: '7,9', opacity: 0.65
+    }}).addTo(map);
+  }}
+
+  // Numbered markers
+  let dayNum = 0;
+  stops.forEach(stop => {{
+    const isBonus = stop.type === 'bonus';
+    const isFiji = stop.fiji === true;
+    if (!isBonus) dayNum++;
+    const color = isBonus ? bonusColor : (isFiji ? fijiColor : nzColor);
+    const label = isBonus ? '★' : String(dayNum);
+
+    const icon = L.divIcon({{
+      className: '',
+      html: `<div style="
+        width:32px;height:32px;border-radius:50%;
+        background:${{color}};color:#fff;
+        display:flex;align-items:center;justify-content:center;
+        font-size:${{isBonus ? '14px' : '12px'}};font-weight:700;
+        border:2.5px solid #fff;
+        box-shadow:0 2px 8px rgba(0,0,0,0.28);
+        font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+        cursor:pointer;
+        transition:transform 0.15s;
+      ">${{label}}</div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -20]
+    }});
+
+    const marker = L.marker([stop.lat, stop.lng], {{icon}}).addTo(map);
+    marker.bindPopup(`
+      <div style="font-family:-apple-system,BlinkMacSystemFont,sans-serif;min-width:170px;padding:2px 0;">
+        <div style="font-weight:700;font-size:0.95em;color:#0f2a4a;margin-bottom:3px;">${{stop.name}}</div>
+        <div style="font-size:0.78em;color:#e8a020;font-weight:600;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.5px;">${{stop.day}}</div>
+        <div style="font-size:0.85em;color:#374151;line-height:1.5;">${{stop.description}}</div>
+      </div>`, {{maxWidth: 220}});
+  }});
+
+  // Fit all stops with padding
+  const bounds = L.latLngBounds(stops.map(s => [s.lat, s.lng]));
+  map.fitBounds(bounds, {{padding: [48, 48]}});
+}})();
+</script>"""
 
     generated = datetime.now().strftime("%B %d, %Y")
 
@@ -129,6 +213,7 @@ def render_html(trip: dict) -> str:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{destination} · Trip Overview</title>
+{leaflet_head}
 <style>
   *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
   :root {{
@@ -212,6 +297,8 @@ def render_html(trip: dict) -> str:
     background: var(--card-bg); border-radius: 14px; overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 1px solid var(--border);
     transition: transform 0.2s, box-shadow 0.2s;
+    display: block; text-decoration: none; color: inherit;
+    position: relative;
   }}
   .highlight-card:hover {{ transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }}
   .highlight-img {{
@@ -221,6 +308,15 @@ def render_html(trip: dict) -> str:
   .highlight-body {{ padding: 18px 20px; }}
   .highlight-title {{ font-weight: 700; font-size: 1em; margin-bottom: 6px; color: var(--navy); }}
   .highlight-desc {{ font-size: 0.88em; color: #4b5563; line-height: 1.55; }}
+  .highlight-link-badge {{
+    position: absolute; top: 12px; right: 12px;
+    background: rgba(0,0,0,0.45); color: #fff;
+    width: 26px; height: 26px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85em; font-weight: 700; backdrop-filter: blur(4px);
+    transition: background 0.15s;
+  }}
+  .highlight-card:hover .highlight-link-badge {{ background: var(--accent); }}
 
   /* Flights */
   .flight-card {{ display: flex; flex-direction: column; gap: 6px; }}
@@ -305,6 +401,7 @@ def render_html(trip: dict) -> str:
 
 <nav class="nav">
   {"<a href='#highlights'>Highlights</a>" if trip.get('highlights') else ""}
+  {"<a href='#map'>Map</a>" if has_map else ""}
   {"<a href='#stays'>Stays</a>" if trip.get('accommodation') else ""}
   {"<a href='#flights'>Flights</a>" if trip.get('flights') else ""}
   {"<a href='#itinerary'>Itinerary</a>" if trip.get('itinerary') else ""}
@@ -315,6 +412,8 @@ def render_html(trip: dict) -> str:
 <div class="container">
 
   {('<section id="highlights"><h2>Highlights</h2><div class="highlights-grid">' + highlights_html + '</div></section>') if highlights_html else ''}
+
+  {map_section}
 
   {('<section id="stays"><h2>Where We\'re Staying</h2>' + accommodation_html + '</section>') if accommodation_html else ''}
 
@@ -330,6 +429,7 @@ def render_html(trip: dict) -> str:
 
 <div class="footer">Generated {generated} &middot; Travel Planner &middot; {destination}</div>
 
+{map_script}
 </body>
 </html>"""
 

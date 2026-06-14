@@ -265,6 +265,10 @@ Total clearly in chosen currency. Always include a "Remaining headroom" row show
 
 Per option: name, location, why-it-fits, estimated price, booking link, 1–2 alternatives at different price points.
 
+### 4. HTML Presentation (`trip-data.json` + `overview.html`) — Always
+
+Build `trip-data.json` and run `generate_html.py` every session. See the **Shareable Assets** section for the full schema and component requirements. This is the primary artifact for pitching a trip to a travel companion.
+
 ---
 
 ## Consistency & Alignment Check
@@ -287,70 +291,121 @@ At the end of each planning session (or on request):
 ### Google Sheets Export (`budget.csv`)
 Structured for direct Google Sheets import. Include a scenario block at the bottom with upgrade options and their cost impact.
 
-### HTML Trip Presentation (`overview.html`)
-Generate using `scripts/generate_html.py`. This is a rich, interactive presentation designed to be shared with travel companions.
+### HTML Trip Presentation (`overview.html`) — Always Produce
 
-**trip-data.json schema** — include these fields for full fidelity:
+**Generate this every session.** It is the primary shareable artifact — the thing that gets shown to travel companions to get them excited. Never skip it.
+
+Generate using `scripts/generate_html.py`. No API keys required — uses Leaflet + OpenStreetMap for maps and Picsum for placeholder images.
+
+**The HTML always includes:**
+- **Hero header** — destination title, dates, travelers, vibe tag
+- **Highlight cards** — 6–8 key experiences with cover image, description, cost tag, and a clickable link (↗ badge appears on hover). Use official booking pages for bookable experiences; YouTube search URLs for hikes, natural wonders, or anything where video is more compelling than a brochure.
+- **Interactive map** — Leaflet.js, numbered navy pins for each stop in itinerary order, gold pin for any international island/resort leg, grey ★ pins for bonus stops. Dashed polyline traces the route. Click any pin for a popup with the day number and description. Auto-fits bounds to show all stops including any island legs.
+- **Stays** — one card per accommodation with name, neighborhood, date range, price/night, booking link, and why-it-fits.
+- **Flights** — one card per leg with route, airline, times, and price/person.
+- **Day-by-Day itinerary** — collapsible accordion, one row per day. Morning / Afternoon / Evening segments with emojis. Day theme and estimated daily cost shown in the header row.
+- **Budget summary table** — itemized by category, total row in navy, headroom row in green.
+- **Bonus activities** — 3–5 extras that didn't make the main itinerary, with booking links and costs.
+
+**trip-data.json schema** — populate all fields for full fidelity:
+
 ```json
 {
-  "destination": "Barcelona, Spain",
-  "dates": { "from": "2026-06-14", "to": "2026-06-21" },
-  "travelers": ["You", "Alex", "Sam"],
-  "vibe": "cultural · foodie · nightlife",
+  "destination": "New Zealand + Fiji",
+  "dates": { "from": "March 2027", "to": "~14 days" },
+  "travelers": ["Nir", "Sarah"],
+  "vibe": "adventure · romance · culture · Pacific islands",
+
   "highlights": [
     {
-      "title": "Sagrada Família",
-      "description": "Two to three sentence description of what makes this special.",
-      "estimated_cost": "€36/person",
-      "image_query": "Sagrada Familia Barcelona"
+      "title": "Tongariro Alpine Crossing",
+      "description": "2–3 sentences on what makes this special and what to expect.",
+      "estimated_cost": "$33/person (shuttle)",
+      "image_query": "Tongariro Alpine Crossing volcanic New Zealand",
+      "link": "https://..."
     }
   ],
+
+  "map_stops": [
+    {
+      "name": "Queenstown",
+      "lat": -45.0312,
+      "lng": 168.6626,
+      "day": "Days 6–10",
+      "description": "Short description shown in the map popup.",
+      "type": "stop",
+      "fiji": false
+    }
+  ],
+
   "accommodation": [
     {
-      "name": "Airbnb Eixample",
-      "neighborhood": "Eixample",
-      "dates": "Jun 14–21",
-      "price_per_night": "$185/night",
-      "link": "https://...",
-      "description": "Why this stay fits the trip."
+      "name": "Kamana Lakehouse",
+      "neighborhood": "Queenstown (5 min from centre)",
+      "dates": "Nights 7–10",
+      "price_per_night": "~$250",
+      "link": "https://kamana.co.nz",
+      "description": "Why this stay fits the trip and the travelers."
     }
   ],
+
   "flights": [
     {
-      "route": "NYC → Barcelona",
-      "airline": "Iberia",
-      "departure": "Jun 14, 9:00am",
-      "arrival": "Jun 14, 10:30pm",
-      "price_per_person": "$750",
+      "route": "Chicago (ORD) → Auckland (AKL)",
+      "airline": "Air New Zealand",
+      "departure": "TBD",
+      "arrival": "Day 1",
+      "price_per_person": "~$1,100 est.",
       "link": "https://..."
     }
   ],
+
   "itinerary": [
     {
-      "day": "Day 1 – Jun 14",
-      "morning": "Activity description with transit info.",
-      "afternoon": "Activity description with transit info.",
-      "evening": "Activity description with transit info.",
-      "day_theme": "Arrival & First Impressions",
-      "day_cost": "$80/person"
+      "day": "Day 1 – Auckland",
+      "day_theme": "Arrival",
+      "day_cost": "~$50/couple",
+      "morning": "Activity with transit info and cost.",
+      "afternoon": "Activity with transit info and cost.",
+      "evening": "Activity with transit info and cost."
     }
   ],
+
   "budget_summary": {
-    "Flights": "$1,500",
-    "Accommodation": "$1,295",
-    "Total": "$3,722",
-    "Headroom": "$778 under budget"
+    "Flights — international (2 pax)": "$2,200",
+    "Accommodation (11 nights)": "$2,960",
+    "Activities": "$2,345",
+    "Food & dining": "$800",
+    "Total": "$9,785",
+    "Headroom": "$215 under $10k budget"
   },
+
   "bonus_activities": [
     {
-      "title": "Flamenco Show",
-      "description": "Authentic tablao performance in the Gothic Quarter.",
-      "estimated_cost": "€45/person",
-      "link": "https://..."
+      "title": "Kaikōura Whale Watching",
+      "description": "Why it's worth considering and what the experience is.",
+      "estimated_cost": "$105/person",
+      "link": "https://whalewatch.co.nz"
     }
   ]
 }
 ```
+
+**map_stops — field reference:**
+
+| Field | Type | Notes |
+|---|---|---|
+| `name` | string | Display name shown in popup header |
+| `lat` / `lng` | number | WGS84 decimal degrees |
+| `day` | string | e.g. `"Days 6–10"` or `"Day 7 — Day Trip"` |
+| `description` | string | 1–2 sentences for the popup body |
+| `type` | string | `"stop"` (main itinerary) · `"day-trip"` (excursion, still connected by polyline) · `"transit"` · `"bonus"` (★ grey pin, not on polyline) |
+| `fiji` | boolean | `true` renders pin in gold accent colour — use for any tropical island / resort leg that contrasts with the main land journey |
+
+**Highlight link guidance:**
+- Bookable experiences (bungy, cruise, dinner cruise, resort) → official booking page
+- Hikes, natural wonders, cultural sites → YouTube search URL (`https://www.youtube.com/results?search_query=...`) — video beats a brochure for pitching
+- Wineries, cellar doors → winery's own website
 
 Usage:
 ```bash
