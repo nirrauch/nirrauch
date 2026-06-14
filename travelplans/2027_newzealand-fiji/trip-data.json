@@ -1,0 +1,369 @@
+{
+  "destination": "New Zealand + Fiji",
+  "dates": {
+    "from": "March 2027",
+    "to": "~14 days"
+  },
+  "travelers": ["Nir", "Sarah"],
+  "vibe": "adventure · romance · culture · Pacific islands",
+  "highlights": [
+    {
+      "title": "Tongariro Alpine Crossing",
+      "description": "New Zealand's most iconic day hike — 20km across an active volcanic plateau. Red Crater, emerald alpine lakes, ash fields, and a summit at 1,886m. Challenging, unforgettable, and deeply surreal.",
+      "estimated_cost": "$33/person (shuttle) · $177+ guided",
+      "image_query": "Tongariro Alpine Crossing volcanic New Zealand",
+      "link": "https://www.youtube.com/results?search_query=tongariro+alpine+crossing+new+zealand"
+    },
+    {
+      "title": "Milford Sound: Fly-Cruise-Fly",
+      "description": "Forty minutes over Fiordland's snowcapped peaks by light plane, then a 1h45m cruise through the fjord past waterfalls and resident seals. The return flight over the Southern Alps seals it as the most spectacular day in the country.",
+      "estimated_cost": "$435–$609/person",
+      "image_query": "Milford Sound Fiordland aerial New Zealand",
+      "link": "https://www.airmilford.co.nz/flights/milford-fly-nature-cruise-fly/"
+    },
+    {
+      "title": "Nevis Bungee — 134m",
+      "description": "The highest bungy jump in New Zealand: a 134-metre drop off a cable car suspended above the Nevis River gorge, with 8.5 seconds of freefall. Not a tourist gimmick — this is the real thing.",
+      "estimated_cost": "$237/person",
+      "image_query": "Nevis Bungee Queenstown New Zealand gorge",
+      "link": "https://www.bungy.co.nz/queenstown/nevis/nevis-bungy/"
+    },
+    {
+      "title": "Rotorua: Māori Culture",
+      "description": "Te Puia's working Māori arts institute erupts beside the Pōhutu Geyser. The Whakarewarewa living village is exactly that — families still cook in geothermal pools. One of the few places in the world where ancient culture is genuinely alive, not performed.",
+      "estimated_cost": "$72/person (Te Puia) · $24/person (village)",
+      "image_query": "Rotorua Te Puia geyser Maori culture New Zealand",
+      "link": "https://www.tepuia.com/"
+    },
+    {
+      "title": "Lomani Island, Fiji",
+      "description": "Seventeen rooms on a private patch of Malolo Lailai Island — adults-only, intimate enough that staff learn your names on day one. Daily guided reef snorkel trips, kava ceremonies, and evening beach dinners. The post-adventure exhale.",
+      "estimated_cost": "From $358/night · 3 nights",
+      "image_query": "Lomani Island Resort Fiji beach bungalow",
+      "link": "https://www.lomaniisland.com/"
+    },
+    {
+      "title": "Wānaka + Roys Peak",
+      "description": "Forty-five minutes from Queenstown, Wānaka is quieter, prettier, and completely different in character. Roys Peak is a 5-hour return summit hike with one of the most photographed panoramas in New Zealand — the Southern Alps and Lake Wānaka from 1,578m.",
+      "estimated_cost": "Free hike · Rippon vineyard tasting from free",
+      "image_query": "Roys Peak Wanaka New Zealand summit lake",
+      "link": "https://www.youtube.com/results?search_query=roys+peak+wanaka+new+zealand+hike"
+    },
+    {
+      "title": "Central Otago Wine Harvest",
+      "description": "March–April is harvest season in the Gibbston Valley — the world's southernmost Pinot Noir region. Rolling schist canyon, boutique cellar doors, and vineyard lunches that stretch into the afternoon.",
+      "estimated_cost": "$141–$171/person (half-day tour with lunch)",
+      "image_query": "Central Otago Gibbston Valley vineyard Queenstown",
+      "link": "https://www.gibbstonvalley.com/"
+    },
+    {
+      "title": "Walter Peak Dinner Cruise",
+      "description": "Board the vintage TSS Earnslaw steamship at Queenstown's pier, cross Lake Wakatipu to the high-country Walter Peak farm, and sit down to a gourmet BBQ dinner as the Remarkables turn pink at sunset.",
+      "estimated_cost": "$119/person",
+      "image_query": "Walter Peak TSS Earnslaw Lake Wakatipu Queenstown sunset",
+      "link": "https://www.realnz.com/en/experiences/tss-earnslaw-walter-peak-experiences/walter-peak-gourmet-bbq-dining/"
+    }
+  ],
+  "map_stops": [
+    {
+      "name": "Auckland",
+      "lat": -36.8509,
+      "lng": 174.7645,
+      "day": "Day 1 — Arrival",
+      "description": "Gateway to New Zealand. Transit night before the road trip begins.",
+      "type": "transit",
+      "fiji": false
+    },
+    {
+      "name": "Rotorua",
+      "lat": -38.1368,
+      "lng": 176.2497,
+      "day": "Days 2–3",
+      "description": "Geothermal landscapes, Māori culture, Te Puia, Wai-O-Tapu, Polynesian Spa.",
+      "type": "stop",
+      "fiji": false
+    },
+    {
+      "name": "Taupo / Tongariro",
+      "lat": -39.1957,
+      "lng": 175.5726,
+      "day": "Days 4–5",
+      "description": "Tongariro Alpine Crossing — 20km volcanic traverse. Recovery in the hot pools.",
+      "type": "stop",
+      "fiji": false
+    },
+    {
+      "name": "Queenstown",
+      "lat": -45.0312,
+      "lng": 168.6626,
+      "day": "Days 6–10",
+      "description": "Adventure capital. Nevis Bungee, Dart River Jet, Walter Peak, wine country, Wānaka day trip.",
+      "type": "stop",
+      "fiji": false
+    },
+    {
+      "name": "Milford Sound",
+      "lat": -44.6414,
+      "lng": 167.8974,
+      "day": "Day 7 — Fly-Cruise-Fly",
+      "description": "40-minute flight over Fiordland, 1h45m fjord cruise past waterfalls and seals.",
+      "type": "day-trip",
+      "fiji": false
+    },
+    {
+      "name": "Wānaka",
+      "lat": -44.6975,
+      "lng": 169.1305,
+      "day": "Day 9 — Day Trip",
+      "description": "Roys Peak summit hike (free), Rippon vineyard cellar door tasting. 45 min from Queenstown.",
+      "type": "day-trip",
+      "fiji": false
+    },
+    {
+      "name": "Lomani Island, Fiji",
+      "lat": -17.7781,
+      "lng": 177.1886,
+      "day": "Days 11–14",
+      "description": "Adults-only, 17 rooms, Malolo Lailai Island. Daily reef snorkel, kava ceremony, beach dinners.",
+      "type": "stop",
+      "fiji": true
+    },
+    {
+      "name": "Kaikōura",
+      "lat": -42.4008,
+      "lng": 173.9604,
+      "day": "Bonus Stop",
+      "description": "Sperm whale watching (95% success rate), swim with Dusky dolphins, fresh crayfish on the waterfront.",
+      "type": "bonus",
+      "fiji": false
+    }
+  ],
+  "accommodation": [
+    {
+      "name": "Koura Lodge",
+      "neighborhood": "Rotorua lakefront",
+      "dates": "Nights 2–3",
+      "price_per_night": "~$280",
+      "link": "https://kouralodge.co.nz",
+      "description": "Boutique lakeside B&B, 8 rooms all facing Lake Rotorua with private deck access, outdoor hot tub and sauna. 5 minutes from Te Puia and the geothermal zones. Nir gets uninterrupted lake panoramas; Sarah gets an owner-run property that doesn't feel like a hotel."
+    },
+    {
+      "name": "Tongariro Crossing Lodge",
+      "neighborhood": "National Park Village",
+      "dates": "Nights 4–5",
+      "price_per_night": "~$200",
+      "link": "https://www.tongarirocrossinglodge.co.nz",
+      "description": "Built for exactly this purpose — shuttle departs from the door, spa pool on-site for post-hike recovery. New garden suites opened 2025. Not a luxury lodge, but perfectly positioned and extremely well-reviewed for the crossing experience."
+    },
+    {
+      "name": "Kamana Lakehouse",
+      "neighborhood": "Queenstown (5 min from centre)",
+      "dates": "Nights 7–10",
+      "price_per_night": "~$250",
+      "link": "https://kamana.co.nz",
+      "description": "Independently owned boutique hotel with the Remarkables and Lake Wakatipu panorama as the headline — Nir's #1 priority met immediately. Five minutes from Queenstown's dining strip, so evenings are easy. Genuine boutique feel, not a chain in disguise."
+    },
+    {
+      "name": "Lomani Island Resort",
+      "neighborhood": "Malolo Lailai Island, Mamanucas, Fiji",
+      "dates": "Nights 11–13",
+      "price_per_night": "~$420",
+      "link": "https://www.lomaniisland.com",
+      "description": "Adults-only, 17 rooms total — this is genuinely intimate. Daily guided snorkel trips to different reef spots are included and consistently the most-praised aspect of a stay. Food is exceptional (multiple 2025–26 reviews: 'spectacular,' 'restaurant-quality'). Kava ceremonies, private beach dinners, and genuine Fijian hospitality."
+    }
+  ],
+  "flights": [
+    {
+      "route": "Chicago (ORD) → Auckland (AKL)",
+      "airline": "Air New Zealand / United (TBD)",
+      "departure": "TBD — target late March 2027",
+      "arrival": "Day 1 arrival",
+      "price_per_person": "~$1,100 est.",
+      "link": "https://www.google.com/travel/flights"
+    },
+    {
+      "route": "Auckland (AKL) → Queenstown (ZQN)",
+      "airline": "Air New Zealand domestic",
+      "departure": "Day 6",
+      "arrival": "Day 6 afternoon",
+      "price_per_person": "~$150 est.",
+      "link": "https://www.airnewzealand.co.nz"
+    },
+    {
+      "route": "Queenstown (ZQN) → Nadi, Fiji (NAN)",
+      "airline": "Fiji Airways / Air New Zealand (via AKL)",
+      "departure": "Day 11",
+      "arrival": "Day 11 afternoon",
+      "price_per_person": "~$175 est.",
+      "link": "https://www.fijiairways.com"
+    },
+    {
+      "route": "Nadi, Fiji (NAN) → Chicago (ORD)",
+      "airline": "Via LAX or SFO",
+      "departure": "Day 14 afternoon",
+      "arrival": "Day 15 (overnight flight)",
+      "price_per_person": "~$850 est.",
+      "link": "https://www.google.com/travel/flights"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1 – Auckland",
+      "day_theme": "Arrival",
+      "day_cost": "~$50/couple",
+      "morning": "Long-haul arrival from Chicago. Clear customs, grab the rental car. Coffee from a good Auckland café — flat whites are a different league here.",
+      "afternoon": "Check into the transit hotel near the waterfront. Walk the Viaduct Harbour. Light grocery run for snacks and tomorrow's road trip provisions.",
+      "evening": "Early dinner — something simple and local. Early night. The adventure starts properly tomorrow."
+    },
+    {
+      "day": "Day 2 – Auckland → Rotorua",
+      "day_theme": "Into the Geothermal Zone",
+      "day_cost": "~$200/couple",
+      "morning": "Hit the road early — 2.5 hours south to Rotorua. Stop in Tirau for flat whites and the world's most surreal small-town corrugated-iron buildings.",
+      "afternoon": "Wai-O-Tapu Thermal Landscape — the Champagne Pool (vivid orange silica edges), Artist's Palette (green and yellow sulphur formations), Lady Knox Geyser. 2–3 hours self-guided. $27/person. 30 minutes from Rotorua centre.",
+      "evening": "Polynesian Spa — 12 geothermal mineral pools set over Lake Rotorua, some dating back to 1882. Deluxe Double Dipper includes both the historic Pavilion pools and the cliff-edge Lake Spa pools. $66/person. Book the 5pm–7pm slot for golden hour."
+    },
+    {
+      "day": "Day 3 – Rotorua: Māori Culture",
+      "day_theme": "Culture & Living History",
+      "day_cost": "~$290/couple",
+      "morning": "Te Puia — the working Māori arts institute. Watch master carvers and weavers at work, then catch the 90-minute guided experience including the Pōhutu Geyser and a cultural performance (haka, poi, waiata). $72/person. Book the 9am slot to beat tour groups.",
+      "afternoon": "Whakarewarewa Living Village — unlike Te Puia, this village is still fully inhabited. Guides are residents. Families cook in the thermal pools. 1-hour guided tour. $24/person. This is the more authentic of the two — fewer theatrics, more real.",
+      "evening": "Dinner on the Rotorua waterfront strip. Try Atticus Finch for craft beer and shared plates, or Eat Streat for local flavour and open-air atmosphere."
+    },
+    {
+      "day": "Day 4 – Rotorua → Taupo",
+      "day_theme": "Volcanic Heartland",
+      "day_cost": "~$100/couple",
+      "morning": "Pack up and drive south toward Taupo (1 hour). Stop at Huka Falls — the most visited natural site in New Zealand and genuinely worth it. A turquoise, 220,000-litre-per-second rush through a narrow canyon. Free, 5-minute walk from the car park.",
+      "afternoon": "Check into Tongariro Crossing Lodge. Early to bed is optional — the better option is the lakeside Taupo dining strip for a long, relaxed dinner.",
+      "evening": "Early dinner, early sleep. The shuttle departs at 6:30am."
+    },
+    {
+      "day": "Day 5 – Tongariro Alpine Crossing",
+      "day_theme": "The Big One",
+      "day_cost": "~$70/couple",
+      "morning": "6:30am shuttle from the lodge drops you at Mangatepopo trailhead. The opening hour crosses a vast lava field toward the volcanoes — Mt Ngauruhoe rising on your right (the original Mt Doom). Red Crater summit at 1,886m.",
+      "afternoon": "The descent from Red Crater passes the glowing emerald Emerald Lakes — thermal-tinted and completely surreal at altitude. 20.2km total, 6–8 hours. Shuttle picks you up from Ketetahi end by 3pm.",
+      "evening": "Back at the lodge by 4pm. Into the spa pool immediately. Dinner in the village. Legs will complain. That's correct."
+    },
+    {
+      "day": "Day 6 – Travel to Queenstown",
+      "day_theme": "Adventure Capital Awaits",
+      "day_cost": "~$300/couple",
+      "morning": "Drive back toward Auckland (or Rotorua Airport). Domestic flight to Queenstown — 1h20m, with aerial views of the North Island from above. Air New Zealand domestic is reliable.",
+      "afternoon": "Arrive Queenstown. Drop bags at Kamana Lakehouse — the Remarkables visible from check-in. Walk the waterfront along Lake Wakatipu.",
+      "evening": "Fergburger. Yes, the queue. Yes, it's worth it. Craft beer at Altitude Brewing after. Early night — tomorrow is one of the best days of the trip."
+    },
+    {
+      "day": "Day 7 – Milford Sound: Fly-Cruise-Fly",
+      "day_theme": "The Most Spectacular Day in New Zealand",
+      "day_cost": "~$870/couple",
+      "morning": "Queenstown Airport, 8am flight over Fiordland. The aerial approach to Milford Sound — snowcapped peaks, glacial valleys, no roads below — is itself worth the price. Land at Milford aerodrome.",
+      "afternoon": "1h45m cruise through the fjord. Stirling Falls up close, fur seals on the rocks, bottlenose dolphins if the weather behaves. The scale is incomprehensible in photos — you understand it only from the water.",
+      "evening": "Return flight over the Southern Alps. Back in Queenstown by 3pm. Dinner at a waterfront restaurant — Finz Seafood & Grill for a blow-out, or Madam Woo for something more relaxed."
+    },
+    {
+      "day": "Day 8 – Adventure Day",
+      "day_theme": "All-In",
+      "day_cost": "~$690/couple",
+      "morning": "Nevis Bungee, 8am slot. 134m platform suspended from a cable car above the Nevis Gorge. 8.5 seconds of freefall. Includes return transfer from Queenstown, photo package, and certificate. $237/person.",
+      "afternoon": "Dart River Wilderness Jet Boat — 90 minutes, up to 90km through Mt Aspiring National Park. 80mph through canyon walls on a river where Lord of the Rings was filmed. $106/person.",
+      "evening": "TSS Earnslaw and the Walter Peak Dinner Cruise. Board the 1912 vintage coal-fired steamship at the Queenstown pier, cross Lake Wakatipu, gourmet BBQ at the high-country farm, back by 9:30pm. $119/person. Book ahead — sells out."
+    },
+    {
+      "day": "Day 9 – Wānaka",
+      "day_theme": "Alpine Serenity",
+      "day_cost": "~$70/couple",
+      "morning": "45-minute drive to Wānaka. Arrive by 7am for Roys Peak — 5–6 hours return, 1,578m summit, the most iconic panorama in the South Island. Free. Trekking poles useful.",
+      "afternoon": "Descend into Wānaka town. Rippon Vineyard cellar door tasting — 4–6 Pinot Noir wines on a lakeside deck with the peak behind you, by appointment. From free.",
+      "evening": "Drive back to Queenstown (45 min) in time for dinner. Try Rata for a celebratory South Island meal."
+    },
+    {
+      "day": "Day 10 – Wine Country",
+      "day_theme": "Harvest Season",
+      "day_cost": "~$290/couple",
+      "morning": "Central Otago half-day wine tour. Gibbston Valley schist canyon, 3–4 boutique cellar doors, vineyard lunch included. March is harvest — you may walk the rows during picking. $141/person.",
+      "afternoon": "Back in Queenstown by 3pm. Lake walk, final afternoon in the adventure capital. Pack for Fiji.",
+      "evening": "Celebratory last-night-in-NZ dinner. Botswana Butchery on the waterfront — South Island rack of lamb."
+    },
+    {
+      "day": "Day 11 – Fly to Fiji",
+      "day_theme": "The Pacific Begins",
+      "day_cost": "~$400/couple",
+      "morning": "Fly Queenstown → Nadi via Auckland. Total journey time approximately 6–7 hours including the connection.",
+      "afternoon": "Arrive Nadi. Fast boat from Port Denarau Marina to Malolo Lailai Island — 45 minutes across open turquoise water. Welcome cocktail on arrival at Lomani.",
+      "evening": "Explore the 17-room resort, which takes about 15 minutes. Watch the sunset over the lagoon from the beach. The pace has officially changed."
+    },
+    {
+      "day": "Day 12 – Fiji: Reef Day",
+      "day_theme": "Underwater Fiji",
+      "day_cost": "~$100/couple",
+      "morning": "Lomani's guided morning snorkel trip to the outer reef — multiple coral and fish species, guided to the best spots. Included in the room rate.",
+      "afternoon": "Beach time. Stand-up paddleboarding from the shore. Couples' spa treatment (book on arrival).",
+      "evening": "Kava ceremony with staff — a genuine Fijian cultural exchange, not a staged show. Dinner on the beach."
+    },
+    {
+      "day": "Day 13 – Fiji: Sailing Day",
+      "day_theme": "Island Time",
+      "day_cost": "~$200/couple",
+      "morning": "Catamaran day-sail to a neighbouring island. Snorkel, swim, drift. Lunch on the boat.",
+      "afternoon": "Return to Lomani. Long afternoon on the beach. Read. Nap. Do nothing at all.",
+      "evening": "Sunset cruise on the resort's boat. Best cocktails of the trip. Private beach dinner if booked as part of the honeymoon package."
+    },
+    {
+      "day": "Day 14 – Fiji → Home",
+      "day_theme": "Last Morning",
+      "day_cost": "~$50/couple",
+      "morning": "Final snorkel or sunrise swim. Last coffee on the beach. Boat back to Port Denarau by 11am.",
+      "afternoon": "Nadi airport. Afternoon departure NAN → LAX/SFO → ORD.",
+      "evening": "Overnight flight home. Arrive Chicago Day 15."
+    }
+  ],
+  "budget_summary": {
+    "Flights — international (2 pax, economy)": "$2,200",
+    "Flights — domestic NZ + NZ→Fiji (2 pax)": "$650",
+    "Accommodation — NZ (8 nights)": "$2,030",
+    "Accommodation — Fiji (3 nights, Lomani)": "$1,260",
+    "Activities — NZ": "$2,345",
+    "Activities — Fiji": "$300",
+    "Food & dining — NZ ($60/day × 10)": "$600",
+    "Food & drinks — Fiji (incl. half-board supplement)": "$200",
+    "Car rental — NZ (10 days)": "$450",
+    "Misc, tips, SIM cards, buffer": "$350",
+    "Total": "$10,385",
+    "Note on flights": "Flights estimated — Kiwi search pending date confirmation. Economy in March shoulder season. Budget $500 flex."
+  },
+  "bonus_activities": [
+    {
+      "title": "Kaikōura: Sperm Whale Watching",
+      "description": "Sperm whales are resident year-round off Kaikōura, 2.5h north of Christchurch. 95% success rate, 80% refund if no whale. Add a day between Queenstown and Fiji if the routing allows via CHC.",
+      "estimated_cost": "$105–$153/person",
+      "link": "https://whalewatch.co.nz"
+    },
+    {
+      "title": "Skydive over Lake Taupo",
+      "description": "Jump at 15,000ft over the lake and Tongariro volcanoes — one of the most dramatic skydive views in the world. Nir's profile written all over it. Add on Day 4 if energy allows after the drive.",
+      "estimated_cost": "$317/person (15,000ft)",
+      "link": "https://taupotandemskydiving.com"
+    },
+    {
+      "title": "Private Guided Tongariro Crossing",
+      "description": "Upgrade the shuttle ($33/person) to a private guided crossing with Adrift Tongariro or Walk into Luxury — set your own pace, expert volcanic geology commentary, and no logistics stress on the big day. Worth it for a honeymoon if budget allows.",
+      "estimated_cost": "~$177–$480/person",
+      "link": "https://adriftnz.co.nz/guided-tongariro-walks/tongariro-alpine-crossing-private/"
+    },
+    {
+      "title": "Heli-Hike into the Southern Alps",
+      "description": "Helicopter drop into the backcountry from Queenstown — glacier landing or remote alpine terrain that's otherwise inaccessible. The premium version of 'adventure access' that fits Nir's splurge profile exactly.",
+      "estimated_cost": "$456–$720/person",
+      "link": "https://www.glaciersouthernlakes.co.nz"
+    },
+    {
+      "title": "Swim with Dolphins — Kaikōura",
+      "description": "Dusky dolphins in pods of hundreds. Wetsuit provided, 3.5 hours total. DOC permits limit spots — book immediately when dates are confirmed. Add with the whale watching day for a full Kaikōura wildlife stop.",
+      "estimated_cost": "$144/person",
+      "link": "https://www.dolphinencounter.co.nz"
+    }
+  ]
+}

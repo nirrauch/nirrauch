@@ -1,6 +1,7 @@
 # New Zealand — Research & Planning Notes
-**Trip:** Nir & Sarah Honeymoon · ~2 weeks · Target: early 2027 (exact dates TBD)
-**Last updated:** 2026-05-19
+**Trip:** Nir & Sarah Honeymoon · 14 days · Target: March–April 2027 (exact dates TBD)
+**Last updated:** 2026-06-06
+**Context:** This is **Pitch Option 1 of 3** — NZ + Fiji. The full pitch HTML is at `overview.html`.
 
 ---
 
@@ -10,11 +11,17 @@
 |---|---|
 | Destination confirmed | ✅ New Zealand + Fiji |
 | Rough timing | ✅ March–April 2027 (optimal weather + cost — see Timing section) |
-| Exact dates | ⏳ Pending |
-| Itinerary shape | ⏳ In progress — key stops confirmed, routing TBD |
-| Flight search | ⏳ Blocked — need final entry/exit airports before searching |
-| Accommodation | ⏳ Not started |
-| Budget | ✅ $10k USD working budget (splurge options above that) |
+| Exact dates | ⏳ Pending — needed to unlock flight search |
+| Itinerary shape | ✅ Option C confirmed — AKL in → Rotorua → Taupo → fly ZQN → Queenstown → Fiji |
+| Milford Sound format | ✅ Fly-cruise-fly confirmed |
+| Kaikōura | ✅ Bonus stop (whale watch + crayfish lunch) — not in main itinerary |
+| Wānaka | ✅ Day trip from Queenstown (not overnight) |
+| Fiji | ✅ Mamanucas / Lomani Island Resort — see fiji-notes.md |
+| Flight search | ⏳ Blocked — need exact dates first |
+| Accommodation | ✅ Researched — options shortlisted per stop (see Accommodation Research section) |
+| Activities pricing | ✅ Fully researched — see nz-activity-pricing.md |
+| Budget | ✅ $10k USD working budget · Estimated spend ~$9,785 (see trip-data.json) |
+| HTML pitch | ✅ Generated — overview.html |
 
 ---
 
@@ -60,11 +67,11 @@
 **Suggested stay:** 3–4 nights (base for Milford Sound day trip + Wānaka overnight option)
 **Airport:** Queenstown (ZQN) — consider flying in from Auckland rather than driving the full South Island
 
-### ✅ Kaikōura (en-route stop)
-**Why confirmed:** Natural stop on the drive between Picton/Christchurch and further south. Wildlife focus.
-**What's here:** Sperm whale watching tours, swim-with-Dusky-dolphins, fresh crayfish (local specialty, one of the best seafood meals in NZ), seal colony coastal walks.
-**Suggested stay:** Half-day stop or 1 overnight
-**Routing note:** Fits between Picton (ferry from Wellington) and Christchurch — 2.5h each way.
+### ⭐ Kaikōura (Bonus Stop — not in main itinerary)
+**Status:** Moved to bonus. The routing from Queenstown → Fiji doesn't naturally pass through Kaikōura (it's north of CHC, requiring a detour). Included as an optional add-on if dates allow.
+**What's here:** Sperm whale watching tours (95% success rate, ~$105/person), swim-with-Dusky-dolphins ($144/person), fresh crayfish — one of the best seafood meals in NZ, seal colony coastal walks.
+**If adding:** Fly QZN → CHC, rent car, drive north to Kaikōura (2.5h), whale watch + lunch, drive back to CHC, fly CHC → NAN next morning. Adds 1 day and ~$400–500 per couple (car + whale watch).
+**Accommodation if staying:** Hapuku Lodge Tree Houses (~$500–700/night all-in) — genuinely worth it if staying overnight.
 
 ---
 
@@ -88,22 +95,34 @@ Main South Island airport (CHC). Good food scene, interesting post-earthquake re
 ### Franz Josef Glacier — On Hold
 West Coast glaciers, dramatic scenery. Adds significant driving time (5h from Queenstown). Worth it only if routing allows — would require overnight on the West Coast. Could be a splurge helicopter glacier hike option from Queenstown.
 
-### Wānaka — Likely Overnight Add-On
-45 min from Queenstown. Roys Peak (one of NZ's best summit views), Rippon vineyard, Rob Roy Glacier. Sarah would appreciate the quieter pace vs. Queenstown. Plan as 1-night add-on within the Queenstown stop.
+### Wānaka — Day Trip from Queenstown (confirmed)
+45 min from Queenstown. Confirmed as a day trip (not overnight) — drive over early for Roys Peak hike (free, 5-6h, 1,578m), then Rippon vineyard tasting in the afternoon, back to Queenstown for dinner. Lime Tree Lodge (~$220–300/night) is available if an overnight is preferred, but the day trip fits the 14-day frame better.
 
 ---
 
-## Itinerary Shape — Options Under Consideration
+## Itinerary Shape — CONFIRMED: Option C
 
-**Key open question:** Fly into Auckland + drive south, or fly directly to Queenstown and work with domestic flights?
+**Confirmed route:** ORD → AKL (1N transit) → Rotorua (2N, drive) → Taupo/Tongariro (2N, drive) → fly AKL→ZQN → Queenstown (4N, including Wānaka day trip + Milford Sound day) → fly ZQN→NAN → Lomani Island Fiji (3N) → NAN→ORD
 
-| Option | Route | Pros | Cons |
-|---|---|---|---|
-| **A — South Island focus** | ORD → AKL (overnight) → fly AKL→ZQN → Queenstown base → Kaikōura → Christchurch → fly home | Maximizes South Island (Nir's profile); fewer driving days; cleaner | Skips Rotorua/Taupo (both confirmed as desired stops) |
-| **B — North + South** | ORD → AKL → Rotorua (drive) → Taupo → fly or ferry south → Queenstown → Kaikōura | Hits all confirmed stops; more variety | More moving; pushes against Sarah's 2–3 stop preference; tight in 2 weeks |
-| **C — North then fly south** | ORD → AKL → Rotorua → Taupo → fly to ZQN (skip the drive/ferry) → Queenstown/Milford → fly home from ZQN | Efficient — domestic flight saves 2 days of driving; hits all confirmed stops | Cost of domestic flight (~NZD $150–250/person) |
+**14-day breakdown:**
+| Day | Location | Key activity |
+|---|---|---|
+| 1 | Auckland | Arrival transit |
+| 2 | Rotorua | Drive from AKL, Wai-O-Tapu, Polynesian Spa |
+| 3 | Rotorua | Te Puia + cultural performance, Whakarewarewa |
+| 4 | Taupo | Drive, Huka Falls, settle in |
+| 5 | Tongariro | Alpine Crossing |
+| 6 | Queenstown | Drive/fly, arrive, Fergburger |
+| 7 | Queenstown | Milford Sound fly-cruise-fly |
+| 8 | Queenstown | Nevis Bungee + Dart River Jet + Walter Peak dinner |
+| 9 | Wānaka day trip | Roys Peak hike, Rippon vineyard |
+| 10 | Queenstown | Central Otago wine tour, pack for Fiji |
+| 11 | → Fiji | Fly ZQN→NAN, boat to Lomani |
+| 12 | Fiji | Reef snorkel, spa, kava ceremony |
+| 13 | Fiji | Sailing day trip, sunset cruise |
+| 14 | → Home | Morning beach, boat to Nadi, fly home |
 
-**Leading option:** C — fly into Auckland, drive Rotorua → Taupo, domestic flight to Queenstown, explore south, fly home from ZQN. Then Fiji (Mamanucas) as the final leg.
+**Why C was chosen:** Hits all confirmed NZ stops without ferry transit. Domestic flight AKL→ZQN (~$150/person) saves 2 driving days and avoids the Wellington stopover. Clean exit from ZQN into Fiji.
 
 ---
 
@@ -131,12 +150,138 @@ West Coast glaciers, dramatic scenery. Adds significant driving time (5h from Qu
 
 ## Open Questions / Next Decisions
 
-1. **Itinerary routing** — Confirm Option C (fly AKL in, drive north, fly to QZN, home from QZN)?
-2. **Exact dates** — March or April? Nail down so flights can be searched.
-3. **Tongariro decision** — Both do it or split day? Check Sarah's fitness/hiking comfort.
-4. **Milford Sound format** — Day trip (fly-cruise-fly) or overnight cruise?
-5. **Fiji** — Review Fiji section (Nir hasn't read it yet). Likely Mamanuca Islands / Likuliku Lagoon.
-6. **Flight search** — Run once entry/exit airports confirmed.
+1. ✅ ~~Itinerary routing~~ — Option C confirmed.
+2. ⏳ **Exact dates** — March or April? Avoid Easter weekend (Good Fri Mar 28 – Sun Apr 1). Late March or mid-April are the sweet spots. Needed to unlock flight search.
+3. ⏳ **Tongariro decision** — Both do it together, or Nir solo while Sarah spa day? Resolve before booking shuttle or guide.
+4. ✅ ~~Milford Sound format~~ — Fly-cruise-fly confirmed.
+5. ✅ ~~Fiji~~ — Mamanucas + Lomani Island Resort confirmed. See fiji-notes.md.
+6. ⏳ **Flight search** — Run Kiwi search once dates confirmed. Entry: ORD→AKL. Domestic: AKL→ZQN. Exit: ZQN→NAN + NAN→ORD (via LAX/SFO).
+
+---
+
+---
+
+## Accommodation Research — March–April 2027
+*Researched 2026-06-06. Prices in USD per night for 2 adults, approximate (rates fluctuate by date and platform — check direct booking links closer to travel).*
+
+**NZD→USD note:** NZD/USD rate ~0.60 used as working conversion. March 2027 rates will likely be similar to current shoulder-season pricing; April 2027 may run 5–15% cheaper except over Easter weekend (date shifts year to year — check 2027 calendar).
+
+---
+
+### Stop 1 — Rotorua (2 nights)
+*Priorities: boutique/lodge feel, geothermal setting, views — not a generic city hotel. Near Te Puia and Wai-O-Tapu.*
+
+#### Option A — Koura Lodge ★ RECOMMENDED mid-range
+**~$280–$380/night** · Boutique lakeside B&B, 8 rooms all with uninterrupted Lake Rotorua views from private deck, lakeside hot tub and sauna, 5 min drive to Te Puia.
+- **Why it fits:** Nir gets the panoramic lake view he demands; Sarah gets a boutique, authentic, owner-run feel with proper bathroom standards and a lakeside hot tub — not a chain. Views right off the deck are the draw. Breakfast included.
+- **Booking:** [kouralodge.co.nz](https://kouralodge.co.nz/) · Also on [Booking.com](https://www.booking.com/hotel/nz/koura-lodge.html) and [KAYAK (from $224)](https://www.kayak.com/Rotorua-Hotels-Koura-Lodge.453893.ksp)
+
+#### Option B — On The Point (formerly Peppers on the Point) ★★ PREMIUM
+**~$530–$700/night** · Boutique luxury lodge on a private peninsula on Lake Rotorua, 12 suites, floatplane access, fine dining on-site.
+- **Why it fits:** Delivers on every priority — panoramic lake + volcanic backdrop views from every suite, genuine boutique luxury (boutique staff-to-guest ratio), Sarah will love the quality and space, Nir can book a floatplane scenic flight from the jetty. Romantic honeymoon energy throughout. Breakfast and dinner usually included.
+- **Booking:** [onthepoint.co.nz](https://www.onthepoint.co.nz/) · [KAYAK (from $530)](https://www.kayak.com/Rotorua-Hotels-Peppers-On-The-Point---Lake-Rotorua.189122.ksp) · [Hotels.com](https://www.hotels.com/ho340983/peppers-on-the-point-lake-rotorua-rotorua-new-zealand/)
+
+#### Option C — Solitaire Lodge ★★★ SPLURGE
+**~$1,100–$1,700/night (all-inclusive)** · NZ's original luxury lodge, on a private headland on Lake Tarawera (30 min from Rotorua), volcano views, 10 suites, all-inclusive (meals, drinks, activities).
+- **Why it fits:** Maximum view payoff — the lodge sits on a peninsula with 180-degree volcanic lake panoramas; Nir's "views are #1" criterion is fully met. Sarah gets the nicest bathrooms and unpacking space in the region. The all-in rate covers 5-course dinner, full bar, kayaks, dinghies. Honeymoon-appropriate privacy.
+- **Booking:** [solitairelodge.co.nz](https://solitairelodge.co.nz/) · [KAYAK (from $1,485)](https://www.kayak.com/Rotorua-Hotels-Solitaire-Lodge.22934.ksp)
+
+**Verdict:** Koura Lodge is the sweet spot — boutique, lakeside, right price. On The Point if the budget allows a treat. Solitaire Lodge only if this stop is the honeymoon splurge night.
+
+---
+
+### Stop 2 — Taupo / Tongariro Area (2 nights)
+*Priorities: within 15–25 min of Tongariro Alpine Crossing trailhead, hot pools access, cozy lodge or lakeside retreat.*
+
+#### Option A — Tongariro Crossing Lodge ★ ALREADY ON LIST / RECOMMENDED
+**~$180–$280/night** · Closest purpose-built lodge to the Crossing trailhead (National Park Village, ~15 min to Mangatepopo start). Shuttle service included. New garden suites opened May 2025. On-site spa pool.
+- **Why it fits:** Purpose-built for exactly this trip — the shuttle departs from the door, the spa pool handles post-hike recovery, and new garden suites have upped the quality standard. Not luxury, but comfortable and extremely well-positioned. Good value for what it is.
+- **Booking:** [tongarirocrossinglodge.co.nz](https://www.tongarirocrossinglodge.co.nz/) · [KAYAK (from $249 NZD)](https://www.nz.kayak.com/National-Park-Village-Hotels-Tongariro-Crossing-Lodge.2733014.ksp) · [Hotels.com](https://www.hotels.com/ho680518/tongariro-crossing-lodge-national-park-village-new-zealand/)
+
+#### Option B — The Park Hotel Ruapehu ★★ MID-RANGE WITH VIEWS
+**~$120–$200/night** · 3-star hotel in National Park Village with two outdoor hot tubs, views of Mt Ruapehu and Ngauruhoe, on-site restaurant, 15 min to trailhead. Packages include shuttle + breakfast + packed lunch.
+- **Why it fits:** The volcano views from the hot tubs are genuinely impressive — Nir will appreciate looking directly at the peaks they're hiking. Sarah gets the self-contained vibe without roughing it. The crossing package deal simplifies logistics significantly.
+- **Booking:** [the-park.co.nz](https://the-park.co.nz/) · [Package deal page](https://the-park.co.nz/packages/summer-tongariro-crossing) · [KAYAK (from $66)](https://www.kayak.com/National-Park-Village-Hotels-The-Park-Hotel-Ruapehu.334134.ksp)
+
+#### Option C — Chateau Tongariro Hotel ★★ ICONIC / ATMOSPHERIC
+**~$170–$280/night** · Historic 1929 grand hotel inside Whakapapa Village on the slopes of Mt Ruapehu. Views of the volcanic landscape, indoor pool and spa, ~20 min to Crossing trailhead.
+- **Why it fits:** The most character-rich stay in the region — a century-old alpine hotel inside a UNESCO World Heritage national park. Sarah will love the authentic historic architecture and proper rooms; Nir gets the high-altitude volcanic setting. The indoor pool and spa handle post-hike recovery.
+- **Booking:** [chateautongariro.co.nz](https://chateautongariro.co.nz/) · [Booking.com](https://www.booking.com/city/nz/whakapapa-village.html) · [KAYAK](https://www.kayak.com/Whakapapa-Village-Hotels-Chateau-Tongariro-Hotel.76979.ksp)
+
+**Verdict:** Tongariro Crossing Lodge is the most logical choice — built for exactly this use case, closest to the trailhead, shuttle from the door. Chateau Tongariro is the more romantic/atmospheric option if proximity matters slightly less.
+
+---
+
+### Stop 3 — Queenstown (3–4 nights)
+*Priorities: views of the Remarkables or Lake Wakatipu (Nir's #1), central or short drive, balcony preferred. Budget $200–$400/night. Plus 1-night Wānaka option.*
+
+#### Option A — Kamana Lakehouse ★ RECOMMENDED MID-RANGE
+**~$200–$350/night** · 4.5-star boutique hotel 5 min drive from Queenstown center, direct views of the Remarkables and Lake Wakatipu, genuine boutique feel (not a chain), strong reviews.
+- **Why it fits:** Nir gets the Remarkables-and-lake panorama he's identified as his top priority, at a price that fits the budget. Sarah gets boutique service quality away from the tourist crush of downtown — she can settle in properly. 5 min to town for dining and nightlife.
+- **Booking:** [kamana.co.nz](https://kamana.co.nz/) · [KAYAK (from $154)](https://www.kayak.com/Queenstown-Hotels-Kamana-Lakehouse.41432.ksp) · [Booking.com](https://www.booking.com/hotel/nz/aspen-queenstown-tanoa-hotels.html)
+
+#### Option B — QT Queenstown ★★ BOUTIQUE WITH BALCONY
+**~$280–$420/night** · Boutique design hotel in Queenstown CBD. The "QT Remarkables Lakeview King" room (37sqm) has a Juliette balcony with direct views of Lake Wakatipu and the Remarkables, standalone bath, cocktails on arrival.
+- **Why it fits:** The Juliette balcony with Remarkables + lake view directly satisfies Nir's top two criteria in one room. Sarah gets the standalone bath and genuinely stylish boutique design (QT is decidedly not a chain). Central location for evening dining.
+- **Booking:** [qthotels.com/queenstown](https://www.qthotels.com/queenstown/) · [Booking.com](https://www.booking.com/hotel/nz/qt-queenstown.html) · [Expedia](https://www.expedia.com/Queenstown-Hotels-QT-Queenstown.h19676433.Hotel-Information)
+
+#### Option C — Hotel St Moritz (MGallery) ★★ MID-RANGE BACKUP
+**~$200–$350/night** · Central Queenstown boutique hotel with lake and Remarkables views, strong room quality, part of MGallery (boutique tier of Accor — not a chain-feel property).
+- **Why it fits:** A reliable, well-reviewed option if Kamana is full — similar view profile, central location, good bathroom quality that Sarah will appreciate. Slightly more corporate than Kamana but still boutique.
+- **Booking:** [mgallery.accor.com](https://mgallery.accor.com/en/hotels/2074.html) · [KAYAK (from $185)](https://www.kayak.com/Queenstown-Hotels-Hotel-St-Moritz-Queenstown---MGallery-by-Sofitel.20310.ksp)
+
+#### SPLURGE OPTION — Rosewood Matakauri
+**~$1,000–$1,500/night (all-inclusive)** · 5-star luxury lodge on the shores of Lake Wakatipu, 10 min from Queenstown, private balcony villas with Remarkables and lake panoramas, all-inclusive meals and drinks.
+- **Why it fits:** The best possible Queenstown stay for this couple — Nir gets the most dramatic view scenario in the region (lake + Remarkables from a private villa balcony), Sarah gets the ultimate luxury space and bathroom. Reserve for a splurge night or the whole stay if budget flexes up.
+- **Booking:** [rosewoodhotels.com/en/matakauri](https://www.rosewoodhotels.com/en/matakauri) · [KAYAK (from $987)](https://www.kayak.com/Queenstown-Hotels-Matakauri-Lodge.43510.ksp)
+
+**Verdict:** Kamana Lakehouse hits the brief squarely at the right price. QT upgrades the view and adds the balcony. Rosewood Matakauri is the honeymoon-splurge option if one stop gets an upgrade.
+
+---
+
+#### 1-Night Wānaka Option (45 min from Queenstown)
+*For quieter contrast to Queenstown — good fit for Sarah's "settle in" preference.*
+
+**Lime Tree Lodge** — ~$220–$300/night · Boutique 5-star lodge on 10-acre estate just outside town, 360-degree mountain views, infinity pool, spa, breakfast included, owner-run.
+- **Why it fits:** Sarah will love the space, the grounds, the slower pace — exactly her "nest and settle" energy. The 360-degree mountain views work for Nir. Wānaka itself (lake walk, Roys Peak views, Rippon vineyard) has low tourist density — the anti-Queenstown Sarah actively prefers.
+- **Booking:** [booking.com/hotel/nz/limetree-lodge](https://www.booking.com/hotel/nz/limetree-lodge.html) · [KAYAK (from $165)](https://www.kayak.com/Wanaka-Hotels-Lime-Tree-Lodge.300383.ksp)
+
+---
+
+### Stop 4 — Kaikōura (1 night or half-day stop)
+*Brief stop for whale watching and crayfish. Reasonable overnight, or just a lunch stop.*
+
+#### Option A — Hapuku Lodge + Tree Houses ★★ STANDOUT IF STAYING OVERNIGHT
+**~$500–$700/night (dinner + breakfast included)** · 5 tree houses set 10m up in a manuka grove + 4 lodge suites, 15 min north of Kaikōura town, sea and mountain views, all meals included.
+- **Why it fits:** If staying overnight in Kaikōura, this is the only option worth staying for in its own right — the tree houses are genuinely spectacular (Nir's profile: extreme/unusual experiences > comfortable-but-generic). Sarah gets top-tier bathrooms, beautifully designed space, and coastal/mountain views. Dinner included so no need to hunt for restaurants after whale watching.
+- **Booking:** [hapukulodge.com](https://www.hapukulodge.com/) · [Mr & Mrs Smith review](https://www.mrandmrssmith.com/luxury-hotels/hapuku-lodge-and-tree-houses)
+
+#### Option B — Bay Cottages ★ BUDGET / FUNCTIONAL
+**~$100–$170/night** · 3-star self-catering cottages directly on the ocean in Kaikōura, simple but sea-facing, kitchenette and BBQ, walking distance to waterfront restaurants and whale watch departure point.
+- **Why it fits:** If the goal is just a solid night's sleep before continuing south (or driving on the same day), Bay Cottages is clean, well-located, and nothing more is needed. Book direct to save.
+- **Booking:** [baycottages.co.nz](https://www.baycottages.co.nz/) · [Booking.com](https://www.booking.com/hotel/nz/bay-cottages-kaikoura.html)
+
+#### Option C — Skip the overnight (lunch stop only)
+If Kaikōura falls between two driving days, consider: arrive mid-morning, do the Whale Watch Kaikōura tour (2.5–3 hrs, ~$160 USD/person), lunch at The Crayfish (fresh crayfish on the wharf), continue to Christchurch or next stop. No overnight needed.
+- **Whale Watch booking:** [whalewatch.co.nz](https://www.whalewatch.co.nz/) — book well in advance, tours fill up.
+
+**Verdict:** Hapuku Lodge makes the Kaikōura stop a destination in itself. Bay Cottages is fine if it's just a transit night. Given this is a 1-night stop on a honeymoon, Hapuku is the call — the price is justified by the experience.
+
+---
+
+### Seasonal Pricing: March vs. April
+Both months are New Zealand's shoulder season — noticeably cheaper than peak summer (December–February) and before the slow winter (May–August).
+
+| Factor | March | April |
+|---|---|---|
+| General pricing | Shoulder season, but busier weekends linger from summer | Slightly lower — typically 5–15% cheaper than March |
+| Queenstown | Still busy (school holiday influx fades mid-March) | Quieter, better availability, autumn colour bonus |
+| Tongariro Crossing | Ideal weather window — warm, dry | Good but slightly cooler — still excellent |
+| Easter impact | Easter 2027 date TBD — if in April, rates spike on that weekend | Avoid Easter weekend (check 2027 dates — April 1 is Easter 2027) |
+| Wānaka | Autumn colour peaks in April — stunning for Roys Peak | Peak for autumn foliage viewing |
+| **Recommendation** | Late March (after ~Mar 20) is ideal | Early April (pre-Easter) is strong — April 2027 Easter falls April 1 (Good Fri Mar 28 – Easter Sun Apr 1) — book mid-April onward |
+
+**Note on Easter 2027:** Easter Sunday falls on April 1, 2027. Good Friday is March 28. The long weekend (Mar 27–Apr 1) will see elevated prices and booking pressure across all South Island stops. Aim to be in transit or at a pre-booked property over that weekend — do not leave accommodation bookings for that weekend until late.
 
 ---
 

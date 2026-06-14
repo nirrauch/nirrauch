@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Zealand + Fiji · Trip Overview</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0f2a4a;
+    --blue: #1a5276;
+    --accent: #e8a020;
+    --light: #f8f7f4;
+    --card-bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--light); color: var(--text); line-height: 1.65; }
+
+  /* Hero */
+  .hero {
+    position: relative; min-height: 420px; display: flex; align-items: flex-end;
+    background: linear-gradient(160deg, var(--navy) 0%, #1b4f72 60%, #2471a3 100%);
+    overflow: hidden; padding: 0;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('https://picsum.photos/seed/260/1400/500');
+    background-size: cover; background-position: center;
+    opacity: 0.25; mix-blend-mode: luminosity;
+  }
+  .hero-content { position: relative; padding: 56px 48px; width: 100%; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.6rem); font-weight: 800; color: #fff; letter-spacing: -1px; line-height: 1.1; margin-bottom: 12px; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+  .hero-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2); border-radius: 100px;
+    padding: 6px 16px; font-size: 0.88em; color: #fff;
+  }
+  .hero-pill.accent { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  /* Nav */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--navy); border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex; gap: 0; overflow-x: auto;
+  }
+  .nav a {
+    color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85em; font-weight: 500;
+    padding: 14px 20px; white-space: nowrap; transition: color 0.15s, border-color 0.15s;
+    border-bottom: 2px solid transparent;
+  }
+  .nav a:hover { color: #fff; border-bottom-color: var(--accent); }
+
+  /* Layout */
+  .container { max-width: 900px; margin: 0 auto; padding: 48px 24px; }
+  section { margin-bottom: 56px; scroll-margin-top: 60px; }
+  h2 {
+    font-size: 1.3em; font-weight: 700; color: var(--navy);
+    margin-bottom: 24px; padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent); display: inline-block;
+  }
+
+  /* Cards */
+  .card {
+    background: var(--card-bg); border-radius: 12px; padding: 22px 26px;
+    margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
+  }
+  .card-title { font-weight: 700; font-size: 1.05em; margin-bottom: 4px; }
+  .card-title a { color: var(--navy); text-decoration: none; }
+  .card-title a:hover { text-decoration: underline; color: var(--blue); }
+  .card-meta { color: var(--muted); font-size: 0.85em; margin-bottom: 6px; }
+  .card-body { color: #374151; font-size: 0.95em; }
+  .card-desc { color: var(--muted); font-size: 0.88em; margin-top: 8px; }
+  .tag {
+    display: inline-block; margin-top: 10px;
+    background: #eff6ff; color: var(--blue); border: 1px solid #bfdbfe;
+    border-radius: 6px; padding: 3px 12px; font-size: 0.82em; font-weight: 500;
+  }
+
+  /* Highlights */
+  .highlights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px; }
+  .highlight-card {
+    background: var(--card-bg); border-radius: 14px; overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block; text-decoration: none; color: inherit;
+    position: relative;
+  }
+  .highlight-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .highlight-img {
+    height: 180px; background-size: cover; background-position: center;
+    background-color: #dde;
+  }
+  .highlight-body { padding: 18px 20px; }
+  .highlight-title { font-weight: 700; font-size: 1em; margin-bottom: 6px; color: var(--navy); }
+  .highlight-desc { font-size: 0.88em; color: #4b5563; line-height: 1.55; }
+  .highlight-link-badge {
+    position: absolute; top: 12px; right: 12px;
+    background: rgba(0,0,0,0.45); color: #fff;
+    width: 26px; height: 26px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85em; font-weight: 700; backdrop-filter: blur(4px);
+    transition: background 0.15s;
+  }
+  .highlight-card:hover .highlight-link-badge { background: var(--accent); }
+
+  /* Flights */
+  .flight-card { display: flex; flex-direction: column; gap: 6px; }
+  .flight-route { display: flex; align-items: center; gap: 12px; margin-bottom: 2px; }
+  .flight-city { font-weight: 700; font-size: 1.05em; color: var(--navy); }
+  .flight-arrow { color: var(--accent); font-size: 1.2em; }
+
+  /* Itinerary accordion */
+  .day-block {
+    background: var(--card-bg); border-radius: 12px; margin-bottom: 10px;
+    border: 1px solid var(--border); overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .day-summary {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 24px; cursor: pointer; list-style: none;
+    user-select: none; gap: 12px;
+  }
+  .day-summary::-webkit-details-marker { display: none; }
+  .day-summary::after {
+    content: '›'; font-size: 1.4em; color: var(--muted);
+    transition: transform 0.2s; margin-left: 8px;
+  }
+  details[open] .day-summary::after { transform: rotate(90deg); }
+  .day-summary:hover { background: #f9fafb; }
+  .day-summary-left { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .day-number { font-weight: 800; font-size: 0.78em; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; }
+  .day-date { font-weight: 600; color: var(--navy); }
+  .day-theme { font-size: 0.85em; color: var(--muted); }
+  .day-cost { font-size: 0.82em; font-weight: 600; color: var(--blue); background: #eff6ff; border-radius: 6px; padding: 3px 10px; white-space: nowrap; }
+  .day-content { padding: 4px 24px 20px; border-top: 1px solid var(--border); }
+  .segment { margin-top: 16px; }
+  .segment-label { font-weight: 700; font-size: 0.78em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .segment-text { color: #374151; font-size: 0.93em; line-height: 1.6; }
+
+  /* Budget table */
+  .budget-table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .budget-table th { background: var(--navy); color: #fff; padding: 13px 20px; text-align: left; font-size: 0.85em; font-weight: 600; }
+  .budget-table td { padding: 12px 20px; border-bottom: 1px solid var(--border); font-size: 0.93em; }
+  .budget-table td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+  .budget-table .total-row td { font-weight: 800; background: var(--navy); color: #fff; border-bottom: none; font-size: 1em; }
+  .budget-table .headroom-row td { font-weight: 600; background: #ecfdf5; color: #065f46; border-bottom: none; }
+
+  /* Bonus activities */
+  .bonus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .bonus-card {
+    background: var(--card-bg); border-radius: 10px; padding: 18px 20px;
+    border: 1px solid var(--border); border-left: 3px solid var(--accent);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .bonus-title { font-weight: 700; font-size: 0.95em; margin-bottom: 4px; }
+  .bonus-title a { color: var(--navy); text-decoration: none; }
+  .bonus-title a:hover { text-decoration: underline; }
+  .bonus-desc { font-size: 0.87em; color: #4b5563; line-height: 1.5; }
+
+  /* Footer */
+  .footer { text-align: center; color: var(--muted); font-size: 0.8em; padding: 32px 20px 56px; border-top: 1px solid var(--border); margin-top: 40px; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero-content { padding: 36px 20px; }
+    .container { padding: 32px 16px; }
+    .day-summary { padding: 14px 16px; }
+    .day-content { padding: 4px 16px 16px; }
+    .budget-table td, .budget-table th { padding: 10px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>New Zealand + Fiji</h1>
+    <div class="hero-meta">
+      <div class='hero-pill'>📅 March 2027 – ~14 days</div>
+      <div class='hero-pill'>👥 Nir, Sarah</div>
+      <div class='hero-pill accent'>✦ adventure · romance · culture · Pacific islands</div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav">
+  <a href='#highlights'>Highlights</a>
+  <a href='#map'>Map</a>
+  <a href='#stays'>Stays</a>
+  <a href='#flights'>Flights</a>
+  <a href='#itinerary'>Itinerary</a>
+  <a href='#budget'>Budget</a>
+  <a href='#extras'>Extras</a>
+</nav>
+
+<div class="container">
+
+  <section id="highlights"><h2>Highlights</h2><div class="highlights-grid">
+        <a href="https://www.youtube.com/results?search_query=tongariro+alpine+crossing+new+zealand" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/296/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Tongariro Alpine Crossing</div>
+            <div class="highlight-desc">New Zealand's most iconic day hike — 20km across an active volcanic plateau. Red Crater, emerald alpine lakes, ash fields, and a summit at 1,886m. Challenging, unforgettable, and deeply surreal.</div>
+            <div class='tag'>$33/person (shuttle) · $177+ guided</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.airmilford.co.nz/flights/milford-fly-nature-cruise-fly/" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/358/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Milford Sound: Fly-Cruise-Fly</div>
+            <div class="highlight-desc">Forty minutes over Fiordland's snowcapped peaks by light plane, then a 1h45m cruise through the fjord past waterfalls and resident seals. The return flight over the Southern Alps seals it as the most spectacular day in the country.</div>
+            <div class='tag'>$435–$609/person</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.bungy.co.nz/queenstown/nevis/nevis-bungy/" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/640/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Nevis Bungee — 134m</div>
+            <div class="highlight-desc">The highest bungy jump in New Zealand: a 134-metre drop off a cable car suspended above the Nevis River gorge, with 8.5 seconds of freefall. Not a tourist gimmick — this is the real thing.</div>
+            <div class='tag'>$237/person</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.tepuia.com/" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/119/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Rotorua: Māori Culture</div>
+            <div class="highlight-desc">Te Puia's working Māori arts institute erupts beside the Pōhutu Geyser. The Whakarewarewa living village is exactly that — families still cook in geothermal pools. One of the few places in the world where ancient culture is genuinely alive, not performed.</div>
+            <div class='tag'>$72/person (Te Puia) · $24/person (village)</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.lomaniisland.com/" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/155/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Lomani Island, Fiji</div>
+            <div class="highlight-desc">Seventeen rooms on a private patch of Malolo Lailai Island — adults-only, intimate enough that staff learn your names on day one. Daily guided reef snorkel trips, kava ceremonies, and evening beach dinners. The post-adventure exhale.</div>
+            <div class='tag'>From $358/night · 3 nights</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=roys+peak+wanaka+new+zealand+hike" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/856/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Wānaka + Roys Peak</div>
+            <div class="highlight-desc">Forty-five minutes from Queenstown, Wānaka is quieter, prettier, and completely different in character. Roys Peak is a 5-hour return summit hike with one of the most photographed panoramas in New Zealand — the Southern Alps and Lake Wānaka from 1,578m.</div>
+            <div class='tag'>Free hike · Rippon vineyard tasting from free</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.gibbstonvalley.com/" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/387/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Central Otago Wine Harvest</div>
+            <div class="highlight-desc">March–April is harvest season in the Gibbston Valley — the world's southernmost Pinot Noir region. Rolling schist canyon, boutique cellar doors, and vineyard lunches that stretch into the afternoon.</div>
+            <div class='tag'>$141–$171/person (half-day tour with lunch)</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a>
+        <a href="https://www.realnz.com/en/experiences/tss-earnslaw-walter-peak-experiences/walter-peak-gourmet-bbq-dining/" target="_blank" rel="noopener" class="highlight-card">
+          <div class="highlight-img" style="background-image:url('https://picsum.photos/seed/464/800/500')"></div>
+          <div class="highlight-body">
+            <div class="highlight-title">Walter Peak Dinner Cruise</div>
+            <div class="highlight-desc">Board the vintage TSS Earnslaw steamship at Queenstown's pier, cross Lake Wakatipu to the high-country Walter Peak farm, and sit down to a gourmet BBQ dinner as the Remarkables turn pink at sunset.</div>
+            <div class='tag'>$119/person</div>
+          </div>
+          <div class="highlight-link-badge">↗</div>
+        </a></div></section>
+
+  
+  <section id="map">
+    <h2>Where We're Going</h2>
+    <div id="trip-map" style="height:460px;border-radius:12px;border:1px solid var(--border);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);"></div>
+  </section>
+
+  <section id="stays"><h2>Where We're Staying</h2>
+        <div class="card">
+          <div class="card-title"><a href="https://kouralodge.co.nz" target="_blank">Koura Lodge</a></div>
+          <div class="card-meta">Rotorua lakefront &middot; Nights 2–3</div>
+          <div class="card-body">~$280 / night</div>
+          <div class='card-desc'>Boutique lakeside B&B, 8 rooms all facing Lake Rotorua with private deck access, outdoor hot tub and sauna. 5 minutes from Te Puia and the geothermal zones. Nir gets uninterrupted lake panoramas; Sarah gets an owner-run property that doesn't feel like a hotel.</div>
+        </div>
+        <div class="card">
+          <div class="card-title"><a href="https://www.tongarirocrossinglodge.co.nz" target="_blank">Tongariro Crossing Lodge</a></div>
+          <div class="card-meta">National Park Village &middot; Nights 4–5</div>
+          <div class="card-body">~$200 / night</div>
+          <div class='card-desc'>Built for exactly this purpose — shuttle departs from the door, spa pool on-site for post-hike recovery. New garden suites opened 2025. Not a luxury lodge, but perfectly positioned and extremely well-reviewed for the crossing experience.</div>
+        </div>
+        <div class="card">
+          <div class="card-title"><a href="https://kamana.co.nz" target="_blank">Kamana Lakehouse</a></div>
+          <div class="card-meta">Queenstown (5 min from centre) &middot; Nights 7–10</div>
+          <div class="card-body">~$250 / night</div>
+          <div class='card-desc'>Independently owned boutique hotel with the Remarkables and Lake Wakatipu panorama as the headline — Nir's #1 priority met immediately. Five minutes from Queenstown's dining strip, so evenings are easy. Genuine boutique feel, not a chain in disguise.</div>
+        </div>
+        <div class="card">
+          <div class="card-title"><a href="https://www.lomaniisland.com" target="_blank">Lomani Island Resort</a></div>
+          <div class="card-meta">Malolo Lailai Island, Mamanucas, Fiji &middot; Nights 11–13</div>
+          <div class="card-body">~$420 / night</div>
+          <div class='card-desc'>Adults-only, 17 rooms total — this is genuinely intimate. Daily guided snorkel trips to different reef spots are included and consistently the most-praised aspect of a stay. Food is exceptional (multiple 2025–26 reviews: 'spectacular,' 'restaurant-quality'). Kava ceremonies, private beach dinners, and genuine Fijian hospitality.</div>
+        </div></section>
+
+  <section id="flights"><h2>Flights</h2>
+        <div class="card flight-card">
+          <div class="flight-route">
+            <span class="flight-city">Chicago (ORD)</span>
+            <span class="flight-arrow">✈</span>
+            <span class="flight-city">Auckland (AKL)</span>
+          </div>
+          <div class="card-meta">Air New Zealand / United (TBD) &middot; TBD — target late March 2027 → Day 1 arrival</div>
+          <div class="card-body"><a href="https://www.google.com/travel/flights" target="_blank">~$1,100 est. / person</a></div>
+        </div>
+        <div class="card flight-card">
+          <div class="flight-route">
+            <span class="flight-city">Auckland (AKL)</span>
+            <span class="flight-arrow">✈</span>
+            <span class="flight-city">Queenstown (ZQN)</span>
+          </div>
+          <div class="card-meta">Air New Zealand domestic &middot; Day 6 → Day 6 afternoon</div>
+          <div class="card-body"><a href="https://www.airnewzealand.co.nz" target="_blank">~$150 est. / person</a></div>
+        </div>
+        <div class="card flight-card">
+          <div class="flight-route">
+            <span class="flight-city">Queenstown (ZQN)</span>
+            <span class="flight-arrow">✈</span>
+            <span class="flight-city">Nadi, Fiji (NAN)</span>
+          </div>
+          <div class="card-meta">Fiji Airways / Air New Zealand (via AKL) &middot; Day 11 → Day 11 afternoon</div>
+          <div class="card-body"><a href="https://www.fijiairways.com" target="_blank">~$175 est. / person</a></div>
+        </div>
+        <div class="card flight-card">
+          <div class="flight-route">
+            <span class="flight-city">Nadi, Fiji (NAN)</span>
+            <span class="flight-arrow">✈</span>
+            <span class="flight-city">Chicago (ORD)</span>
+          </div>
+          <div class="card-meta">Via LAX or SFO &middot; Day 14 afternoon → Day 15 (overnight flight)</div>
+          <div class="card-body"><a href="https://www.google.com/travel/flights" target="_blank">~$850 est. / person</a></div>
+        </div></section>
+
+  <section id="itinerary"><h2>Day by Day</h2>
+        <details class="day-block" open>
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 1</span>
+              <span class="day-date">Auckland</span>
+              <span class='day-theme'>Arrival</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$50/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Long-haul arrival from Chicago. Clear customs, grab the rental car. Coffee from a good Auckland café — flat whites are a different league here.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Check into the transit hotel near the waterfront. Walk the Viaduct Harbour. Light grocery run for snacks and tomorrow's road trip provisions.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Early dinner — something simple and local. Early night. The adventure starts properly tomorrow.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 2</span>
+              <span class="day-date">Auckland → Rotorua</span>
+              <span class='day-theme'>Into the Geothermal Zone</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$200/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Hit the road early — 2.5 hours south to Rotorua. Stop in Tirau for flat whites and the world's most surreal small-town corrugated-iron buildings.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Wai-O-Tapu Thermal Landscape — the Champagne Pool (vivid orange silica edges), Artist's Palette (green and yellow sulphur formations), Lady Knox Geyser. 2–3 hours self-guided. $27/person. 30 minutes from Rotorua centre.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Polynesian Spa — 12 geothermal mineral pools set over Lake Rotorua, some dating back to 1882. Deluxe Double Dipper includes both the historic Pavilion pools and the cliff-edge Lake Spa pools. $66/person. Book the 5pm–7pm slot for golden hour.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 3</span>
+              <span class="day-date">Rotorua: Māori Culture</span>
+              <span class='day-theme'>Culture & Living History</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$290/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Te Puia — the working Māori arts institute. Watch master carvers and weavers at work, then catch the 90-minute guided experience including the Pōhutu Geyser and a cultural performance (haka, poi, waiata). $72/person. Book the 9am slot to beat tour groups.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Whakarewarewa Living Village — unlike Te Puia, this village is still fully inhabited. Guides are residents. Families cook in the thermal pools. 1-hour guided tour. $24/person. This is the more authentic of the two — fewer theatrics, more real.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Dinner on the Rotorua waterfront strip. Try Atticus Finch for craft beer and shared plates, or Eat Streat for local flavour and open-air atmosphere.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 4</span>
+              <span class="day-date">Rotorua → Taupo</span>
+              <span class='day-theme'>Volcanic Heartland</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$100/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Pack up and drive south toward Taupo (1 hour). Stop at Huka Falls — the most visited natural site in New Zealand and genuinely worth it. A turquoise, 220,000-litre-per-second rush through a narrow canyon. Free, 5-minute walk from the car park.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Check into Tongariro Crossing Lodge. Early to bed is optional — the better option is the lakeside Taupo dining strip for a long, relaxed dinner.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Early dinner, early sleep. The shuttle departs at 6:30am.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 5</span>
+              <span class="day-date">Tongariro Alpine Crossing</span>
+              <span class='day-theme'>The Big One</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$70/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">6:30am shuttle from the lodge drops you at Mangatepopo trailhead. The opening hour crosses a vast lava field toward the volcanoes — Mt Ngauruhoe rising on your right (the original Mt Doom). Red Crater summit at 1,886m.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">The descent from Red Crater passes the glowing emerald Emerald Lakes — thermal-tinted and completely surreal at altitude. 20.2km total, 6–8 hours. Shuttle picks you up from Ketetahi end by 3pm.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Back at the lodge by 4pm. Into the spa pool immediately. Dinner in the village. Legs will complain. That's correct.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 6</span>
+              <span class="day-date">Travel to Queenstown</span>
+              <span class='day-theme'>Adventure Capital Awaits</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$300/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Drive back toward Auckland (or Rotorua Airport). Domestic flight to Queenstown — 1h20m, with aerial views of the North Island from above. Air New Zealand domestic is reliable.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Arrive Queenstown. Drop bags at Kamana Lakehouse — the Remarkables visible from check-in. Walk the waterfront along Lake Wakatipu.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Fergburger. Yes, the queue. Yes, it's worth it. Craft beer at Altitude Brewing after. Early night — tomorrow is one of the best days of the trip.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 7</span>
+              <span class="day-date">Milford Sound: Fly-Cruise-Fly</span>
+              <span class='day-theme'>The Most Spectacular Day in New Zealand</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$870/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Queenstown Airport, 8am flight over Fiordland. The aerial approach to Milford Sound — snowcapped peaks, glacial valleys, no roads below — is itself worth the price. Land at Milford aerodrome.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">1h45m cruise through the fjord. Stirling Falls up close, fur seals on the rocks, bottlenose dolphins if the weather behaves. The scale is incomprehensible in photos — you understand it only from the water.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Return flight over the Southern Alps. Back in Queenstown by 3pm. Dinner at a waterfront restaurant — Finz Seafood & Grill for a blow-out, or Madam Woo for something more relaxed.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 8</span>
+              <span class="day-date">Adventure Day</span>
+              <span class='day-theme'>All-In</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$690/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Nevis Bungee, 8am slot. 134m platform suspended from a cable car above the Nevis Gorge. 8.5 seconds of freefall. Includes return transfer from Queenstown, photo package, and certificate. $237/person.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Dart River Wilderness Jet Boat — 90 minutes, up to 90km through Mt Aspiring National Park. 80mph through canyon walls on a river where Lord of the Rings was filmed. $106/person.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">TSS Earnslaw and the Walter Peak Dinner Cruise. Board the 1912 vintage coal-fired steamship at the Queenstown pier, cross Lake Wakatipu, gourmet BBQ at the high-country farm, back by 9:30pm. $119/person. Book ahead — sells out.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 9</span>
+              <span class="day-date">Wānaka</span>
+              <span class='day-theme'>Alpine Serenity</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$70/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">45-minute drive to Wānaka. Arrive by 7am for Roys Peak — 5–6 hours return, 1,578m summit, the most iconic panorama in the South Island. Free. Trekking poles useful.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Descend into Wānaka town. Rippon Vineyard cellar door tasting — 4–6 Pinot Noir wines on a lakeside deck with the peak behind you, by appointment. From free.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Drive back to Queenstown (45 min) in time for dinner. Try Rata for a celebratory South Island meal.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 10</span>
+              <span class="day-date">Wine Country</span>
+              <span class='day-theme'>Harvest Season</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$290/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Central Otago half-day wine tour. Gibbston Valley schist canyon, 3–4 boutique cellar doors, vineyard lunch included. March is harvest — you may walk the rows during picking. $141/person.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Back in Queenstown by 3pm. Lake walk, final afternoon in the adventure capital. Pack for Fiji.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Celebratory last-night-in-NZ dinner. Botswana Butchery on the waterfront — South Island rack of lamb.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 11</span>
+              <span class="day-date">Fly to Fiji</span>
+              <span class='day-theme'>The Pacific Begins</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$400/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Fly Queenstown → Nadi via Auckland. Total journey time approximately 6–7 hours including the connection.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Arrive Nadi. Fast boat from Port Denarau Marina to Malolo Lailai Island — 45 minutes across open turquoise water. Welcome cocktail on arrival at Lomani.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Explore the 17-room resort, which takes about 15 minutes. Watch the sunset over the lagoon from the beach. The pace has officially changed.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 12</span>
+              <span class="day-date">Fiji: Reef Day</span>
+              <span class='day-theme'>Underwater Fiji</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$100/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Lomani's guided morning snorkel trip to the outer reef — multiple coral and fish species, guided to the best spots. Included in the room rate.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Beach time. Stand-up paddleboarding from the shore. Couples' spa treatment (book on arrival).</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Kava ceremony with staff — a genuine Fijian cultural exchange, not a staged show. Dinner on the beach.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 13</span>
+              <span class="day-date">Fiji: Sailing Day</span>
+              <span class='day-theme'>Island Time</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$200/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Catamaran day-sail to a neighbouring island. Snorkel, swim, drift. Lunch on the boat.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Return to Lomani. Long afternoon on the beach. Read. Nap. Do nothing at all.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Sunset cruise on the resort's boat. Best cocktails of the trip. Private beach dinner if booked as part of the honeymoon package.</div>
+                </div></div>
+        </details>
+        <details class="day-block" >
+          <summary class="day-summary">
+            <div class="day-summary-left">
+              <span class="day-number">Day 14</span>
+              <span class="day-date">Fiji → Home</span>
+              <span class='day-theme'>Last Morning</span>
+            </div>
+            <div class="day-summary-right"><span class='day-cost'>~$50/couple</span></div>
+          </summary>
+          <div class="day-content">
+                <div class="segment">
+                  <div class="segment-label">☀️ Morning</div>
+                  <div class="segment-text">Final snorkel or sunrise swim. Last coffee on the beach. Boat back to Port Denarau by 11am.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌤 Afternoon</div>
+                  <div class="segment-text">Nadi airport. Afternoon departure NAN → LAX/SFO → ORD.</div>
+                </div>
+                <div class="segment">
+                  <div class="segment-label">🌙 Evening</div>
+                  <div class="segment-text">Overnight flight home. Arrive Chicago Day 15.</div>
+                </div></div>
+        </details></section>
+
+  <section id="budget"><h2>Budget Summary</h2><table class="budget-table"><thead><tr><th>Category</th><th>Estimated Cost</th></tr></thead><tbody><tr class=''><td>Flights — international (2 pax, economy)</td><td>$2,200</td></tr><tr class=''><td>Flights — domestic NZ + NZ→Fiji (2 pax)</td><td>$650</td></tr><tr class=''><td>Accommodation — NZ (8 nights)</td><td>$2,030</td></tr><tr class=''><td>Accommodation — Fiji (3 nights, Lomani)</td><td>$1,260</td></tr><tr class=''><td>Activities — NZ</td><td>$2,345</td></tr><tr class=''><td>Activities — Fiji</td><td>$300</td></tr><tr class=''><td>Food & dining — NZ ($60/day × 10)</td><td>$600</td></tr><tr class=''><td>Food & drinks — Fiji (incl. half-board supplement)</td><td>$200</td></tr><tr class=''><td>Car rental — NZ (10 days)</td><td>$450</td></tr><tr class=''><td>Misc, tips, SIM cards, buffer</td><td>$350</td></tr><tr class='total-row'><td>Total</td><td>$10,385</td></tr><tr class=''><td>Note on flights</td><td>Flights estimated — Kiwi search pending date confirmation. Economy in March shoulder season. Budget $500 flex.</td></tr></tbody></table></section>
+
+  <section id="extras"><h2>Also Worth Considering</h2><div class="bonus-grid">
+        <div class="bonus-card">
+          <div class="bonus-title"><a href="https://whalewatch.co.nz" target="_blank">Kaikōura: Sperm Whale Watching</a></div>
+          <div class="bonus-desc">Sperm whales are resident year-round off Kaikōura, 2.5h north of Christchurch. 95% success rate, 80% refund if no whale. Add a day between Queenstown and Fiji if the routing allows via CHC.</div>
+          <div class='tag'>$105–$153/person</div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-title"><a href="https://taupotandemskydiving.com" target="_blank">Skydive over Lake Taupo</a></div>
+          <div class="bonus-desc">Jump at 15,000ft over the lake and Tongariro volcanoes — one of the most dramatic skydive views in the world. Nir's profile written all over it. Add on Day 4 if energy allows after the drive.</div>
+          <div class='tag'>$317/person (15,000ft)</div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-title"><a href="https://adriftnz.co.nz/guided-tongariro-walks/tongariro-alpine-crossing-private/" target="_blank">Private Guided Tongariro Crossing</a></div>
+          <div class="bonus-desc">Upgrade the shuttle ($33/person) to a private guided crossing with Adrift Tongariro or Walk into Luxury — set your own pace, expert volcanic geology commentary, and no logistics stress on the big day. Worth it for a honeymoon if budget allows.</div>
+          <div class='tag'>~$177–$480/person</div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-title"><a href="https://www.glaciersouthernlakes.co.nz" target="_blank">Heli-Hike into the Southern Alps</a></div>
+          <div class="bonus-desc">Helicopter drop into the backcountry from Queenstown — glacier landing or remote alpine terrain that's otherwise inaccessible. The premium version of 'adventure access' that fits Nir's splurge profile exactly.</div>
+          <div class='tag'>$456–$720/person</div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-title"><a href="https://www.dolphinencounter.co.nz" target="_blank">Swim with Dolphins — Kaikōura</a></div>
+          <div class="bonus-desc">Dusky dolphins in pods of hundreds. Wetsuit provided, 3.5 hours total. DOC permits limit spots — book immediately when dates are confirmed. Add with the whale watching day for a full Kaikōura wildlife stop.</div>
+          <div class='tag'>$144/person</div>
+        </div></div></section>
+
+</div>
+
+<div class="footer">Generated June 06, 2026 &middot; Travel Planner &middot; New Zealand + Fiji</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function() {
+  const stops = [{"name": "Auckland", "lat": -36.8509, "lng": 174.7645, "day": "Day 1 \u2014 Arrival", "description": "Gateway to New Zealand. Transit night before the road trip begins.", "type": "transit", "fiji": false}, {"name": "Rotorua", "lat": -38.1368, "lng": 176.2497, "day": "Days 2\u20133", "description": "Geothermal landscapes, M\u0101ori culture, Te Puia, Wai-O-Tapu, Polynesian Spa.", "type": "stop", "fiji": false}, {"name": "Taupo / Tongariro", "lat": -39.1957, "lng": 175.5726, "day": "Days 4\u20135", "description": "Tongariro Alpine Crossing \u2014 20km volcanic traverse. Recovery in the hot pools.", "type": "stop", "fiji": false}, {"name": "Queenstown", "lat": -45.0312, "lng": 168.6626, "day": "Days 6\u201310", "description": "Adventure capital. Nevis Bungee, Dart River Jet, Walter Peak, wine country, W\u0101naka day trip.", "type": "stop", "fiji": false}, {"name": "Milford Sound", "lat": -44.6414, "lng": 167.8974, "day": "Day 7 \u2014 Fly-Cruise-Fly", "description": "40-minute flight over Fiordland, 1h45m fjord cruise past waterfalls and seals.", "type": "day-trip", "fiji": false}, {"name": "W\u0101naka", "lat": -44.6975, "lng": 169.1305, "day": "Day 9 \u2014 Day Trip", "description": "Roys Peak summit hike (free), Rippon vineyard cellar door tasting. 45 min from Queenstown.", "type": "day-trip", "fiji": false}, {"name": "Lomani Island, Fiji", "lat": -17.7781, "lng": 177.1886, "day": "Days 11\u201314", "description": "Adults-only, 17 rooms, Malolo Lailai Island. Daily reef snorkel, kava ceremony, beach dinners.", "type": "stop", "fiji": true}, {"name": "Kaik\u014dura", "lat": -42.4008, "lng": 173.9604, "day": "Bonus Stop", "description": "Sperm whale watching (95% success rate), swim with Dusky dolphins, fresh crayfish on the waterfront.", "type": "bonus", "fiji": false}];
+  const map = L.map('trip-map', {zoomControl: true, scrollWheelZoom: false});
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+  const nzColor = '#0f2a4a';
+  const fijiColor = '#e8a020';
+  const bonusColor = '#94a3b8';
+
+  // Draw route polyline through main stops only
+  const mainStops = stops.filter(s => s.type !== 'bonus');
+  if (mainStops.length > 1) {
+    L.polyline(mainStops.map(s => [s.lat, s.lng]), {
+      color: '#94a3b8', weight: 2, dashArray: '7,9', opacity: 0.65
+    }).addTo(map);
+  }
+
+  // Numbered markers
+  let dayNum = 0;
+  stops.forEach(stop => {
+    const isBonus = stop.type === 'bonus';
+    const isFiji = stop.fiji === true;
+    if (!isBonus) dayNum++;
+    const color = isBonus ? bonusColor : (isFiji ? fijiColor : nzColor);
+    const label = isBonus ? '★' : String(dayNum);
+
+    const icon = L.divIcon({
+      className: '',
+      html: `<div style="
+        width:32px;height:32px;border-radius:50%;
+        background:${color};color:#fff;
+        display:flex;align-items:center;justify-content:center;
+        font-size:${isBonus ? '14px' : '12px'};font-weight:700;
+        border:2.5px solid #fff;
+        box-shadow:0 2px 8px rgba(0,0,0,0.28);
+        font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+        cursor:pointer;
+        transition:transform 0.15s;
+      ">${label}</div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -20]
+    });
+
+    const marker = L.marker([stop.lat, stop.lng], {icon}).addTo(map);
+    marker.bindPopup(`
+      <div style="font-family:-apple-system,BlinkMacSystemFont,sans-serif;min-width:170px;padding:2px 0;">
+        <div style="font-weight:700;font-size:0.95em;color:#0f2a4a;margin-bottom:3px;">${stop.name}</div>
+        <div style="font-size:0.78em;color:#e8a020;font-weight:600;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.5px;">${stop.day}</div>
+        <div style="font-size:0.85em;color:#374151;line-height:1.5;">${stop.description}</div>
+      </div>`, {maxWidth: 220});
+  });
+
+  // Fit all stops with padding
+  const bounds = L.latLngBounds(stops.map(s => [s.lat, s.lng]));
+  map.fitBounds(bounds, {padding: [48, 48]});
+})();
+</script>
+</body>
+</html>
