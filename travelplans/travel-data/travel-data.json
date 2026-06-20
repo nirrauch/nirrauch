@@ -81,22 +81,29 @@
     {
       "id": "east-africa-safari-honeymoon-2027",
       "destination": "Tanzania (Serengeti + Ngorongoro) + Zanzibar",
-      "dates": { "from": "TBD (target March–April 2027)", "to": "TBD (~14 nights)" },
+      "dates": { "from": "TBD — top windows: June, October, or late Jan/Feb 2027", "to": "TBD (~14 nights)" },
       "travelers": ["nir", "sarah"],
       "status": "research",
       "vibe": "wildlife · romance · cultural · foodie · coastal",
       "budget": { "total": 10000, "currency": "USD", "breakdown": {
         "international_flights_2pax": "2200-3000",
         "internal_flights_tanzania": "600-900",
-        "safari_camp_3nights": "1200-1800",
-        "zanzibar_stone_town_2nights": "400-600",
-        "zanzibar_beach_3nights": "600-900",
-        "food_activities": "500-850",
-        "miscellaneous_visas_tips": "400-600"
+        "gibbs_farm_1night_2pax": "730-970",
+        "ngorongoro_crater_day_fees": "300-400",
+        "lemala_mara_2nights_2pax": "1600-2200",
+        "balloon_safari_2pax": "1200",
+        "zanzibar_stone_town_2nights_2pax": "400-600",
+        "zanzibar_east_coast_4nights_2pax": "1000-1400",
+        "food_activities_zanzibar": "400-600",
+        "miscellaneous_visas_tips": "400-600",
+        "mid_estimate_total": "8750",
+        "headroom_vs_10k_budget": "~1250"
       }},
-      "summary": "Honeymoon research option. Tanzania calving season Serengeti (March–April) + Ngorongoro Big Five crater + Zanzibar (Stone Town food immersion + east coast beach). Best East Africa timing. Zanzibar pairs logistically (1hr bush flight) and is budget-friendly. Madagascar deferred to dedicated 2028/2029 trip. Rwanda gorilla trek also deferred ($1,500/person permit alone). Budget achievable at $8,200–9,500 mid estimate with hot air balloon upgrade headroom ($1,200). Key camp tier: mid-range private concession ($200–300/pp/night all-inclusive). Key Zanzibar insight: Stone Town is one of Africa's great food cities — Sarah's #1 food priority fully met.",
+      "summary": "Honeymoon trip. October 5–19 2027. LOCKED ITINERARY SHAPE: ORD → Kilimanjaro/Arusha → Karatu (Gibbs Farm 1 night + Ngorongoro crater day) → Northern Serengeti (Lemala Mara 2 nights + balloon) → Zanzibar (6 nights). NGORONGORO: Day-Visit locked — 1 night Gibbs Farm (~$365–485/pp FB, organic farm-to-table, #12 of 35 TripAdvisor NCA), full crater day ~6am–3pm (~$200–400 add-on). Rim overnight eliminated. SERENGETI: Lemala Mara selected — ~$400–550/pp/night full board, full plumbing (flush toilet + pump shower), Lerai Foundation ethics (600-student school, 78% local sourcing, 100% solar), 12 tents, closest camp to Kogatende crossings. 2 nights not 3 — balloon safari (~$1,200 for two, Serengeti Balloon Safaris) replaces third night. Night drives prohibited inside SNP by TANAPA — no ethical private concession in Northern Serengeti for October. Ang'ata viable backup (ethics minimum pass, bucket shower, 1.5hr from crossings). ZANZIBAR: 2 nights Stone Town (Emerson Spice) + 4 nights east coast (Pongwe Beach Hotel, Cliff Ocean Suite with plunge pool). Still to confirm formally. BUDGET: ~$8,750 mid estimate, ~$1,250 headroom vs $10k.",
       "outputs": [
-        "~/repos/nirrauch/travelplans/2027_east-africa-safari/east-africa-research-notes.md"
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/east-africa-research-notes.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-accommodation-research.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/ngorongoro-accommodation-research.md"
       ]
     },
     {

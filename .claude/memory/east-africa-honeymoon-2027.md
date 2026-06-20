@@ -31,3 +31,28 @@ Mnemba Atoll (best snorkeling in Zanzibar) is 15–20 min boat from Matemwe (eas
 
 ## 2026-06-14 — project: Ngorongoro stop in planning — next action is direct quotes
 Two priority quotes needed before Ngorongoro decision can be made: (1) Ngorongoro Rim Lodge by TNS Hospitality — tnshospitality.co.tz; (2) Lion's Paw standard suite — Karibu Camps & Lodges. andBeyond Ngorongoro Crater Lodge reopens January 2027 — will be available for October 2027 booking but at $1,500+/pp. Session paused at Ngorongoro stop; Serengeti, Zanzibar Stone Town, and Zanzibar coast still to walk through with user.
+SUPERSEDED → east-africa-honeymoon-2027.md (see 2026-06-20 project entry below)
+
+## 2026-06-20 — decision: Ngorongoro Day-Visit Strategy locked in
+SUPERSEDES east-africa-honeymoon-2027.md:32 — "Ngorongoro stop in planning — next action is direct quotes"
+Rim overnight eliminated — too expensive for a single game drive day; couple don't need crater-rim views. Strategy: 1 night Gibbs Farm, Karatu (~$365–485/pp full board, organic farm-to-table, best food in the area, #12 of 35 TripAdvisor NCA) + 1 full crater day (~6am–3pm, ~$200–400 add-on for vehicle + descent fees). Est. total for Ngorongoro stop: ~$1,200 for two people.
+
+## 2026-06-20 — decision: Serengeti = Lemala Mara, 2 nights + balloon safari
+SUPERSEDES east-africa-honeymoon-2027.md:26 — "Serengeti camp positioning for October = Northern Serengeti (Kogatende area)"
+Wayo eliminated (confirmed $788/pp — not $240 as estimated; bucket shower; inside national park, no night drives). Ang'ata passes ethics minimum but bucket shower + 1.5hr from crossings makes it second choice. Lemala Mara selected: ~$400–550/pp/night full board, full plumbing (passes Sarah's bathroom test), Lerai Foundation ethics (600-student school, 78% local sourcing, 100% solar), closest camp to Kogatende crossings. 2 nights not 3 — third night's budget (~$950 for two) redirected to balloon safari (~$1,200 shared for two via Serengeti Balloon Safaris). Book balloon 6+ months in advance; October is tail end of dry-season balloon window.
+
+## 2026-06-20 — learning: Wayo Green Camp North pricing was badly wrong in prior research
+SUPERSEDES east-africa-honeymoon-2027.md:26 (Wayo pricing reference of ~$240/pp)
+Confirmed October 2027 rate from booking platforms: ~$788/pp/night full board. The $240/pp figure was stale data from an early estimate. Always verify camp pricing against current booking platform data (Chalo Africa, Tanzania Odyssey, monkey.travel) before committing to a budget line. A 3x pricing error is possible from outdated sources.
+
+## 2026-06-20 — learning: Night drives unavailable in Northern Serengeti — no ethical private concession option
+TANAPA bans night drives park-wide inside Serengeti National Park. No exceptions. Private concessions adjacent to Northern Serengeti in October: (1) Loliondo/OBC — hard ethical veto (documented Maasai displacement violations); (2) Grumeti Reserve — wrong season (June–July migration only). Night drives are not available for a Northern Serengeti October trip at any accessible budget. Do not recommend night drives as an activity for this trip.
+
+## 2026-06-20 — learning: TNS Rim Lodge and Lion's Paw fully researched but moot — Day-Visit removes accommodation decision
+SUPERSEDES east-africa-honeymoon-2027.md:14 — "Ngorongoro Rim Lodge (TNS Hospitality) is top unresearched option — needs a quote"
+SUPERSEDES east-africa-honeymoon-2027.md:17 — "Lion's Paw (Karibu Camps) is best confirmed mid-tier Ngorongoro option"
+TNS Rim Lodge confirmed ~$555–650/pp/night (Monkey.travel), 5.0/5, 183 reviews, all rooms crater-facing. Lion's Paw confirmed 4.9/5 (not 4.0 — was a display glitch), 1,444 reviews, standard suite ~$638–725/pp Oct 2027, beverages included, formal honeymoon package. Both moot — Ngorongoro Day-Visit strategy eliminates rim accommodation decision entirely. andBeyond reopening confirmed on track for Jan 2027; post-rebuild rate est. $2,800–3,500+/pp.
+
+## 2026-06-20 — project: Trip status — Zanzibar is next stop to confirm
+SUPERSEDES east-africa-honeymoon-2027.md:32 — "Ngorongoro stop in planning — next action is direct quotes"
+Ngorongoro (Gibbs Farm 1 night + crater day) and Serengeti (Lemala Mara 2 nights + balloon safari) fully locked. Zanzibar still to confirm: Stone Town 2 nights (Emerson Spice, ~$90–225/room) + east coast 4 nights (Pongwe Beach Hotel, Cliff Ocean Suite with private plunge pool, ~$250–288 B&B). Full trip budget estimate: ~$8,750 mid, ~$1,250 headroom. Itinerary shape: ORD → Kilimanjaro/Arusha → Karatu (Gibbs Farm 1 night + crater day) → Northern Serengeti (Lemala Mara 2 nights) → Zanzibar (6 nights) → ORD.

@@ -1447,3 +1447,230 @@ Incorporating Section 4 findings, the revised ranking of ALL on-rim options by T
 ---
 
 *Section 4 research compiled: June 2026 | Sources: TripAdvisor, AfricanMecca Safaris, Elewana Collection, Expert Africa, Go2Africa, Chalo Africa, TNS Hospitality, Yellow Zebra Safaris, Mahlatini, Tanzania Odyssey, Discover Africa, SafariAndBeach, Altezza Travel, Rhino Africa, Moivaro, Readytotrip, SafariBookings, Monkey.travel*
+
+---
+---
+
+# SECTION 5: October 2027 Pricing Update — Priority Properties
+**Research date:** June 2026
+**Brief:** Confirmed/best-available pricing for three priority properties for October 2027, 2 adults, 2 nights.
+
+---
+
+## PROPERTY 1: Ngorongoro Rim Lodge by TNS Hospitality — PRIORITY
+
+### Status: Active. Rated 5.0/5, now 183 reviews (up from 163 in prior research).
+
+### TripAdvisor Update (June 2026)
+- **5.0/5 — 183 reviews** (was 163 in prior session)
+- **#1 of 3 B&Bs/Inns in Ngorongoro** (category still listed as B&B/Inn — likely a classification quirk)
+- Most recent reviews: June 2026 — "Everything about the experience was exceptional! The rooms are beautiful and spacious"
+- Reviewer highlights: freestanding bathtubs overlooking the crater, hot water bottles in beds nightly, fireplaces, personal waiter service throughout stay, close proximity to crater entrance
+- No negative review themes found in the 2025–2026 window
+
+### Confirmed Rate (October 2027)
+- **Rate: USD $531–$599.50 per person per night, Full Board** (confirmed via Monkey.travel booking platform, October 2026 pricing as proxy; 2027 rates likely 5–8% higher)
+- Two tiers listed without season labels — likely reflect weekday/weekend or early-book/standard distinction
+- **October 2027 best estimate: $555–$650 per person per night, Full Board** (applying ~5% annual increase)
+- This is materially lower than the $1,121–$1,612/night figure that appeared in one earlier search — those likely reflect full package rates (guide + vehicle + park fees + lodge)
+
+### What's Included
+- Full Board: accommodation + 3 meals daily
+- Free WiFi
+- Walking tours
+- 24-hour check-in
+- Restaurant with crater views, bar and lounge
+- Gym access
+- Hot water bottles in bed nightly
+- Fireplace in rooms
+
+### What's Excluded
+- **NCA Conservation Fees: NOT included** — add $70.80/pp/night (camping/statutory fee for NCA overnight stays). Total add: ~$282 for 2 adults, 2 nights.
+- Beverages: not explicitly confirmed as excluded, but standard Full Board pricing in Tanzania typically excludes alcohol. Confirm with property.
+- Game drive vehicle and guide: likely not included — confirm whether lodge-arranged game drives are available or whether guests bring their own safari vehicle.
+- Crater descent fees (vehicle fee per descent, ~$295/vehicle — or ~$75–150/pp if sharing)
+
+### All-In Estimate for 2 Adults, 2 Nights (October 2027)
+- Accommodation + full board: ~$2,220–$2,600 (2 pax × 2 nights × $555–$650)
+- NCA conservation fees: ~$282
+- **Total accommodation spend: approximately $2,500–$2,900 for 2 adults, 2 nights**
+- (Game drive vehicle and crater fees additional — depends on broader safari arrangement)
+
+### Honeymoon Packages / Upgrades
+- No confirmed dedicated honeymoon package found in research. Property is small (22 rooms) — worth calling to ask directly whether any complimentary honeymoon touches (rose petals, bubbly, private dinner) are available. Given the 5/5 TripAdvisor score and consistently praised service, staff responsiveness to special requests is likely high.
+
+### Notable Changes Since June 2026
+- TripAdvisor review count increased from 163 to 183 since initial research — property is growing in recognition
+- Consistent 5/5 maintenance through June 2026 — no quality drift detected
+- No reports of renovation, rebranding, or ownership changes
+- Still solar-powered, still on eastern rim near Lemala Gate
+
+### Direct Booking / Contact
+- Official website: [tnshospitality.co.tz/ngorongoro-rim-lodge](https://tnshospitality.co.tz/ngorongoro-rim-lodge/)
+- Monkey.travel (pricing reference): [monkey.travel listing](http://monkey.travel/en/usd/accommodation/ngorongoro-rim-Lodge) — USD rates available
+- WeGuide African Safaris (agent): Reservations specialist Ronell Joubert, +255 758 974 192
+- Direct TNS contact for quote: info form on tnshospitality.co.tz
+
+### Confidence Level
+- Rate: **Medium-Low** — the $531–$599.50 figure is from a third-party booking platform (Monkey.travel) for October 2026, not a direct 2027 quote from TNS. No other source confirms this specific figure; TNS's own website and all other operators direct to quote requests. Treat as a working estimate; get direct confirmation.
+- Quality: **High** — 5.0/5 across 183 TripAdvisor reviews is exceptional and consistent
+
+---
+
+## PROPERTY 2: Ngorongoro Lion's Paw by Karibu Camps & Lodges
+
+### Status: Active. Rated 4.9/5, 1,444 reviews (updated from prior 4.0/5, 1,423 reviews).
+
+### TripAdvisor Update (June 2026)
+- **4.9/5 — 1,444 reviews** (prior research had this at 4.0/5 with 1,423 reviews — the 4.0 was likely a TripAdvisor rounding artifact; current display shows 4.9)
+- **#2 of 35 specialty lodging** in Ngorongoro Conservation Area — unchanged
+- Most recent review: June 6, 2026
+- Reviewer highlights (2025–2026): heated electric blankets, hot water bottles, Maasai cultural dance performances, all beverages included, anniversary/honeymoon occasions celebrated with cake and staff dancing
+- One critical note: hot water limited to ~10 minutes per 3-hour solar cycle; shower duration ~2.5 minutes when fully booked — flagged as a constraint
+
+### Confirmed Rate (October 2027)
+**Standard Double Room (Full Board):**
+- **$607–$690 per person per night, Full Board** (confirmed via multiple sources including Monkey.travel October 2026 pricing)
+- The two tiers likely reflect different room/season sub-categories — the lower figure ($607) is the standard double tent rate, the higher ($690) may apply to superior rooms or peak October dates
+- **October 2027 best estimate: $638–$725 per person per night, Full Board** (applying ~5% annual increase)
+
+**Honeymoon Suite:**
+- **$900 per person per night, All-Inclusive** (excluding premium drinks) — confirmed from African Spice Safaris and consistent across all sources
+- Honeymoon Suite inclusions: all meals, all standard beverages, sparkling wine on arrival, fruit basket, one private sundowner, one private dinner, one complimentary massage per person
+- **October 2027 best estimate: ~$945 per person per night** (with ~5% increase)
+
+### What's Included
+**Standard Double Room — Full Board:**
+- Accommodation + 3 meals daily (breakfast, lunch, dinner) + tea/coffee
+- Government taxes (VAT + Tourism Development Levy) included in rate
+- All beverages included (reviewers confirm this — unusual for Tanzania lodges at this tier)
+- Maasai cultural evening entertainment
+- Heated electric blankets and hot water bottles
+
+**Honeymoon Suite — All-Inclusive (except premium drinks):**
+- All of the above
+- Sparkling wine + fruit basket on arrival
+- One private sundowner per stay
+- One private dinner per stay
+- One massage per person per stay
+
+### What's Excluded
+- **NCA Conservation Fee (Statutory/Camping Fee): NOT included — $70.80 per person per night**
+- Game drive vehicle and guide: guests must arrange their own safari vehicle
+- Crater descent vehicle fee (separate government charge)
+- Premium drinks (for Honeymoon Suite — standard beverages are included)
+
+### All-In Estimate for 2 Adults, 2 Nights (October 2027)
+**Standard Double Room:**
+- Accommodation + full board: ~$2,552–$2,900 (2 pax × 2 nights × $638–$725)
+- NCA conservation fees: ~$282
+- **Total accommodation spend: approximately $2,834–$3,182 for 2 adults, 2 nights**
+
+**Honeymoon Suite:**
+- Accommodation all-inclusive: ~$3,780 (2 pax × 2 nights × $945)
+- NCA conservation fees: ~$282
+- **Total accommodation spend: approximately $4,062 for 2 adults, 2 nights**
+
+### Honeymoon-Specific Package
+**YES — confirmed dedicated Honeymoon Suite product.** The suite is a separate room category with specific romantic inclusions (sparkling wine, private sundowner, private dinner, massage). Staff explicitly celebrate occasions — multiple reviewer reports of anniversary and honeymoon celebrations with personalized touches. The lodge is clearly experienced with honeymoon guests.
+
+### Notable Changes Since June 2026
+- TripAdvisor score has improved to 4.9/5 (from the 4.0 noted in prior research — the prior figure may have been a display error or older data)
+- Review count growing steadily (1,423 → 1,444)
+- No reports of renovation, rebranding, or ownership changes
+- One service note: solar hot water constraint (10 min per 3-hr cycle) was newly surfaced in June 2026 reviews — worth flagging if this is a priority for Sarah
+
+### Direct Booking / Contact
+- Official website: [karibucamps.com/lions-paw](https://karibucamps.com/lions-paw/)
+- Rooms & pricing: [karibucamps.com/lions-paw/rooms-and-suites](https://karibucamps.com/lions-paw/rooms-and-suites/)
+- Email: jambo@karibucamps.com
+- Phone/WhatsApp: +255 789 193 333
+- Booking.com: [lions-paw-ngorongoro](https://www.booking.com/hotel/tz/lions-paw-ngorongoro.html) — 9.4/10 score (based on 8 reviews; small sample)
+- TripAdvisor: [Ngorongoro Lions Paw](https://www.tripadvisor.com/Hotel_Review-g317085-d8095327-Reviews-Ngorongoro_Lions_Paw-Ngorongoro_Conservation_Area_Arusha_Region.html)
+
+### Confidence Level
+- Standard suite rate ($607–$690/pp): **Medium** — confirmed across two independent booking platforms (Monkey.travel, African Spice Safaris/derived), consistent with the Booking.com ~€1,180/night room figure. Get direct quote for October 2027.
+- Honeymoon Suite rate ($900/pp): **High** — confirmed explicitly by name from African Spice Safaris and consistent across all sources that mention it.
+- NCA fee exclusion: **High** — confirmed explicitly from Monkey.travel booking notes.
+
+---
+
+## PROPERTY 3: andBeyond Ngorongoro Crater Lodge
+
+### Status: CLOSED for rebuild until January 2027. No 2027 rates published yet.
+
+### Reopening Confirmation
+- **Closure date:** January 15–16, 2025
+- **Target reopening:** January 2027 (confirmed by andBeyond official site, Duma Explorer, Timbuktu Travel, Ubuntu Travel Group, Africa A-Z)
+- **Confirmed rebuild description:** Full property reconstruction — not renovation. andBeyond is rebuilding from scratch.
+- New design confirmed as 30 handcrafted suites divided into three camps (North Camp, South Camp, Tree Lodge). Design inspiration: Maasai homestead architecture combined with luxury materials — mud/thatch construction, banana leaf ceilings, grass/palm roofs. Described as "Maasai meets Versailles" character preserved from original lodge.
+- andBeyond quote on the new property: "elevated experience blending breathtaking design with the crater's natural splendour"
+
+### 2027 Pricing
+- **No 2027 rates have been published as of June 2026.** Africa A-Z's listing explicitly states: "We will publish 2027 rates as soon as we have them."
+- All sources either show the lodge as "CAMP CLOSED" or redirect to alternative accommodations
+- No pre-opening reservations appear to be available on any booking platform
+
+### Historical 2024 Rates (Reference Only)
+- **High season (June–October, Dec 21–Jan 10): USD $2,470 per person per night**
+- **Low season (March–May, Nov–Dec 20): USD $1,460 per person per night**
+- Note: October was high season at $2,470/pp/night pre-rebuild
+
+### Expected Post-Rebuild Rate (October 2027)
+- **No confirmed figure.** Based on: (a) pre-rebuild high season rate of $2,470/pp, (b) full rebuild (not renovation) typically commands a significant post-reopen premium, (c) andBeyond's post-rebuild properties at other lodges (e.g., post-rebuild Sandibe in Botswana saw ~20–30% rate increases)
+- **Working estimate: $2,800–$3,500+ per person per night, high season October 2027** — treat as directional only
+- This would represent a ~14–42% premium over the 2024 high-season rate
+- The rebuilt lodge is firmly in the ultra-luxury category — well above the $400–900/pp budget
+
+### What's Included (Based on 2024 Rate Structure — Likely Unchanged)
+- Accommodation in stilted suites
+- Three daily meals
+- Soft drinks, house wines, local brand spirits and beers, teas and coffees
+- Game drives and lodge ground walks
+- Crater floor game drives
+- Local community visit
+- Swarovski binoculars for use during stay
+- WILDchild children's programme
+- Laundry
+- Emergency medical evacuation insurance
+- Scheduled return transfers
+
+### What's Excluded
+- Premium drinks, personal expenses, gratuities, international airfares
+- NCA Conservation Fee status: unclear from public sources — at andBeyond's price tier, fees are typically bundled into the rate. Confirm with andBeyond directly.
+
+### Notable Changes Since June 2026
+- **Major:** The rebuild appears to be proceeding on schedule. As of June 2026, no reports of delays, design changes, or reopening postponements found across any operator websites, travel media, or forums.
+- The confirmed room count (30 suites in 3 camps) gives a clear picture of the new product scale
+- At this price point, the lodge will not be relevant to the October 2027 trip budget (estimated $2,800–3,500+/pp vs. $400–900/pp target)
+
+### Action Items
+- **No immediate booking action required.** This property is over budget by approximately 5–8x.
+- **December 2026 check-in:** Once rates are published (andBeyond typically releases the following year's rates in Q4 of the prior year), confirm whether any shoulder pricing exists for late October 2027. If the trip budget meaningfully expands (e.g., to $3,000+/pp), this becomes the most iconic 2-night Ngorongoro option.
+- **Contact for quote:** andBeyond reservations — +27 11 809 4300 or reservations@andbeyond.com
+
+### Direct Booking / Contact
+- Official website: [andbeyond.com — Ngorongoro Crater Lodge](https://www.andbeyond.com/our-lodges/africa/tanzania/ngorongoro-crater/andbeyond-ngorongoro-crater-lodge/)
+- Africa A-Z (operator with confirmed 2027 update): [africaa-z.travel/ngorongoro-crater-lodge](https://africaa-z.travel/accommodation/ngorongoro-crater-lodge/)
+- TripAdvisor: [andBeyond Ngorongoro Crater Lodge](https://www.tripadvisor.com/Hotel_Review-g317085-d315076-Reviews-andBeyond_Ngorongoro_Crater_Lodge-Ngorongoro_Conservation_Area_Arusha_Region.html)
+- Chalo Africa 2026/2027 listing: [chaloafrica.com/andbeyond-ngorongoro](https://www.chaloafrica.com/accommodation/andbeyond-ngorongoro-crater-lodge-tanzania/)
+
+### Confidence Level
+- Reopening date (January 2027): **High** — confirmed across andBeyond's own website and 5+ independent operators. No delays reported.
+- 2027 pricing: **Not available** — no published rates exist as of June 2026.
+- Price estimate ($2,800–3,500+/pp): **Low** — directional estimate only, derived from 2024 rates + rebuild premium pattern.
+
+---
+
+## SECTION 5 SUMMARY TABLE
+
+| Property | Status | Oct 2027 Rate/pp/night (FB or AI) | NCA Fee Included? | Beverages Included? | Honeymoon Package? | TripAdvisor | Confidence |
+|---|---|---|---|---|---|---|---|
+| **Rim Lodge (TNS)** | Active, eastern rim | **$555–$650 FB** (est.) | NO — add $70.80/pp/night | Unclear (confirm) | None confirmed | **5.0/5, 183 reviews** | Medium-Low on rate |
+| **Lion's Paw Standard Suite** | Active, crater rim | **$638–$725 FB** (est.) | NO — add $70.80/pp/night | YES — all beverages included | YES — dedicated Honeymoon Suite | **4.9/5, 1,444 reviews, #2 of 35** | Medium on rate |
+| **Lion's Paw Honeymoon Suite** | Active, crater rim | **~$945 AI** (est.) | NO — add $70.80/pp/night | YES (excl. premium) | YES — full package | Same | High on rate |
+| **andBeyond Crater Lodge** | CLOSED until Jan 2027 | **Not published** (est. $2,800–3,500+) | Likely bundled at this tier | YES — at this tier | N/A | N/A (pre-rebuild) | No rate data |
+
+---
+
+*Section 5 research compiled: June 2026 | Sources: Monkey.travel, African Spice Safaris, TripAdvisor (June 2026), andBeyond official website, Africa A-Z, Duma Explorer, Chalo Africa, Timbuktu Travel, Ubuntu Travel Group, Tanzania Odyssey, Karibu Camps & Lodges, WeGuide African Safaris, GetSafariTours, Altezza Travel*

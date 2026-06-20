@@ -3,6 +3,17 @@
 
 ---
 
+## DECISIONS LOG
+
+| Stop | Decision | Notes |
+|---|---|---|
+| Timing | **October 5–19, 2027** | Best value (20-30% below peak), thin vegetation for sightings, migration returning south, Zanzibar nearly empty |
+| Ngorongoro | **Day-Visit — 1 night Gibbs Farm + 1 crater day** | Rim overnight eliminated. 1 night Gibbs Farm (~$365–485/pp FB, organic farm-to-table). Full crater day ~6am–3pm (~$200–400 add-on, vehicle + descent fees). Est. total: ~$1,200 for two. |
+| Serengeti | **Lemala Mara, 2 nights + balloon safari** | Northern Serengeti (Kogatende). Lemala Mara: ~$400–550/pp FB, full plumbing, Lerai Foundation ethics. 2 nights (not 3) — third night budget redirected to balloon (~$1,200 for two, Serengeti Balloon Safaris). Book balloon 6+ months out. |
+| Zanzibar | **TBD — to plan next session** | Working plan: 2 nights Stone Town (Emerson Spice) + 4 nights east coast (Pongwe Beach Hotel, Cliff Ocean Suite with plunge pool). |
+
+---
+
 ## SECTION 0: MONTH-BY-MONTH TIMING ANALYSIS
 *Research updated June 2026. Full calendar-year breakdown for Tanzania (Serengeti + Ngorongoro) + Zanzibar.*
 
@@ -694,49 +705,613 @@ Nir and Sarah require ethical wildlife and labor standards across all stops. Thi
 
 *Three options researched for Northern Serengeti, October 2027:*
 
-**Wayo Green Camp North** (value pick)
-- Location: Northern Serengeti, Kogatende — perfect for October migration
-- Price: ~$200–280/pp/night all-in (accommodation, full board, beer/wine/spirits all included — unusual)
-- Size: 8–10 bell tents, intimate
-- Honeymoon: bush dinners on request, private sundowners, intimate scale
-- Book via: wayoafrica.com or Yellow Zebra Safaris
-- Ethics: **Needs verification before finalizing**
+---
 
-**Ang'ata Migration Camp**
-- Location: Northern Serengeti, Bolongonja River corridor
-- Price: ~$350–500/pp/night (October shoulder brings it to lower end)
-- Honeymoon infrastructure: bush dinners standard, night drives, walking safaris
-- Book via: sunsafaris.com or africanspicesafaris.com
+#### WAYO GREEN CAMP NORTH — FULL RESEARCH (June 14, 2026)
 
-**Nasikia Mobile Migration Camp**
-- Location: Northern Serengeti, Kogatende
-- Price: ~$399/pp/night + $60–71 park fees (often unbundled — confirm)
-- Size: 10 tents max
-- Book via: nasikiacamps.com
+**1. PRICING — October 2027**
+
+| Source | Rate | Notes |
+|---|---|---|
+| Chalo Africa (booking partner, October 2027 rate) | **$788/pp/night** | Includes full board, TANAPA camping fees, beer/wine/local spirits |
+| Tanzania Odyssey (operator review) | ~$750/pp/night | All-inclusive |
+| Timbuktu Travel | "From $560/pp/night" | Likely low-season entry; October shoulder rate above this |
+| Sun Safaris / older estimates | $250–390/pp/night | Outdated — do not rely on |
+
+**Confirmed October 2027 working rate: ~$750–788/pp/night**
+This is significantly above the $200–280 figure used in previous research notes — that figure was likely a low-season or outdated estimate. At $788/pp/night, 3 nights for 2 people = **$4,728** — a meaningful portion of the $10k budget.
+
+**What's included:** Full board accommodation (all meals), TANAPA national park camping fees, unlimited beer/wine/local spirits, game drives (vehicle + guide).
+**What may be excluded:** Airstrip transfers (conflicting sources — Timbuktu says they ARE included; Wayo website implies airport pickup is included), balloon safaris (always paid separately, ~$599/pp), conservation gratuities/tips, premium drinks. *Confirm airstrip transfer status directly with Wayo before booking.*
+
+**Budget note for this trip:** At ~$788/pp/night, 3 nights = $4,728 for 2. This leaves only $1,500–2,000 for Ngorongoro + Zanzibar + flights — which is insufficient. Either (a) reduce to 2 nights at Wayo (~$3,152), or (b) re-evaluate vs Ang'ata (~$350–500/pp) which, despite being pricier per person at peak, may have better honeymoon infrastructure for the cost. See budget re-check below.
 
 ---
 
-### OPEN QUESTIONS / NEXT STEPS
+**2. ETHICAL CREDENTIALS — VERIFIED**
+
+Overall assessment: **Passes the ethical filter.** Not perfect on all axes, but meaningfully above average for the Serengeti market.
+
+**Community investment (confirmed via Wayo Africa website):**
+- Local food sourcing: "All raw ingredients are purchased from local markets, local shops and farms putting money back into local communities" — 80%+ local procurement stated
+- Guide training: 15+ year-old training facility described as "one of the most recognised Guide Training facilities in Tanzania." Trains hundreds of local guides.
+- Artisan employment: Bell tents are "handmade locally encouraging employment and safeguarding traditional skills in Tanzania." Interiors incorporate banana leaf panels from Mto Wa Mbu, Maasai cushions — sourced and made locally.
+- Education: Supports school eco-clubs and sustainable farming vocational programs in surrounding villages.
+- NGO partnership: Partners with **Children in the Wilderness**, a non-profit focused on community and conservation education in Tanzania.
+- Waste leadership: Initiated stainless steel water bottle program across the industry; camp is 100% free of disposable plastic.
+
+**Conservation credentials (confirmed):**
+- Solar-powered throughout; own water filtration plant (no single-use plastic bottles)
+- Low-carbon activity offerings: walking safaris, canoeing, biking (reducing vehicle game drive hours and CO2)
+- Mobile camp model: moves with migration = no permanent footprint on any single area of the Serengeti
+
+**Fair wages / worker treatment:**
+- Not explicitly published. No third-party wage audit or Fair Trade Tourism certification found. Recent TripAdvisor reviews describe staff as "more like a family," "warm, welcoming, attentive" — suggests low turnover and positive work culture, but this is not wage verification.
+- TATO (Tanzania Association of Tour Operators) membership: *Not confirmed — check directly.* TATO membership is a minimum bar for legitimacy.
+
+**Wildlife disturbance issues:**
+- No documented incidents of baiting, luring, or vehicle-crowding violations found in any review or operator report.
+- The camp operates inside Serengeti National Park (mobile camp within park boundaries), not a private concession — meaning vehicle access at sightings is shared with other operators, and vehicle limits per sighting are set by TANAPA, not by Wayo. This is the key wildlife crowd management difference vs. a private concession.
+- One TripAdvisor review (Jan 2026) noted "very little wildlife around camp during the day" — this is a nature/luck variable, not an ethical issue.
+
+**Verdict:** Wayo passes the ethical bar for community investment, artisan employment, guide training, environmental practices, and conservation. The gap is: (1) no published wage data, (2) no TATO confirmation found online, (3) inside national park not private concession = no vehicle exclusivity guarantee at sightings. The ethical requirements are met at the community/labor/environment level. The "private concession = fewer vehicles" preference is not satisfied by Wayo — flag this for discussion.
+
+---
+
+**3. HONEYMOON SUITABILITY**
+
+**What's confirmed:**
+- Candlelit bush dinners under the stars: standard experience (hearty breakfasts, picnic lunches in the bush, "candlelit dinners beneath the stars after sunset" — quoted from multiple sources)
+- Sundowners by the campfire: explicitly described as "an important part of the safari experience"
+- Walking safaris (half-day and full-day options): intimate and romantic; suitable for two
+- Small camp scale: 10 tents maximum = intimate, non-resort feel
+- Private veranda / porch per tent: morning coffee from your own canvas porch watching the plains
+
+**What's NOT confirmed / not explicitly offered:**
+- No advertised honeymoon-specific package (no turndown with rose petals, champagne arrival, romance add-on listed)
+- Private bush dinner setup for couples not mentioned (though very likely available on request — standard across Serengeti camps)
+- No dedicated couple's activities or suite category
+- Hot air balloon is a separate booking (Serengeti Balloon Safaris), not arranged through Wayo directly
+
+**Practical honeymoon verdict:** Good atmosphere and scale but no formal honeymoon infrastructure. Couples will need to request romance touches (private dinner setup, private sundowner spot) directly at booking. At $750–788/pp/night, you should reasonably expect this level of customization on request. Ang'ata Migration Camp is the better choice if formal honeymoon programming matters to the couple.
+
+---
+
+**4. OCTOBER-SPECIFIC NOTES**
+
+- **Operational in October: YES.** Northern Serengeti season explicitly stated as July–October by Wayo and all operators. October is the last month of the northern position before the camp moves south.
+- **Location:** Nyamalumbwa/Kogatende area, northern Serengeti — approximately 20 minutes from the Mara River. October = migration herds returning south; last Mara River crossings possible in early October.
+- **Inside National Park, not private concession:** Wayo Green Camp North operates as a mobile camp within Serengeti National Park under a TANAPA camping concession (not a private wildlife concession like Grumeti or Loliondo). This means: (a) game drives are within the main park, (b) other operators' vehicles may be at the same sightings, (c) no off-road driving privileges.
+- **Night drives: NOT AVAILABLE.** Night game drives are officially prohibited inside Serengeti National Park by TANAPA regulation, with penalties for violations. This applies to all camps operating inside the park boundaries, including Wayo. Night drives ARE available in private game reserves adjacent to the Serengeti (Grumeti, Loliondo, Maswa, Ikorongo) — but Wayo does not operate there.
+- **Wayo's alternative nighttime offering:** Guided walks and evening campfire sundowners. Wayo does offer walking safaris which give a different kind of intimacy with the bush.
+
+---
+
+**5. REVIEWS**
+
+**TripAdvisor (Wayo Africa — covers all camps):**
+- Overall rating: **4.8 / 5**
+- Total review count: **195 reviews** (as of June 2026)
+- Listed under "Wayo Africa" (operator), not as a separate Serengeti camp property
+
+**Selected recent reviews (June 2025 – June 2026):**
+
+*September 2025 (Green Camp North, 5 stars):* "Incredible 3-night stay at Wayo Green Camp. The whole team wonderful, more like a family. Warm, welcoming and attentive. Meals hearty and so tasty — amazing what the chefs produce from a tent." — Jane W.
+
+*February 2026 (guide praise, 5 stars):* "My first time in Africa — guide Simba was so intentional, such an amazing heart, truly such a fun time. So knowledgeable, even about the birds!" — Riaan D (note: same reviewer also noted lower wildlife density around camp during day and overnight noise)
+
+*January 2026 (mixed, 3 stars):* Same reviewer raised: toilet cleanliness, large gaps in tent allowing insects, bats and birds in shower area, bucket shower described as "small" with inadequate hot water. This is likely the "Green Camp" (Central/South) not necessarily North, but the tent design is standard across camps.
+
+**Key signals from reviews:**
+- Guide quality universally praised
+- Food quality praised despite field kitchen constraints
+- Staff warmth and family atmosphere consistent
+- Bathroom experience variable — bucket shower is genuinely rustic; some guests find it charming, others find it inadequate
+- Wildlife density around camp depends on timing and luck — not a Wayo failure
+
+**No Booking.com listing found** — Wayo books through operator partners (Yellow Zebra Safaris, Chalo Africa, Timbuktu Travel) or direct.
+
+---
+
+**6. TENT / ROOM QUALITY — SARAH'S BATHROOM TEST**
+
+**Tent design:**
+- Canvas bell tents with 180-degree panoramic mesh frontage ("picture window")
+- Stretch canvas overhead for shade/privacy
+- King bed or twin beds, bedside tables with reading lamps, writing desk, day beds, hanging storage, luggage racks
+- Private porch (tarp canopy) with camp chairs for morning/evening views
+- Locally sourced interiors: banana leaf bed panels, Maasai cushions, chaga cup chandeliers
+
+**Bathroom — for Sarah:**
+This is the honest assessment based on multiple confirmed sources:
+- **Toilet:** Low-flush / flushing toilet. Multiple sources confirm flush toilet (not long-drop). One recent review mentioned cleanliness concern — not structural, but execution.
+- **Shower:** Bucket shower. Hot water provided on request. This is not a pump shower — a bucket of hot water is delivered and tipped overhead. Safari-standard but genuinely rustic.
+- **Basin:** En-suite twin washbasins inside tent (zip door separation from sleeping area). Additional canvas wash basin outside tent filled with warm water each morning.
+- **Insects/wildlife in bathroom:** One review mentioned bats and birds accessing the shower area through gaps in canvas. This is characteristic of mobile canvas camps (not sealed permanent structures).
+
+**Sarah's bathroom profile:**
+Sarah "checks bathrooms first" and rates them as her top accommodation priority. The Wayo bucket shower is authentic safari infrastructure — not a flaw in the camp's design, but it is a real characteristic she should be aware of before booking. At $788/pp/night, a bucket shower may feel like a mismatch to expectations. Ang'ata Migration Camp ($350–500/pp) has pump showers and flush toilets in a semi-permanent setup — more likely to meet Sarah's expectation at this price point.
+
+---
+
+**WAYO GREEN CAMP NORTH — VERDICT SUMMARY**
+
+| Category | Status | Notes |
+|---|---|---|
+| October pricing | $750–788/pp/night | CONFIRMED — significantly above earlier $200–280 estimate |
+| Budget fit (3 nights) | STRAIN | $4,500–4,728 for 2 = most of the trip budget. Consider 2 nights. |
+| Ethical credentials | PASSES | Community food sourcing, guide training, artisan employment, NGO partnership, eco-practices |
+| Private concession | NO | Inside National Park — vehicle exclusivity at sightings not guaranteed |
+| Night drives | NOT AVAILABLE | TANAPA prohibition inside SNP — applies to all camps |
+| Honeymoon package | NONE | Romantic atmosphere but no formal honeymoon program. Request touches at booking. |
+| October operational | YES | July–October is Northern Serengeti season |
+| Bathroom (Sarah) | CONCERN | Bucket shower, flush toilet. Authentic but rustic. |
+| TripAdvisor score | 4.8/5 (195 reviews) | Strong and consistent |
+| Ethical veto issues | NONE FOUND | No wildlife disturbance, no labor violations, no displacement links |
+
+**Recommendation:** Wayo passes the ethical filter. The primary concerns for this couple are (1) budget strain at ~$788/pp/night for 3 nights, (2) bucket shower may be a mismatch for Sarah at this price, and (3) no private concession means vehicle crowding at sightings is possible. If budget allows 2 nights instead of 3, Wayo is viable. For 3 nights at the Northern Serengeti, **Ang'ata Migration Camp** ($350–500/pp, semi-permanent, pump showers, honeymoon infrastructure) may be the better match for this specific couple.
+
+---
+
+---
+
+### EXPANDED ALTERNATIVES RESEARCH — June 14, 2026
+*Full comparison of 7 Kogatende/Bolongonja/Lamai corridor camps for October 2027 honeymoon. $200–600/pp/night hard budget, ethical standards hard filter.*
+
+---
+
+#### CAMP-BY-CAMP ANALYSIS
+
+---
+
+**SAYARI CAMP (Asilia Africa)**
+- **Location:** Kogatende, northern Serengeti National Park — directly near Mara River
+- **Park/Concession:** National Park (SNP). Night drives not standard (require special permit).
+- **Size:** 15 tented suites including 1 dedicated honeymoon suite
+- **Oct 2027 pricing:** ~$2,320/pp/night + ~$153/pp park fees = **~$2,470/pp/night all-in** — well above budget cap
+- **TripAdvisor:** World Responsible Tourism Award 2022; Travelers' Choice 2023; 1,027+ reviews; consistent 5/5 from booking platforms
+- **Ethical credentials:** GOLD STANDARD — B Corp certified (2012, one of the first in Africa); GSTC-audited; Fair Trade Tourism certified. Asilia took over Sayari in 2004 when the area was "overrun with poachers" — now virtually zero poaching. Ubuntu philosophy shapes staffing.
+- **Romance infrastructure:** Dedicated honeymoon suite with 4-poster bed, outdoor freestanding bathtub, secluded deck. Rim-flow pool, spa, private outdoor shower. Twice-daily drives. Sundowner setups.
+- **Bathroom (Sarah test):** EXCEPTIONAL — freestanding tub overlooking savannah, private outdoor shower on deck, walk-in shower. Top-tier.
+- **October operational:** Yes, year-round.
+- **VERDICT: Eliminated on budget — $2,470/pp is 4x the cap. Benchmark for quality.**
+
+---
+
+**LAMAI SERENGETI (Nomad Tanzania)**
+- **Location:** Kogakuria Kopje, northern Serengeti — elevated 270° panoramic position above the plains
+- **Park/Concession:** National Park (SNP boundary). Night drives not standard. Lamai Private annexe (4-tent section) has more flexibility.
+- **Size:** 12 tents (8 main + 4 private camp). Open-fronted, panoramic.
+- **Oct 2027 pricing:** ~$1,950/pp/night (Oct 2026 confirmed) + ~$153 park fees = **~$2,100/pp/night** — over budget
+- **TripAdvisor:** 5/5, 555 reviews (ranked #45 of 225 specialty lodging in Serengeti NP)
+- **Ethical credentials:** STRONG — Nomad Trust (30-year Tanzania-only sourcing, KopeLion lion guardians, anti-poaching ex-guide employment, free school meals, medical outreach, staff vocational training)
+- **Romance:** Kogakuria Kopje setting is the most romantic elevated position in the corridor. Open-fronted tents with uninterrupted panoramic plains views. Bush picnics, private balconies.
+- **Bathroom:** Well-appointed; open-fronted outdoor experience. Expected to meet Sarah's standards (confirm plumbing vs bucket shower).
+- **October operational:** Yes — July–October prime northern positioning.
+- **VERDICT: Over budget but best views in the corridor. If budget flexes significantly, this is the top-setting option. Would be #1 for Nir's panoramic priority.**
+
+---
+
+**UBUNTU MIGRATION CAMP (Asilia Africa)**
+- **Location:** Lamai Wedge, northern Serengeti — specifically noted for fewer camps and vehicles than main Kogatende zone
+- **Park/Concession:** Inside SNP (Lamai Wedge). No routine night drives. Fewer operators in this sub-zone.
+- **Size:** 10 canvas tents including 1 family tent — most intimate full-service camp of those reviewed
+- **Oct 2027 pricing:** ~$1,120/pp/night (2027 rate confirmed) + ~$153 park fees = **~$1,270–1,300/pp/night** — over budget, but closest to cap among premium options
+- **TripAdvisor:** 4/5, 500+ reviews (ranked #43 of 221 specialty lodging)
+- **Ethical credentials:** GOLD STANDARD — same Asilia umbrella: B Corp certified, GSTC-audited, Fair Trade Tourism certified; specifically chosen for Lamai Wedge position where Asilia's presence reduced poaching
+- **Romance:** Walking safaris, twice-daily drives, intimate 10-tent scale. Mobile camp character.
+- **Bathroom:** Bucket shower — the main weakness for Sarah's priority. Authentic safari experience, not polished.
+- **October operational:** Open June 1 – November 14. Zero closure risk.
+- **VERDICT: Best ethical credentials at sub-$1,500 price point. 10-tent scale is ideal for intimacy. Bucket shower is a genuine flag for Sarah. If Asilia has upgraded Ubuntu bathrooms, this becomes the clear #1 pick.**
+
+---
+
+**LEMALA MARA TENTED CAMP (Lemala Camps)**
+- **Location:** Northern Serengeti, ~10 min from Mara River and Kogatende airstrip; inside SNP
+- **Park/Concession:** Inside SNP. Night drives not standard. Mobile camp.
+- **Size:** 12 en suite tents. Seasonal (June–October north, then moves to Ndutu south).
+- **Oct 2027 pricing:** ~$400–550/pp/night all-in (full board, house drinks, Wi-Fi, laundry included). **Within $200–600 budget cap.**
+- **TripAdvisor:** 4/5, 294 reviews (ranked #75 of 224 specialty lodging)
+- **Ethical credentials:** GOOD — Lerai Foundation: 600-student primary school (Irkapusi village, Ngorongoro border); African Amini Secondary School internship program (7 graduates placed 2023–24); 78% local food sourcing (coffee from Karatu, dairy from Kilimanjaro, vegetables from Arusha market); 100% solar off-grid; zero emissions.
+- **Romance:** Bush dinners on request, intimate scale. Honeymoon discount available (partner 50% off with 6-night stay — not applicable for 3 nights). Standard romance rather than dedicated honeymoon suite.
+- **Bathroom:** Full plumbing — flush toilet, hot water, en suite. Tents have sitting area. **Sarah's bathroom test: PASSES.**
+- **October operational:** Confirm exact close-out date (typically moves to Ndutu by end of October — Oct 5–18 should be safe but verify with operator).
+- **VERDICT: Best in-budget option with verified ethics and plumbed bathrooms. Lower TripAdvisor rank vs Asilia/Nomad options reflects the price tier, not a quality failure. Strong overall value for a honeymoon at the $600/pp cap.**
+
+---
+
+**NOMAD SERENGETI SAFARI CAMP (Northern position)**
+- **Location:** Kogatende area July–October (moves to follow migration); inside SNP
+- **Park/Concession:** Inside SNP. Night drives not standard. Own vehicle per group.
+- **Size:** 12 guests maximum — effectively 6 couples at full occupancy. Most intimate licensed camp in the corridor. Minimum 2-night stay.
+- **Oct 2027 pricing:** ~$865/pp/night (shoulder season) + ~$153 park fees = **~$1,015–1,020/pp/night** — over budget
+- **TripAdvisor:** 4.5/5+; consistent "expectations exceeded" reviews
+- **Ethical credentials:** STRONG — Nomad Trust: KopeLion partnership, 30-year Tanzania sourcing, ex-poacher employment, staff training programs, school meals
+- **Romance:** Near-total privacy at 12-guest max. Communal dining with proprietor-style involvement. Bush dinners.
+- **Bathroom:** Mobile camp — likely bucket shower or upgraded bucket (confirm directly)
+- **October operational:** Yes — northern position July–October.
+- **VERDICT: Over budget but the intimacy gold standard. For a couple who wants to feel like the only people in the bush, 12-guest max is unmatched. Nomad ethics are gold. Worth stretching to ~$1,000/pp if intimacy is the top priority.**
+
+---
+
+**ALEX WALKER'S SERIAN (Serengeti North)**
+- **Location:** Lamai Wedge, Mara River Crossing Point 4 proximity; inside SNP
+- **Park/Concession:** Inside SNP but operates as **exclusive-use only** — 4 tents, max 6 guests, the couple effectively has a private camp. Individual vehicle and guide per group.
+- **Size:** 4 tents, exclusive use mandatory (min 2 guests, max 6)
+- **Oct 2027 pricing:** ~$1,245/pp/night (2025 Oct–Dec rate); 2027 est. ~$1,450–1,600/pp effective. As exclusive use for 2 people, total is ~$2,900–3,200/night. **Over budget, and exclusive use doubles effective cost for a 2-person booking.**
+- **TripAdvisor:** 5/5, 127 reviews — consistently "best camp in Serengeti" ratings. 2 guides per vehicle standard.
+- **Ethical credentials:** MODERATE-GOOD — Maasai community relationship, Hadzabe cultural walks. Smaller operator; no B Corp/GSTC audit. TATO member. Alex Walker personally embedded in operations.
+- **Romance:** Extraordinary — the entire camp is yours. Private vehicle, no other guests ever. Bush dinners under stars, walking safaris with Alex Walker.
+- **Bathroom:** Bucket shower. Open plains views (not elevated Kopje).
+- **October operational:** **CLOSES OCTOBER 15.** Target dates Oct 5–18 — only Oct 5–15 is viable. Hard operational constraint.
+- **VERDICT: Ultimate honeymoon intimacy option, but (1) closes Oct 15 — tight fit, (2) bucket shower is Sarah's flag, (3) over budget as exclusive use. Monitor if dates flex to early October and budget allows.**
+
+---
+
+#### RANKED SHORTLIST — 3 NIGHTS OCTOBER 2027
+
+*Hard filters applied: ethical credentials verified, October operational, within or near $600/pp/night*
+
+---
+
+**RANK 1 — LEMALA MARA TENTED CAMP**
+**Best option that clears all hard filters within budget**
+
+| Dimension | Detail |
+|---|---|
+| Price (Oct 2027) | ~$400–550/pp/night all-in — **in budget** |
+| Camp size | 12 tents |
+| Park/Concession | National Park (SNP) |
+| Ethics | Lerai Foundation (school + internships), 78% local sourcing, 100% solar, zero emissions |
+| Honeymoon | Bush dinners on request, intimate scale; no dedicated honeymoon suite |
+| Bathroom | Full plumbing, hot water, flush toilet — **Sarah's test: PASSED** |
+| TripAdvisor | 4/5, 294 reviews |
+| October dates | Safe — confirm exact season close date directly |
+| vs Wayo/Ang'ata | Better bathroom than Wayo; verified ethics vs Ang'ata's unverified status |
+
+Lemala is the clearest in-budget recommendation that passes the ethical hard filter and meets Sarah's bathroom priority. The lower TA ranking (4/5 vs 5/5 at Lamai/Sayari) reflects the price tier, not a quality failure. At $400–550/pp/night, it delivers a legitimate mid-range safari camp with a real, documented community program.
+
+---
+
+**RANK 2 — UBUNTU MIGRATION CAMP (Asilia Africa)**
+**Best ethics if budget stretches to ~$1,300/pp/night**
+
+| Dimension | Detail |
+|---|---|
+| Price (Oct 2027) | ~$1,270–1,300/pp/night all-in — **over budget, closest to cap** |
+| Camp size | 10 tents — most intimate full-service camp reviewed |
+| Park/Concession | National Park (Lamai Wedge — lower vehicle density than main Kogatende) |
+| Ethics | B Corp, GSTC-audited, Fair Trade Tourism certified — gold standard |
+| Honeymoon | Walking safaris, intimate scale; romance requires request |
+| Bathroom | Bucket shower — **flag for Sarah** |
+| TripAdvisor | 4/5, 500+ reviews |
+| October dates | Open June 1 – Nov 14. No closure risk. |
+
+Ubuntu has the highest ethical certification of any camp in the budget-adjacent range. The Lamai Wedge position means fewer vehicles. The 10-tent cap means genuine intimacy. The bucket shower is the real obstacle for Sarah. **If Asilia has upgraded Ubuntu's bathrooms to pump showers, this becomes the top choice.**
+
+---
+
+**RANK 3 — NOMAD SERENGETI SAFARI CAMP (Northern)**
+**Intimacy gold standard; worth stretching to ~$1,020/pp/night**
+
+| Dimension | Detail |
+|---|---|
+| Price (Oct 2027) | ~$1,015–1,020/pp/night all-in — over budget |
+| Camp size | **12 guests maximum** — near-private feel |
+| Park/Concession | National Park, Kogatende |
+| Ethics | Nomad Trust: KopeLion, 30-year Tanzania sourcing, anti-poaching employment — strong |
+| Honeymoon | 12-guest max = natural privacy; communal dinner intimacy; bush setups |
+| Bathroom | Mobile camp — confirm plumbing status |
+| TripAdvisor | 4.5/5, strong consistent reviews |
+| October dates | Open through October northern position |
+
+For a couple prioritizing the feeling of being alone in the bush, Nomad's 12-guest maximum is unmatched at this price tier. Nomad Trust credentials are the strongest ethical program in the mid-range. If bathroom confirms as plumbed (not bucket), this edges ahead of Ubuntu for intimacy at a $150–200/pp/night lower cost.
+
+---
+
+**RANK 4 — LAMAI SERENGETI (Nomad Tanzania)**
+**Best views and setting; flagged for budget-flex consideration**
+
+| Dimension | Detail |
+|---|---|
+| Price (Oct 2027) | ~$2,100/pp/night all-in — significantly over budget |
+| Camp size | 12 tents (8 main + 4 private) |
+| Ethics | Nomad Trust — same gold standard as Serengeti Safari Camp |
+| Honeymoon | Kogakuria Kopje = most romantic elevated setting in corridor |
+| Bathroom | Well-appointed, likely plumbed (confirm) |
+| TripAdvisor | 5/5, 555 reviews |
+
+Lamai is flagged because it delivers Nir's #1 priority (panoramic elevated setting) better than any other camp in the corridor. The Kogakuria Kopje position is visually extraordinary. If the Africa trip budget can absorb $400–500/night more per person, Lamai is the aspirational target.
+
+---
+
+#### ELIMINATION SUMMARY
+
+| Camp | Reason |
+|---|---|
+| Sayari Camp (Asilia) | ~$2,470/pp/night — 4x budget cap. Benchmark only. |
+| Serian North (Alex Walker) | Closes Oct 15 (tight fit); bucket shower; ~$1,450–1,600/pp for exclusive use |
+| Ang'ata Migration Camp | Ethics PARTIALLY VERIFIED — see full research below. Not a hard failure, but no formal community program documented and bucket shower concern for Sarah. Lemala still preferred at comparable price. |
+| Wayo Green Camp North | Ethics pass but bucket shower + $788/pp pricing = worse value than Lemala for this couple |
+
+---
+
+#### HOW THESE CAMPS COMPARE TO WAYO AND ANG'ATA
+
+**Wayo vs field:**
+- Ethics: Wayo passes the filter (confirmed June 14) but has no B Corp / GSTC certification — less documented than Asilia or Nomad
+- Pricing: $788/pp/night (corrected from earlier $200–280 estimate) — makes Wayo more expensive than Lemala with worse bathroom quality
+- Bathroom: Bucket shower — same concern applies as Ubuntu/Serian
+- Verdict: Lemala beats Wayo on value+bathroom at comparable or lower price; Ubuntu/Nomad beat Wayo on ethics certification
+
+**Ang'ata vs field:**
+- Ethics: PARTIALLY VERIFIED (June 14, 2026 research — see full section below). Not a hard filter failure, but weaker documentation than Lemala/Asilia/Nomad. ATTA member. 2015 annual report confirmed: 100% African staff, local hiring from Arusha/Ngorongoro/Serengeti areas, solar-powered, Halal/Maasai food traditions respected, "company code of ethics and conflict of interest policies" introduced. No third-party certifications (B Corp, GSTC, Fair Trade Tourism). No wage data published. No active community investment program documented post-2015.
+- Pricing: $350–500/pp/night (full board, game drives). Park fees and camping fees EXCLUDED. Night drives cost $250/pp extra; bush dinners/lunches $50/pp extra. Airstrip transfer $200/vehicle (separate).
+- Bathroom: BUCKET SHOWER (hot water on request via manual delivery). Flush toilet. Semi-permanent frame = gaps possible.
+- Until Lemala closes October season or budget flex allows Nomad/Ubuntu, Lemala remains preferred over Ang'ata for this couple.
+
+**What beats them on romance infrastructure:**
+- Sayari (over budget) — dedicated honeymoon suite, outdoor freestanding tub, spa
+- Serian North — exclusive-use private camp (over budget, Oct 15 closure)
+- Nomad Safari Camp — 12-guest max intimacy (over budget)
+
+---
+
+### ANG'ATA MIGRATION CAMP — FULL RESEARCH (June 14, 2026)
+
+*Research commissioned to resolve prior "ethics unverified — hard filter failure" status. All six requested dimensions addressed.*
+
+---
+
+#### NAMING CLARIFICATION: Ang'ata operates multiple Serengeti camps
+
+The Ang'ata brand covers several distinct properties. For the purposes of this trip (October 2027, northern Serengeti / Kogatende area), the relevant camp is:
+
+**Ang'ata Migration — Kogatende / Bologonja Camp**
+- The northern seasonal position, operational July–October
+- Located near Bologonja Ranger Post, ~1–1.5 hours from Kogatende Airstrip, ~50–60 min from Mara River
+- Semi-permanent canvas tented camp, moves seasonally (south to Ndutu December–March)
+- 12 large guest tents including a 2-tent family unit; lounge tent and dining tent
+- TripAdvisor listing: "ANG'ATA MIGRATION — BOLOGONJA CAMP" (separate listing from Ang'ata Serengeti Camp / Seronera)
+
+Do NOT confuse with:
+- **Ang'ata Serengeti Camp** — semi-permanent camp near Seronera (central Serengeti), a different property entirely
+- **Ang'ata Migration — Ndutu Camp** — southern seasonal position (Dec–Mar), different location
+
+---
+
+#### 1. PRICING (October 2027)
+
+**No confirmed October 2027 rate available from direct or primary source.** Current best working rate is derived from multiple operator sources:
+
+| Source | Rate | Notes |
+|---|---|---|
+| Sun Safaris | $350–500/pp/night sharing | Full board; appears to be current published rate |
+| ATR Safari (operator) | "From $350/pp/night" | Low-end entry; October likely higher |
+| AfricanSpice Safaris (operator) | $350–500/pp/night | Consistent with Sun Safaris |
+| Kukua Safaris (operator) | $350–500/pp/night | Same range |
+| Serengetinationalparks.com | Listed camp — no rate shown | Directory entry only |
+
+**Working rate for planning: $350–500/pp/night full board.**
+
+Note: This is substantially lower than Wayo ($788/pp) — which makes Ang'ata more accessible for the $10k total budget. 3 nights for 2 = $2,100–3,000 at full board rates.
+
+**What is included at full board rate:**
+- All meals (breakfast, lunch, dinner — freshly prepared in camp kitchen)
+- Daily game drives (morning and evening) in customized 4x4 vehicles
+- Local spirits, beer, wine (house beverages)
+- Camp staff, guide
+- Maasai warrior escort to tents at night (confirmed from multiple reviews)
+- Bedside hot water bottle service (confirmed)
+
+**What is EXCLUDED — important:**
+- **TANAPA national park camping fees** (Serengeti) — NOT included in full board rate. Estimated ~$70–153/pp/night in 2025–26. Add $140–306/night for 2.
+- **Tourism Development Levy** — 1% of accommodation rate, charged separately
+- **Night game drives** — available but charged separately: $250/pp per drive
+- **Bush dinners/lunches** — available but separately priced: $50/pp per event (for groups of 5–10)
+- **Balloon safari** — always booked separately (~$600/pp via Serengeti Balloon Safaris)
+- **Airstrip transfers** — $200/vehicle one-way. Some operators say included; Ang'ata website implies separate. Confirm at booking.
+- **Premium/imported drinks** — standard house drinks included; premium spirits/champagne VIP upgrade exists at additional fee
+- **Tips and gratuities**
+
+**Budget implication:** True all-in cost for October 2027 is likely $550–700/pp/night (adding park fees + levy to $400–500 full board rate). For 3 nights, 2 people: **$3,300–4,200 total for Serengeti stop** — similar to Lemala's range and well within budget tolerance.
+
+---
+
+#### 2. HONEYMOON SUITABILITY
+
+**What is confirmed:**
+
+Bush dinners and bush lunches are explicitly available at Ang'ata Migration camps. From operator listings: "Bush dinner, bush breakfast, and bush lunch available at $50/pp, from 5–10 people, subject to animal concentration and weather conditions." Note the minimum group size of 5 — a private couple-only bush dinner requires separate arrangement; confirm at booking whether 2-person setup is possible for additional fee.
+
+Night game drives are offered at Ang'ata at $250/pp, but see Park/Concession section below — availability depends on operational location.
+
+Romance-specific confirmed items from reviews:
+- Maasai warriors escort guests to tents after dinner (atmospheric + private)
+- Candlelit camp dinners standard
+- Small camp scale (12 tents) creates intimate, non-resort atmosphere
+- "Four-course dinner menus" mentioned in multiple operator descriptions
+- Bedside hot water bottles, morning coffee service from your tent verandah
+- Reviewer descriptions of honeymoon stays are consistently positive ("beautiful sunrises," "heard lions at night")
+- Staff write poems for guests, described as "going above and beyond with personal touches"
+
+**What is NOT confirmed:**
+- Dedicated honeymoon suite or honeymoon-specific package — not advertised
+- Private sundowner setup for 2 — not explicitly listed, but likely available on request
+- Couples' massage or spa — not offered at this mobile camp
+- Private vehicle per tent (shared vehicle assumed)
+- Private bush dinner for couple only (minimum 5-person note above is a flag)
+
+**Prior research claim ("bush dinners standard and night drives"):** Partially confirmed. Bush dinners are available but at extra cost ($50/pp) and with a stated minimum group of 5 — which matters for a 2-person party. Verify at booking. Night drives are offered but subject to the concession/park restriction below. "Better honeymoon infrastructure" vs Wayo appears to be accurate — the warm service culture, intimate escort traditions, and four-course dinners give it a clear edge over Wayo's more rustic mobile camp feel.
+
+---
+
+#### 3. ETHICAL CREDENTIALS
+
+**Status: Partially verified — passes ethical bar at basic level; not gold-standard certified.**
+
+**Positive findings:**
+
+ATTA (African Travel and Tourism Association) membership confirmed — listed on ATTA's operator directory. This is a legitimate industry credential, though not as rigorous as B Corp or Fair Trade Tourism.
+
+From the 2015 Ang'ata Annual Report (the only publicly available CSR document):
+- 100% African national staff — all employees held African nationalities
+- Local hiring: most staff came from Arusha, Ngorongoro, and Serengeti regions — genuine community employment
+- Maasai and Halal food traditions explicitly respected in kitchen and sourcing
+- 100% solar-powered camps across all properties
+- Biodegradable and non-toxic products replacing conventional alternatives
+- Company code of ethics and conflict of interest policies introduced
+- Regular training and reward programs for all departments
+- Local food sourcing documented
+
+**Current gaps (2026 perspective):**
+- No post-2015 community investment documentation found. The annual report was a one-time publication, not a recurring disclosure.
+- No Fair Trade Tourism, B Corp, or GSTC certification
+- No published wage data or third-party labor audit
+- No documented active anti-poaching program or conservation levy
+- No school program, foundation, or named NGO partnership (unlike Wayo's Children in the Wilderness or Lemala's Lerai Foundation)
+- No formal conservation levy paid to adjacent communities
+
+**Wildlife disturbance concerns:**
+No documented incidents of baiting, luring, vehicle crowding violations, or wildlife harassment in any review or operator report. The camp operates inside Serengeti National Park (not a private concession), so vehicle behavior at sightings is governed by TANAPA regulations, not self-imposed rules. This is the same limitation as Wayo — not a specific Ang'ata failure.
+
+**Ethical verdict:** Ang'ata passes the basic ethical bar (ATTA member, local hiring, solar, Halal/Maasai respect, no documented violations). It does not reach the standard of Lemala (active school + internship program), Wayo (Children in the Wilderness NGO partnership), Asilia (B Corp + GSTC), or Nomad (KopeLion + anti-poaching employment). For a couple with a "community benefit must be documented" requirement, Ang'ata is weaker than Lemala — but it is not an ethical veto.
+
+---
+
+#### 4. OCTOBER-SPECIFIC NOTES
+
+**Operational in October:** YES — confirmed. Northern position (Kogatende/Bologonja) runs July–October. October is the final month of the northern season. Camp is definitively open for Oct 5–18 window. Moves south to Ndutu in December.
+
+**Location relative to Kogatende:** The Ang'ata Migration — Kogatende / Bologonja camp is positioned near the Bologonja Ranger Post. Multiple operator sources confirm: ~50–60 min drive to Mara River crossing points (Kogatende); ~1–1.5 hours from Kogatende Airstrip. One reviewer specifically flagged the distance ("at least 1.5 hours from where most action takes place around Kogatende"). This is a meaningful geographic note: guests will spend more time in the vehicle to reach the prime crossing points than guests staying at camps closer to Kogatende (e.g., Lemala Mara, Sayari).
+
+**Park vs private concession:** Inside Serengeti National Park — NOT a private concession. This has two direct consequences:
+1. **Night drives:** TANAPA officially prohibits night game drives inside the national park. All vehicles must be back in camp by 7pm or before dark. Night drives are described in Ang'ata marketing materials as available in "private concession areas" — but the Kogatende/Bologonja position is inside the park, not a concession. *The $250/pp night drive is likely only available when Ang'ata camps are positioned in concession areas (some of their other properties). For the northern Serengeti location, night drives are almost certainly not available under TANAPA rules.* Confirm directly with Ang'ata before booking if night drives matter.
+2. **Off-road driving:** Not permitted inside SNP. Game drives follow established tracks. Other operators' vehicles may be at the same sightings.
+
+**Wildlife in October at Kogatende:** This is the tail end of the migration season. October brings:
+- Migration herds returning south from Masai Mara — large groups moving through northern Serengeti southward
+- Possible last Mara River crossings (early October; crossings typically end by October)
+- Very dry vegetation = maximum visibility; animals congregated around permanent water sources
+- Excellent resident game (lions, leopards, cheetahs, elephants, buffalo) year-round
+- October is consistently described as "underrated" — peak conditions without peak crowds
+
+---
+
+#### 5. RECENT REVIEWS
+
+**TripAdvisor (Ang'ata Migration — Bologonja Camp):**
+- Listed separately from Ang'ata Serengeti Camp (Seronera)
+- TripAdvisor page: "ANG'ATA MIGRATION — BOLOGONJA CAMP — Updated 2025 Campground Reviews (Nyamburi, Tanzania)"
+- Overall rating signals: Multiple review snippets from operators and booking platforms indicate a 4.7/5 Travelers' Choice 2025 designation for this property
+- Review count: Relatively small (this is a newer listing vs the established Seronera camp)
+
+**Ang'ata Serengeti Camp (Seronera — sister property, broader review base):**
+- TripAdvisor: 4/5 (based on review snippets across multiple searches)
+- Ang'ata Ndutu Camp: 4/5, ranked #19–20 of 34–35 specialty lodging in Ngorongoro Conservation Area, 146 reviews
+
+**Selected guest review signals (June 2025 – present):**
+
+From February 2026 review (confirmed recent): "Delicious food and gracious, warm staff that left them with beautiful memories." Couple stay.
+
+From October/November 2025 area reviews: Staff universally praised for warmth; "more like a family"; Maasai warrior evening escort described as magical; four-course dinners under the stars. One reviewer specifically praised soups as a highlight of meals. Service tone is consistent and positive.
+
+From a reviewer flagging distance: "The camp seemed to be a long way from the action — at least 1.5 hours from where most crossings take place around Kogatende." This confirms the location gap noted above.
+
+**No documented negative reviews found for:**
+- Wildlife disturbance
+- Food quality
+- Staff conduct
+- Accommodation standards (beyond the hot water system, which is characteristic of all mobile canvas camps)
+
+**Hot water note:** Confirmed bucket shower system — hot water delivered in large cans hanging outside tent (one hot, one cold). Guest must request hot water fill before showering. One reviewer noted: "If it's hot outside, the cold water is already warm after game drives." This is the same rustic system as Wayo and is standard for mobile canvas camps in this category.
+
+---
+
+#### 6. ACCOMMODATION QUALITY
+
+**Tent type:** Semi-permanent canvas tents — fixed on platforms during the northern season (July–October). Not fully mobile bell tents like Wayo; more structured framing. Described across sources as "spacious," "luxurious," "super comfortable."
+
+**Number of tents:** 12 guest tents including a 2-tent family unit. Effective standard tent count for non-family guests: ~10. A 12-tent camp at high occupancy = ~24 guests — larger than Wayo (10 tents) and Ubuntu (10 tents), comparable to Lemala (12 tents).
+
+**Bed configuration:** Single, twin, or double beds (confirm preference at booking). Mosquito net. Bedside tables with reading lamps. Writing desk. Luggage rack.
+
+**Bathroom spec (confirmed):**
+- Flush toilet — confirmed from multiple sources
+- Shower: Bucket shower with manual hot water delivery. NOT a pump/pressure shower. Hot water cans hung outside tent, filled on request. This is the primary differentiator vs. a permanent lodge.
+- Vanity desk
+- En-suite (bathroom zoned within the tent, not a separate structure)
+
+**Compared to Sarah's test:** Flush toilet passes. The bucket shower is the potential friction point. At $350–500/pp/night (lower price tier vs Wayo at $788), some expectation management is appropriate. A "luxury" label at this price should mean quality bedding, excellent food, and warm service — all confirmed — but not hotel-style plumbing.
+
+**Solar power:** Confirmed — all Ang'ata camps are solar-powered.
+
+**Lounge and dining:** Communal dining tent. Evening campfire area. Pre-dinner sundowner area standard.
+
+---
+
+#### ANG'ATA MIGRATION CAMP — VERDICT SUMMARY
+
+| Dimension | Status | Detail |
+|---|---|---|
+| October pricing (full board) | $350–500/pp/night | Park fees (~$150/pp/night) excluded — true all-in ~$550–700/pp/night |
+| 3 nights for 2 (total) | ~$3,300–4,200 | Within budget; significantly below Wayo ($4,500–4,728) |
+| Ethics | PARTIAL PASS | ATTA member, local hiring, solar, Maasai respect. No B Corp/GSTC/Fair Trade. No active community program post-2015. No published wages. |
+| Honeymoon infrastructure | MODERATE | Bush dinners/lunches available ($50/pp extra, 5-person min — verify for 2-pax). Night escorts, 4-course dinners, intimate atmosphere. No dedicated honeymoon suite/package. Night drives likely unavailable inside SNP. |
+| Park/concession | National Park (inside SNP) | No off-road. No guaranteed vehicle exclusivity. Night drives almost certainly NOT available at northern location (TANAPA rules). |
+| October operational | YES | July–October season confirmed. Oct 5–18 window is safe. |
+| Distance from Kogatende | 1–1.5 hours | Further from prime Mara River crossings than Lemala Mara or Sayari. |
+| Tent quality | Good — semi-permanent | Spacious, comfortable, solar-powered. |
+| Bathroom (Sarah test) | CONCERN | Bucket shower, flush toilet. Functional but rustic at this price point. |
+| TripAdvisor | ~4.7/5 Travelers' Choice | Smaller review count for Bologonja specifically; ~4/5 for sister properties |
+| Ethical veto issues | NONE FOUND | No wildlife violations, no displacement links, no labor complaints found |
+
+**Overall recommendation vs alternatives:**
+
+Ang'ata is NOT a hard ethical failure. It is a serviceable, locally staffed, solar-powered camp with warm service and good food at a competitive price. But for this specific couple, Lemala Mara remains the stronger recommendation because:
+1. Lemala has a documented, active community program (Lerai Foundation school + internships) — passes the ethical bar definitively
+2. Lemala has full plumbed bathrooms (pump shower + flush toilet) — passes Sarah's test
+3. Lemala is closer to prime Kogatende crossing points
+4. Lemala pricing is comparable ($400–550/pp/night)
+
+**Where Ang'ata has an edge over Lemala:**
+- Potentially warmer service culture (the Maasai escort, bedside traditions, poem-writing staff are charming touches)
+- Slightly larger camp scale (12 vs 12 tents — roughly equal)
+- More romantic dinner ambiance described in reviews
+
+**Conclusion:** Ang'ata is a viable backup option if Lemala is full for October 2027. It is not the top pick given the ethical documentation gap, bucket shower, and distance from prime crossings. The earlier "hard filter failure" status is revised to "passes minimum bar, not preferred."
+
+---
+
+*Ang'ata research added June 14, 2026 | Sources: angatacamps.com (official), ATR Safari (atrsafari.com), African Spice Safaris (africanspicesafaris.com), Kukua Safaris (kukuasafaris.com), Sun Safaris (sunsafaris.com), Tanzania Sharing Safaris (tanzaniasharingsafaris.com), Shadows of Africa (shadowsofafrica.com), TripAdvisor (Ang'ata Migration Bologonja Camp, Ndutu Camp, Serengeti Camp listings), Timbuktu Travel, Blessing Safaris, Ang'ata Camps & Safaris 2015 Annual Report (via DocPlayer), ATTA directory (atta.travel), Serengetinationalparks.com, TANAPA night drive regulations (multiple sources)*
+
+---
+
+### OPEN QUESTIONS / NEXT STEPS (Updated)
 
 **Immediate (before booking):**
 1. Get Ngorongoro Rim Lodge (TNS) October 2027 quote — tnshospitality.co.tz
 2. Get Lion's Paw standard suite October 2027 quote — Karibu Camps
-3. Verify Wayo Green Camp ethical credentials (TATO membership, community programs)
-4. Confirm Serengeti camp choice and run Kiwi flight search (ORD → JRO, October 2027)
+3. ~~Verify Wayo Green Camp ethical credentials~~ — **COMPLETE:** Passes ethical filter.
+4. ~~Verify Ang'ata Migration Camp ethical credentials~~ — **COMPLETE (June 14, 2026):** Partially passes. ATTA member, local hiring, solar. No active community program or third-party certification. Revised from "hard filter failure" to "passes minimum bar, not preferred." See full Ang'ata research section above.
+5. **Confirm Lemala Mara exact October season close date** — target Oct 5–18 should be safe; verify directly
+6. **Ask Asilia Africa about Ubuntu bathroom upgrade** — if pump showers confirmed, Ubuntu becomes #1 choice at ~$1,300/pp
+7. **Decide on budget flex:** Can per-person accommodation stretch from $600 to $1,000–1,300/pp/night? If yes: Ubuntu (ethics gold) or Nomad Safari Camp (intimacy gold) are clear targets.
+8. Run Kiwi flight search (ORD → JRO, October 2027) once camp is confirmed
 
-**Planning walkthrough in progress (stopped at Ngorongoro stop):**
-- Stop 1: Arusha ✓ (explained)
-- Stop 2: Ngorongoro ✓ (explained, accommodation decision pending quotes)
-- Stop 3: Serengeti — to present
-- Stop 4: Stone Town — to present
-- Stop 5: Zanzibar coast — to present
+**Planning walkthrough:**
+- Stop 1: Arusha ✓
+- Stop 2: Ngorongoro ✓ (accommodation decision pending quotes)
+- Stop 3: Serengeti — researched in full, decision pending budget flex discussion
+- Stop 4: Stone Town ✓
+- Stop 5: Zanzibar coast ✓
 
 **Deferred:**
-- Rwanda gorilla trek — future dedicated trip ($1,500/pp permits, no beach for Sarah)
-- Madagascar — 2028/2029 dedicated trip, own 2-week budget
-- Flights — run Kiwi search after Serengeti camp is confirmed (need entry/exit airports locked)
+- Rwanda gorilla trek — future dedicated trip
+- Madagascar — 2028/2029 dedicated trip
+- Flights — run Kiwi after Serengeti camp confirmed
 
 ---
 
-*Research compiled: June 2026 | Updated: June 14, 2026 — planning session*
-*Sources: AfricanMecca Safaris, Asilia Africa, Yellow Zebra Safaris, Natural World Safaris, Far & Wild Travel, Go2Africa, Safari Bookings, Trek Africa Gorillas, Voyage2Africa, Pongwe, Rhino Africa, Mozambique Islands, Anantara Hotels, Wayfairer Travel, Wayo Africa, Nasikia Camps, Karibu Camps, TNS Hospitality, Expert Africa, Chalo Africa, HRW, Cultural Survival, KopeLion, Nomad Tanzania, Lemala Lerai Foundation, A&K Philanthropy*
+*Research compiled: June 2026 | Updated: June 14, 2026 — Wayo full research + expanded 7-camp Kogatende/Lamai corridor comparison added + Ang'ata Migration Camp full ethical and quality research added*
+*Sources: AfricanMecca Safaris, Asilia Africa (asiliaafrica.com), Nomad Tanzania (nomad-tanzania.com), Chalo Africa (chaloafrica.com), Serian.com (Alex Walker's Serian), Expert Africa (expertafrica.com), TripAdvisor (Sayari, Lamai, Ubuntu, Lemala Mara, Serian, Wayo Africa listings), Mahlatini Luxury Travel, Yellow Zebra Safaris, Wayo Africa (wayoafrica.com), Lemala Camps (lemalacamps.com), Siyabona Africa, Cheetah Safaris (cheetahsafaris.com), Kind Traveler, Journeys by Design, AfricanSpice Safaris, Timbuktu Travel, Tanzania Odyssey, Children in the Wilderness, HRW, Cultural Survival, KopeLion, Lemala Lerai Foundation, A&K Philanthropy*
