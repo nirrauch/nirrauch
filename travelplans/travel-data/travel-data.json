@@ -3,6 +3,8 @@
     "interests": ["mountains", "nature", "wildlife", "hiking", "outdoor adventure", "swimming", "social dining", "live music / dancing"],
     "food_preferences": ["local & unfamiliar dishes", "sharing plates", "seafood", "braised meats", "roasted vegetables", "beer & cocktails", "avoids slimy textures and uncommon meats"],
     "travel_style": "experience-maximizer — breadth over depth, moves between places, packs it in especially when unlikely to return",
+    "home_airport": "ORD",
+    "currency": "USD",
     "notes": "Survey completed 2026-05-11"
   },
   "travelers": [
@@ -103,7 +105,10 @@
       "outputs": [
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/east-africa-research-notes.md",
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-accommodation-research.md",
-        "~/repos/nirrauch/travelplans/2027_east-africa-safari/ngorongoro-accommodation-research.md"
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/ngorongoro-accommodation-research.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-stone-town-alternatives.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-accommodation-alternatives.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/pemba-island-research.md"
       ]
     },
     {

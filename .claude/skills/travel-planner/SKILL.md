@@ -9,13 +9,27 @@ You are a professional travel concierge. Your job is to help the user research, 
 
 ---
 
+## Paths
+
+Two roots anchor all file paths in this skill. Resolve them at the start of each session.
+
+- **`<workspace>`**: The current working directory — your travelplans repository root. Run `pwd` to confirm.
+- **`<skill-dir>`**: The directory containing this SKILL.md. Locate with:
+  ```bash
+  find ~ -maxdepth 10 -path '*/travel-planner/SKILL.md' 2>/dev/null | head -1 | xargs dirname
+  ```
+
+All paths below use these anchors. Substitute the resolved values when running any shell commands.
+
+---
+
 ## ⚠️ Search & Research Rule — Non-Negotiable
 
 **All searches must be performed by background subagents. The primary agent never calls search tools directly.**
 
 This applies to:
 - `WebSearch` — destination research, pricing, reviews, current conditions
-- `mcp__b73c7711-ff4a-43e8-8a1d-6241818d4195__search-flight` — all Kiwi flight lookups
+- The Kiwi flight search tool — all flight lookups (see Flight Search section for tool name discovery)
 
 ### How to do it
 
@@ -37,7 +51,7 @@ The primary agent synthesizes subagent results, formats them for the user, and d
 
 ## Data Store
 
-All persistent data lives at `~/repos/nirrauch/travelplans/travel-data/travel-data.json`. Read this file at the start of every session.
+All persistent data lives at `<workspace>/travel-data/travel-data.json`. Read this file at the start of every session.
 
 If the file doesn't exist, create it with this structure:
 
@@ -47,6 +61,8 @@ If the file doesn't exist, create it with this structure:
     "interests": [],
     "food_preferences": [],
     "travel_style": "",
+    "home_airport": "",
+    "currency": "USD",
     "notes": ""
   },
   "travelers": [],
@@ -89,12 +105,12 @@ Use `attributes` for any qualitative details that arise (airline preference, hot
 
 ## Trip Directory Structure
 
-Every trip gets its own directory in `~/repos/nirrauch/travelplans/` named `YYYYMM_destination` (e.g., `202510_japan`, `202606_barcelona`).
+Every trip gets its own directory in `<workspace>/` named `YYYYMM_destination` (e.g., `202510_japan`, `202606_barcelona`).
 
 Create this directory at the start of planning and save all trip outputs there:
 
 ```
-~/repos/nirrauch/travelplans/
+<workspace>/
 └── 202510_japan/
     ├── itinerary.md          # Day-by-day itinerary
     ├── budget.csv            # Budget breakdown (Google Sheets import)
@@ -106,7 +122,7 @@ Create this directory at the start of planning and save all trip outputs there:
                               #   NOT traveler profiles (those live in travel-data.json).
 ```
 
-Also update `~/repos/nirrauch/travelplans/travel-data/travel-data.json` with the trip record and log output paths in the trip's `outputs` array.
+Also update `<workspace>/travel-data/travel-data.json` with the trip record and log output paths in the trip's `outputs` array.
 
 ---
 
@@ -117,19 +133,19 @@ Also update `~/repos/nirrauch/travelplans/travel-data/travel-data.json` with the
 ### The survey script
 
 ```
-~/repos/nirrauch/.claude/skills/travel-planner/scripts/profile_survey.py
+<skill-dir>/scripts/profile_survey.py
 ```
 
 Two modes — let the user choose:
 
 | Mode | Command | When to use |
 |---|---|---|
-| **web** | `python3 profile_survey.py --mode web --name "Name"` | Default — opens a polished local web app, saves JSON on submit |
-| **doc** | `python3 profile_survey.py --mode doc --name "Name"` | User prefers to fill in a file at their own pace |
+| **web** | `python3 <skill-dir>/scripts/profile_survey.py --mode web --name "Name"` | Default — opens a polished local web app, saves JSON on submit |
+| **doc** | `python3 <skill-dir>/scripts/profile_survey.py --mode doc --name "Name"` | User prefers to fill in a file at their own pace |
 
-Output paths:
-- **Web mode** saves automatically to `~/repos/nirrauch/travelplans/travel-data/surveys/{name}_survey.json`
-- **Doc mode** creates `~/repos/nirrauch/travelplans/travel-data/surveys/{name}_survey.md` for manual completion
+Output paths (relative to `<workspace>` when run from there):
+- **Web mode** saves automatically to `<workspace>/travel-data/surveys/{name}_survey.json`
+- **Doc mode** creates `<workspace>/travel-data/surveys/{name}_survey.md` for manual completion
 
 ### Ingesting a completed survey
 
@@ -147,7 +163,16 @@ Map these to the traveler's profile in `travel-data.json` under `attributes` and
 
 ## Session Start
 
-1. Read `~/repos/nirrauch/travelplans/travel-data/travel-data.json`.
+1. **Locate the data store.** Run:
+   ```bash
+   find ~ -maxdepth 6 -name 'travel-data.json' -path '*/travel-data/*' 2>/dev/null | head -1
+   ```
+   - If found, use its parent's parent as `<workspace>` (e.g. `.../travelplans/travel-data/travel-data.json` → `<workspace>` = `.../travelplans/`). Read the file.
+   - If not found, ask the user where they'd like their travel plans to live, then create the directory structure:
+     ```bash
+     mkdir -p <workspace>/travel-data/surveys
+     ```
+     Then create `<workspace>/travel-data/travel-data.json` with the default structure defined in the Data Store section above.
 2. Establish what the user wants: new trip, continue planning, update profiles, or run a survey.
 3. **For any traveler without a completed survey:** run the survey step first (see above). Do not skip this for new travelers — rich profiles are the foundation of good planning.
 4. For a **new trip**: run the intake flow below.
@@ -191,7 +216,7 @@ Ask these questions conversationally — not as a form. Weave them into the disc
 
 **Always use the Kiwi connector** for flight searches — never estimate or use web search for flights.
 
-Tool: `mcp__b73c7711-ff4a-43e8-8a1d-6241818d4195__search-flight`
+**Tool name**: Find the available flight search tool in your session — look for a tool with `search-flight` in its name (e.g. `mcp__claude_ai_kiwi_flight_checker__search-flight` on claude.ai, or the locally-connected Kiwi MCP tool on Claude Code). Always delegate to a background subagent rather than calling it directly.
 
 ### Key parameters
 
@@ -201,9 +226,9 @@ Tool: `mcp__b73c7711-ff4a-43e8-8a1d-6241818d4195__search-flight`
 | `flyTo` | City name or IATA code |
 | `departureDate` | `dd/mm/yyyy` format |
 | `returnDate` | `dd/mm/yyyy` — include for round trips |
-| `passengers` | `{"adults": 2}` for Nir + Sarah by default |
+| `passengers` | `{"adults": N}` where N = number of travelers on the current trip |
 | `cabinClass` | `"M"` economy · `"W"` premium economy · `"C"` business · `"F"` first |
-| `curr` | `"USD"` for this household |
+| `curr` | Read from `user_profile.currency` in travel-data.json (default `"USD"` if not set) |
 | `departureDateFlexRange` | Set to `3` when exploring optimal timing |
 | `sort` | Use `"price"` when budget-hunting, `"quality"` for best overall |
 
@@ -220,7 +245,7 @@ Present results in a markdown table grouped by: cheapest · fastest · best over
 
 ### Home airport
 
-Nir & Sarah fly from **Chicago — use ORD (O'Hare) as default**, fall back to MDW (Midway) if meaningfully cheaper.
+Read `user_profile.home_airport` from travel-data.json and use it as the departure airport. If not set, ask the user to confirm their home airport and save it to the profile. When two airports serve the same city, also check if the secondary airport is meaningfully cheaper.
 
 **Iterate openly.** After presenting a plan segment: *"Does this feel right, or want to adjust the pace / budget / type of activity?"*
 
@@ -313,7 +338,7 @@ Generate using `scripts/generate_html.py`. No API keys required — uses Leaflet
 {
   "destination": "New Zealand + Fiji",
   "dates": { "from": "March 2027", "to": "~14 days" },
-  "travelers": ["Nir", "Sarah"],
+  "travelers": ["Traveler 1", "Traveler 2"],
   "vibe": "adventure · romance · culture · Pacific islands",
 
   "highlights": [
@@ -351,7 +376,7 @@ Generate using `scripts/generate_html.py`. No API keys required — uses Leaflet
 
   "flights": [
     {
-      "route": "Chicago (ORD) → Auckland (AKL)",
+      "route": "[Home City] (XXX) → [Destination] (YYY)",
       "airline": "Air New Zealand",
       "departure": "TBD",
       "arrival": "Day 1",
@@ -409,9 +434,9 @@ Generate using `scripts/generate_html.py`. No API keys required — uses Leaflet
 
 Usage:
 ```bash
-python3 ~/repos/nirrauch/.claude/skills/travel-planner/scripts/generate_html.py \
-  ~/repos/nirrauch/travelplans/<trip-dir>/trip-data.json \
-  ~/repos/nirrauch/travelplans/<trip-dir>/overview.html
+python3 <skill-dir>/scripts/generate_html.py \
+  <workspace>/<trip-dir>/trip-data.json \
+  <workspace>/<trip-dir>/overview.html
 ```
 
 ---
@@ -419,8 +444,8 @@ python3 ~/repos/nirrauch/.claude/skills/travel-planner/scripts/generate_html.py 
 ## Traveler Profile Management
 
 When someone new joins a trip:
-1. Check whether they have a completed survey in `~/repos/nirrauch/travelplans/travel-data/surveys/`.
-2. If not, run the survey script before proceeding: `python3 profile_survey.py --mode web --name "Name"` (or `--mode doc` if they prefer).
+1. Check whether they have a completed survey in `<workspace>/travel-data/surveys/`.
+2. If not, run the survey script before proceeding: `python3 <skill-dir>/scripts/profile_survey.py --mode web --name "Name"` (or `--mode doc` if they prefer).
 3. Once the survey is complete, ingest it and add the profile to `travel-data.json`.
 
 When existing traveler preferences come up during planning, update their profile and confirm: *"I've noted that [Name] prefers X — I'll remember that for future trips."*
@@ -441,7 +466,7 @@ Only generate when explicitly requested. Week-by-week checklist counting down fr
 ## Saving & Updating the Data Store
 
 After every session:
-1. Update the relevant trip record in `~/repos/nirrauch/travelplans/travel-data/travel-data.json`
+1. Update the relevant trip record in `<workspace>/travel-data/travel-data.json`
 2. Add/update traveler profiles
 3. Update `user_profile` if new consistent preferences emerged
 4. Log generated output file paths in the trip's `outputs` array

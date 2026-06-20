@@ -3,23 +3,23 @@
 Travel Planner – Traveler Profile Survey Generator
 
 Generates a creative, scenario-based survey to build rich traveler profiles.
-Results are saved to ~/repos/nirrauch/travelplans/travel-data/surveys/ and can be ingested by the
+Results are saved to ./travel-data/surveys/ (relative to the current working directory) and can be ingested by the
 travel-planner skill to populate traveler profiles in travel-data.json.
 
 Usage:
   # Interactive local web app (auto-opens browser, saves JSON on submit):
-  python3 profile_survey.py --mode web --name "Nir"
+  python3 profile_survey.py --mode web --name "Alice"
 
   # Offline markdown questionnaire (fill in manually, Claude ingests later):
-  python3 profile_survey.py --mode doc --name "Sarah"
+  python3 profile_survey.py --mode doc --name "Bob"
 
   # Custom output directory:
-  python3 profile_survey.py --mode doc --name "Sarah" --output ~/Desktop/
+  python3 profile_survey.py --mode doc --name "Bob" --output ~/Desktop/
 
 Options:
   --mode    web | doc           (required)
   --name    Traveler's name     (required)
-  --output  Output directory    (default: ~/repos/nirrauch/travelplans/travel-data/surveys/)
+  --output  Output directory    (default: ./travel-data/surveys/ relative to cwd)
   --port    Web server port     (default: 8765, web mode only)
 """
 
@@ -579,18 +579,18 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=textwrap.dedent("""\
             Examples:
-              python3 profile_survey.py --mode web --name "Nir"
-              python3 profile_survey.py --mode doc --name "Sarah"
-              python3 profile_survey.py --mode web --name "Nir" --port 9000
-              python3 profile_survey.py --mode doc --name "Sarah" --output ~/Desktop/
+              python3 profile_survey.py --mode web --name "Alice"
+              python3 profile_survey.py --mode doc --name "Bob"
+              python3 profile_survey.py --mode web --name "Alice" --port 9000
+              python3 profile_survey.py --mode doc --name "Bob" --output ~/Desktop/
         """),
     )
     parser.add_argument("--mode", required=True, choices=["web", "doc"],
                         help="web = interactive browser app | doc = markdown questionnaire file")
     parser.add_argument("--name", required=True,
                         help="Traveler's first name (used for the file and personalisation)")
-    parser.add_argument("--output", default="~/repos/nirrauch/travelplans/travel-data/surveys/",
-                        help="Output directory (default: ~/repos/nirrauch/travelplans/travel-data/surveys/)")
+    parser.add_argument("--output", default="./travel-data/surveys/",
+                        help="Output directory (default: ./travel-data/surveys/ relative to cwd)")
     parser.add_argument("--port", type=int, default=8765,
                         help="Port for web mode (default: 8765)")
 
