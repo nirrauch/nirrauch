@@ -27,3 +27,9 @@ During South Korea research, the primary agent spawned 4 sub-agents, each of whi
 User called this out explicitly mid-session: "We had a rule about using live pricing and not inventing for estimates." Hotel estimates ($80–150/night for Singapore) were significantly too low; food/activity estimates were also unverified. Presenting knowledge-based estimates as planning numbers caused multiple corrections and eroded trust in the budget figures.
 **Why:** Prices change, vary by season, and knowledge-based estimates systematically underestimate honeymoon-quality accommodation costs.
 **How to apply:** All cost figures in travel planning must come from live web search (hotel booking sites, recent travel blogs) or Kiwi (flights). If live data is unavailable, say so explicitly and flag the number as unverified. Never present an invented estimate as a planning budget line.
+
+## 2026-06-28 — anti-pattern: Kiwi subagent briefs must request formatted markdown, not raw tool output
+
+Briefing a Kiwi subagent to "return the complete raw tool response verbatim" floods the main context with full JSON (dozens of nested flight objects). Previous sessions returned clean formatted markdown tables — this session regressed before user correction. The Kiwi tool's own description specifies a grouped markdown table format (cheapest / fastest / best overall); use that spec in the subagent brief.
+**Why:** Raw Kiwi JSON is large and unreadable in context. The tool already defines the correct display format — use it.
+**How to apply:** Kiwi subagent prompts should end with: "Return results as a markdown table grouped by: cheapest · fastest · best overall. Include route, times, duration, cabin, total price for N pax, and booking link. Then one short paragraph recommending the best pick."
