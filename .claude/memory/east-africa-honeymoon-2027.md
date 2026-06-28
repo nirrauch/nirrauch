@@ -56,3 +56,21 @@ TNS Rim Lodge confirmed ~$555–650/pp/night (Monkey.travel), 5.0/5, 183 reviews
 ## 2026-06-20 — project: Trip status — Zanzibar is next stop to confirm
 SUPERSEDES east-africa-honeymoon-2027.md:32 — "Ngorongoro stop in planning — next action is direct quotes"
 Ngorongoro (Gibbs Farm 1 night + crater day) and Serengeti (Lemala Mara 2 nights + balloon safari) fully locked. Zanzibar still to confirm: Stone Town 2 nights (Emerson Spice, ~$90–225/room) + east coast 4 nights (Pongwe Beach Hotel, Cliff Ocean Suite with private plunge pool, ~$250–288 B&B). Full trip budget estimate: ~$8,750 mid, ~$1,250 headroom. Itinerary shape: ORD → Kilimanjaro/Arusha → Karatu (Gibbs Farm 1 night + crater day) → Northern Serengeti (Lemala Mara 2 nights) → Zanzibar (6 nights) → ORD.
+SUPERSEDED → see 2026-06-20 decision entry below
+
+## 2026-06-20 — decision: Zanzibar accommodation confirmed — Emerson Spice + Pongwe Beachfront Room
+SUPERSEDES east-africa-honeymoon-2027.md:29 — "Zanzibar east coast preferred over north coast"
+SUPERSEDES above "project: Trip status — Zanzibar is next stop to confirm"
+Stone Town 2 nights: Emerson Spice (Sunset to Sunrise pkg, ~$175–225/night, includes 5-course rooftop dinner on arrival night — book direct). East coast 4 nights: Pongwe Beach Hotel Beachfront Room (~$252–288/night B&B). Cliff Ocean Suite with private plunge pool (+$139/night, total $556 extra) kept as an upgrade option. Full trip now Oct 5–17 2027 (10 nights). All four outputs built: itinerary.md, budget.csv, trip-data.json, overview.html.
+
+## 2026-06-20 — decision: Sarah's tradeoff — Balloon Safari vs Pemba Island (pending her input)
+Cannot have both at $10k budget. Option A: Keep balloon safari ($1,198 for 2) + Zanzibar east coast (Pongwe) — mid total ~$11,260, path to $9,670 with low-end flights + skipping dhow + shared Mnemba. Option B: Skip balloon, upgrade beach leg to Pemba Island/Fundu Lagoon (~€315–380/pp/night AI, adults-only, 2 dives/day, whale shark season starts Oct) — mid total ~$11,200, slightly over budget. Logistics: Stone Town → Pemba is 30-min flight (~$50–100/pp); would fly back to ZNZ for international exit. October is excellent for Pemba (whale shark/manta ray season opens, 20–40m visibility at Misali Island). Sarah to decide when discussing the trip. Saved as Tradeoff A vs B in east-africa-research-notes.md.
+
+## 2026-06-20 — learning: Real mid-estimate is $11,260 — original $8,750 was too low
+SUPERSEDES budget figure in prior entries. Detailed research revealed original estimate understated by ~$2,500: (1) activities $905 actual vs ~$500 rough; (2) Pongwe B&B requires separate dinner budget ($200) not in original; (3) Arusha transit night added. Path to $10k: low flights ($2,200 Turkish/Ethiopian early-bird) + skip dhow ($265) + shared Mnemba ($180 savings) + trim incidentals = ~$9,670. Budget constraint real — one splurge item must be chosen from balloon vs Pemba, not both.
+
+## 2026-06-20 — learning: generate_html.py does not exist — build HTML directly
+The travel-planner skill references scripts/generate_html.py but the scripts directory does not exist at /Users/nirrauch/.claude/skills/travel-planner/scripts/. Build HTML directly for East Africa (and likely all trips) until the script is created. The NZ+Fiji overview.html at ~/repos/nirrauch/travelplans/2027_newzealand-fiji/overview.html is the established template/reference.
+
+## 2026-06-20 — learning: Flights to East Africa unavailable for Oct 2027 in Kiwi — book Oct–Nov 2026
+Kiwi flight search covers ~9–12 months of inventory. October 2027 flights won't appear until Oct–Nov 2026 when airlines open schedules. Set calendar reminder: search Ethiopian Airlines, KLM, Turkish Airlines for ORD→JRO and ZNZ→ORD in October–November 2026. Target $2,200 economy or less.

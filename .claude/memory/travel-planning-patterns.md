@@ -15,3 +15,15 @@ User stated: "Ethical stops for wildlife and nature reserve trips are a must. We
 Sarah checks bathrooms first — it is her #1 accommodation priority. A bucket shower at $350+/pp/night will be noticed and experienced as a mismatch regardless of camp quality elsewhere. Always confirm two things before recommending a safari camp for Sarah: (1) flush toilet ✓ and (2) pump or hot-water shower ✓ (not bucket delivery). This eliminated both Wayo ($788/pp, bucket) and Ang'ata ($550–650/pp, bucket) in favour of Lemala Mara (full plumbing, pump shower) during the Northern Serengeti selection.
 **Why:** Sarah's profile explicitly states "bathroom quality (checks first)" as top accommodation priority. At premium safari price points, a bucket shower represents a structural product mismatch, not a minor inconvenience.
 **How to apply:** When researching any safari camp for this couple, bathroom spec is a non-negotiable research item alongside ethics and pricing.
+
+## 2026-06-27 — anti-pattern: Never spawn agents instructed to spawn further sub-agents — causes rate-limit cascade
+
+During South Korea research, the primary agent spawned 4 sub-agents, each of which spawned 3–4 more. This created 20+ concurrent agents that all hit the Claude API session rate limit before returning any useful data. The entire chain produced nothing. The primary agent then fell back to its own knowledge — which is what should have been done from the start.
+**Why:** Claude's session rate limit applies across all concurrent sub-agents. Deep nesting burns through quota exponentially with no useful output.
+**How to apply:** When spawning research agents, give each agent a specific, bounded task it can execute directly with its own tools (WebSearch, Kiwi, Read). Never instruct an agent to "spawn sub-agents for each X." Max one level of parallelism: primary agent → N background agents, where each agent does its own work and returns results directly.
+
+## 2026-06-27 — anti-pattern: Do not estimate food, hotel, or activity prices from knowledge — use live search only
+
+User called this out explicitly mid-session: "We had a rule about using live pricing and not inventing for estimates." Hotel estimates ($80–150/night for Singapore) were significantly too low; food/activity estimates were also unverified. Presenting knowledge-based estimates as planning numbers caused multiple corrections and eroded trust in the budget figures.
+**Why:** Prices change, vary by season, and knowledge-based estimates systematically underestimate honeymoon-quality accommodation costs.
+**How to apply:** All cost figures in travel planning must come from live web search (hotel booking sites, recent travel blogs) or Kiwi (flights). If live data is unavailable, say so explicitly and flag the number as unverified. Never present an invented estimate as a planning budget line.
