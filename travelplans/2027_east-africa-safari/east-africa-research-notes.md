@@ -1287,6 +1287,27 @@ Ang'ata is NOT a hard ethical failure. It is a serviceable, locally staffed, sol
 
 ---
 
+### SARAH'S TRADEOFF DECISIONS (Pending Discussion)
+
+**Tradeoff A vs B — approximately equal cost (~$1,200). Cannot have both at $10k budget.**
+
+**Option A — Keep Balloon Safari, Zanzibar East Coast**
+- Serengeti: Lemala Mara 2 nights + balloon safari ($1,200 for two)
+- Beach leg: Stone Town 2 nights + Zanzibar east coast 4 nights (Pongwe or equivalent)
+- Total mid estimate: ~$9,533 with Cliff Ocean Suite / ~$8,977 with Beachfront Room
+- What you get: the iconic Serengeti hot-air balloon at dawn looking down over the plains; classic Zanzibar beach holiday with Mnemba Atoll snorkeling 20–30 min away
+
+**Option B — Skip Balloon, Upgrade Beach Leg to Pemba Island**
+- Serengeti: Lemala Mara 2 nights (no balloon)
+- Beach leg: Stone Town 2 nights + Pemba Island 4 nights (Fundu Lagoon, ~$380/pp/night AI)
+- Total mid estimate: ~$11,200 (slightly over $10k — needs minor trim elsewhere)
+- What you get: Pemba Channel diving/snorkeling (Misali Island reef, 20–40m visibility, whale sharks + manta rays Oct–Apr); near-zero tourists on the entire island; October is start of whale shark season; 30-min flight from Stone Town; Fundu Lagoon food is strong (fresh fish from local fishermen daily)
+- What you give up: the balloon moment; classic Zanzibar white-sand beach and tidal lagoon; evening food variety off-resort (Fundu Lagoon is one kitchen — excellent, but no wandering out)
+
+**Flag:** Raise both options with Sarah when planning the trip together. Her preference determines the beach leg.
+
+---
+
 ### OPEN QUESTIONS / NEXT STEPS (Updated)
 
 **Immediate (before booking):**

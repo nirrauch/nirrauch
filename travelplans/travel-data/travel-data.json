@@ -83,32 +83,37 @@
     {
       "id": "east-africa-safari-honeymoon-2027",
       "destination": "Tanzania (Serengeti + Ngorongoro) + Zanzibar",
-      "dates": { "from": "TBD — top windows: June, October, or late Jan/Feb 2027", "to": "TBD (~14 nights)" },
+      "dates": { "from": "October 5, 2027", "to": "October 17, 2027 (10 nights)" },
       "travelers": ["nir", "sarah"],
-      "status": "research",
+      "status": "planning",
       "vibe": "wildlife · romance · cultural · foodie · coastal",
       "budget": { "total": 10000, "currency": "USD", "breakdown": {
-        "international_flights_2pax": "2200-3000",
-        "internal_flights_tanzania": "600-900",
-        "gibbs_farm_1night_2pax": "730-970",
-        "ngorongoro_crater_day_fees": "300-400",
-        "lemala_mara_2nights_2pax": "1600-2200",
-        "balloon_safari_2pax": "1200",
-        "zanzibar_stone_town_2nights_2pax": "400-600",
-        "zanzibar_east_coast_4nights_2pax": "1000-1400",
-        "food_activities_zanzibar": "400-600",
-        "miscellaneous_visas_tips": "400-600",
-        "mid_estimate_total": "8750",
-        "headroom_vs_10k_budget": "~1250"
+        "international_flights_2pax_mid": "2600",
+        "internal_flights_tanzania_mid": "1075",
+        "gibbs_farm_1night_fb": "850",
+        "ngorongoro_crater_fees": "350",
+        "lemala_mara_2nights_fb_incl_drinks": "1900",
+        "balloon_safari_2pax": "1198",
+        "emerson_spice_2nights_sunset_pkg": "400",
+        "pongwe_beachfront_4nights_bb": "1072",
+        "activities_mnemba_prison_walk_spice_dhow_forodhani": "905",
+        "food_pongwe_dinners_stone_town": "280",
+        "visas_tips_incidentals": "630",
+        "mid_estimate_total": "11260",
+        "gap_vs_10k_budget": "+1260 over mid — path to under $10k: low-end flights ($2,200) + skip dhow ($265) + shared Mnemba trip ($180) = ~$9,670"
       }},
-      "summary": "Honeymoon trip. October 5–19 2027. LOCKED ITINERARY SHAPE: ORD → Kilimanjaro/Arusha → Karatu (Gibbs Farm 1 night + Ngorongoro crater day) → Northern Serengeti (Lemala Mara 2 nights + balloon) → Zanzibar (6 nights). NGORONGORO: Day-Visit locked — 1 night Gibbs Farm (~$365–485/pp FB, organic farm-to-table, #12 of 35 TripAdvisor NCA), full crater day ~6am–3pm (~$200–400 add-on). Rim overnight eliminated. SERENGETI: Lemala Mara selected — ~$400–550/pp/night full board, full plumbing (flush toilet + pump shower), Lerai Foundation ethics (600-student school, 78% local sourcing, 100% solar), 12 tents, closest camp to Kogatende crossings. 2 nights not 3 — balloon safari (~$1,200 for two, Serengeti Balloon Safaris) replaces third night. Night drives prohibited inside SNP by TANAPA — no ethical private concession in Northern Serengeti for October. Ang'ata viable backup (ethics minimum pass, bucket shower, 1.5hr from crossings). ZANZIBAR: 2 nights Stone Town (Emerson Spice) + 4 nights east coast (Pongwe Beach Hotel, Cliff Ocean Suite with plunge pool). Still to confirm formally. BUDGET: ~$8,750 mid estimate, ~$1,250 headroom vs $10k.",
+      "summary": "Honeymoon trip. October 5–17 2027. LOCKED ITINERARY: Day 1 depart ORD → Day 2 arrive JRO + transfer to Gibbs Farm (Karatu) → Day 3 Ngorongoro crater day (6am–2:30pm) → Day 4 bush flight to Kogatende, Lemala Mara → Day 5 full game drive → Day 6 balloon safari 5am + fly to ZNZ + Emerson Spice rooftop dinner → Day 7 Prison Island + Stone Town walk + Forodhani market → Day 8 transfer to Pongwe → Days 9–11 east coast (Mnemba snorkel, spice farm, dhow sail, beach) → Day 12 fly home ZNZ→ORD, arrive Oct 17. ACCOMMODATION CONFIRMED: Gibbs Farm 1 night FB, Lemala Mara 2 nights FB (full plumbing, Lerai Foundation ethics), Emerson Spice Stone Town 2 nights (Sunset to Sunrise pkg — 5-course rooftop dinner included), Pongwe Beach Hotel Beachfront Room 4 nights B&B. SERENGETI ETHICS: Lemala Mara — Lerai Foundation (600-student school, 78% local sourcing, 100% solar), closest camp to Kogatende crossings. PENDING SARAH DECISION: Balloon Safari ($1,198 for 2) vs Pemba Island/Fundu Lagoon upgrade (~equal cost ~$1,200) — cannot have both at $10k budget. See east-africa-research-notes.md tradeoff section. FLIGHTS: Book October–November 2026 when schedules open — Ethiopian Airlines (best value), KLM, Turkish. October is final balloon window.",
       "outputs": [
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/east-africa-research-notes.md",
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-accommodation-research.md",
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/ngorongoro-accommodation-research.md",
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-stone-town-alternatives.md",
         "~/repos/nirrauch/travelplans/2027_east-africa-safari/zanzibar-accommodation-alternatives.md",
-        "~/repos/nirrauch/travelplans/2027_east-africa-safari/pemba-island-research.md"
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/pemba-island-research.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/itinerary.md",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/budget.csv",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/trip-data.json",
+        "~/repos/nirrauch/travelplans/2027_east-africa-safari/overview.html"
       ]
     },
     {
@@ -166,6 +171,30 @@
         "~/repos/nirrauch/travelplans/2027_newzealand-fiji/nz-activity-pricing.md",
         "~/repos/nirrauch/travelplans/2027_newzealand-fiji/trip-data.json",
         "~/repos/nirrauch/travelplans/2027_newzealand-fiji/overview.html"
+      ]
+    },
+    {
+      "id": "south-korea-honeymoon-2027",
+      "destination": "South Korea — Seoul + Busan + Jeju (+ stopover TBD: Taipei or Singapore)",
+      "dates": { "from": "March 20, 2027", "to": "April 3, 2027 (14 nights)" },
+      "travelers": ["nir", "sarah"],
+      "status": "planning",
+      "vibe": "foodie · romantic · cultural · adventure",
+      "budget": { "total": 10000, "currency": "USD", "breakdown": {
+        "flights_stopover_to_icn": "3,130–3,240 (Taiwan EVA) OR ~2,732 (SIN Etihad+SIN→ICN)",
+        "accommodation_11nights_sk": "~2,145 (Seoul 4n $185 + Busan 3n $200 + Jeju 4n $175)",
+        "accommodation_2nights_stopover": "440–520 (Taipei Kimpton) OR 560–760 (Singapore)",
+        "food": "~1,400",
+        "ground_transport": "~550",
+        "activities": "~350",
+        "incidentals": "~300",
+        "mid_estimate_total_singapore_path": "~8,400",
+        "mid_estimate_total_taiwan_path": "~8,545",
+        "headroom_vs_10k": "~1,455–1,600"
+      }},
+      "summary": "Honeymoon trip. March 20–April 3 2027, cherry blossom season (Jeju late March, Seoul peaks early April). TRIP SHAPE: Seoul (4n, Hotel Naru MGallery ~$185/night, Han River views) → Busan (3n, L7 Haeundae by Lotte ~$200/night, rooftop pool 1 min beach) → Jeju (4n, Hidden Cliff Hotel ~$175/night, cliff views). JEJU LOGISTICS: Rental car essential. Busan→Jeju = Air Busan PUS→CJU flight ~$40/pp. End Jeju: CJU→ICN domestic to connect ORD return. Hallasan summit requires advance booking at k-hike.kr (book Feb 1 2027). STOPOVER DECISION PENDING (open): Taiwan (EVA via TPE, $3,130–3,240, stopover ~$550–700, total ~$3,680–3,940) vs Singapore (Etihad ORD→SIN $2,244 + SIN→ICN ~$488, stopover ~$810–1,130, total ~$3,542–3,862). Singapore is marginally cheaper overall but stopover costs more; Taiwan cheaper stopover but pricier flights. Singapore = Sarah's bucket list + Night Safari. PENDING: SIN→ICN live reprice, Singapore hotel live rates, SQ Stopover Holiday pricing.",
+      "outputs": [
+        "~/repos/nirrauch/travelplans/2027_south-korea/south-korea-research-notes.md"
       ]
     }
   ]

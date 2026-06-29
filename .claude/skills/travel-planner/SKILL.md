@@ -38,7 +38,7 @@ When research or flight data is needed, spawn a subagent with a precise brief:
 ```
 Agent({
   description: "Research NZ South Island activities and pricing",
-  prompt: "Search for current pricing and highlights for Queenstown bungee, Milford Sound cruise, and heli-hike options for a couple in April 2027. Return structured results with prices in USD, booking links, and a 1-paragraph summary per activity.",
+  prompt: "Search for current pricing and highlights for Queenstown bungee, Milford Sound cruise, and heli-hike options for a couple in April 2027. Return structured results with prices in USD, booking links, and a 1-paragraph summary per activity. Use your WebSearch tool directly — do NOT spawn any subagents.",
   run_in_background: true
 })
 ```
@@ -46,6 +46,19 @@ Agent({
 Run multiple searches in parallel when possible — e.g. flight search + accommodation research at the same time.
 
 The primary agent synthesizes subagent results, formats them for the user, and drives the planning conversation. It does not perform raw searches itself.
+
+### Hard limits — follow these exactly
+
+**1. Subagents must not spawn their own subagents.**
+Every subagent prompt must end with: "Use your tools directly — do NOT spawn any subagents."
+Cascade chains (primary → agent → agent → agent) hit the session rate limit exponentially and produce zero useful output. One level of parallelism only: primary agent → N background agents, each doing its own work directly.
+
+**2. Cap concurrent subagents at 4.**
+Spawning 8–10 agents at once exhausts session quota before any return. If you have more than 4 searches to run, batch them: run 4, wait for results, run the next batch.
+
+**3. Subagents must return formatted markdown, not raw tool output.**
+Always end a subagent brief with a return format instruction. For general research: "Return a clean markdown summary with headers, prices, and booking links." For Kiwi flight searches, see the exact template in the Flight Search section below.
+Returning raw JSON (dozens of nested flight objects) floods the main context and is unreadable.
 
 ---
 
@@ -238,6 +251,12 @@ Ask these questions conversationally — not as a form. Weave them into the disc
 - **Timing exploration:** Once airports are known, use `departureDateFlexRange: 3` across candidate date windows to compare costs.
 - **Multi-leg trips (e.g. Chicago → Auckland → Nadi → Chicago):** Run each leg separately and sum the totals. Leg airports depend on where the itinerary starts and ends.
 - **Cabin class options:** Always show economy baseline. If budget has headroom, run a second search for premium economy and frame it as an upgrade option.
+
+### Kiwi subagent brief template
+
+Always use this exact closing in any Kiwi subagent prompt to get clean output:
+
+> "Use the Kiwi flight search tool directly. Return results as a markdown table grouped by: cheapest · fastest · best overall. Include route (with layovers), times, duration, cabin class, total price for [N] pax, and booking link. Then write one short paragraph recommending the best pick. Do NOT return raw JSON. Do NOT spawn any subagents."
 
 ### Display format
 
