@@ -16,17 +16,23 @@ Sarah checks bathrooms first — it is her #1 accommodation priority. A bucket s
 **Why:** Sarah's profile explicitly states "bathroom quality (checks first)" as top accommodation priority. At premium safari price points, a bucket shower represents a structural product mismatch, not a minor inconvenience.
 **How to apply:** When researching any safari camp for this couple, bathroom spec is a non-negotiable research item alongside ethics and pricing.
 
-## 2026-06-27 — anti-pattern: Never spawn agents instructed to spawn further sub-agents — causes rate-limit cascade
+## 2026-06-28 — hard rule: ONLY the primary agent may create subagents — subagents must never spawn subagents
 
-During South Korea research, the primary agent spawned 4 sub-agents, each of which spawned 3–4 more. This created 20+ concurrent agents that all hit the Claude API session rate limit before returning any useful data. The entire chain produced nothing. The primary agent then fell back to its own knowledge — which is what should have been done from the start.
-**Why:** Claude's session rate limit applies across all concurrent sub-agents. Deep nesting burns through quota exponentially with no useful output.
-**How to apply:** When spawning research agents, give each agent a specific, bounded task it can execute directly with its own tools (WebSearch, Kiwi, Read). Never instruct an agent to "spawn sub-agents for each X." Max one level of parallelism: primary agent → N background agents, where each agent does its own work and returns results directly.
+User stated explicitly: "I want you to never let subagents create subagents. ONLY you can create subagents." This is a non-negotiable constraint, not a suggestion. Prior pattern entries documented the rate-limit cascade problem; this is the user's definitive rule on top of that.
+**Why:** Subagents ignoring "do NOT spawn subagents" briefs cause uncontrolled cascades. The only reliable enforcement is making this a primary-agent rule — only the primary spawns, never a subagent.
+**How to apply:** Every subagent brief must open with: "CRITICAL: You are a subagent. You must NOT spawn any subagents or background agents under any circumstances. Do all research using your own tools directly (WebSearch, Kiwi, Read, etc.)." Place this at the very TOP of the prompt, before any task description. If a subagent would naturally want to parallelize, it must instead do the work sequentially itself. The primary agent handles all parallelism decisions.
 
 ## 2026-06-27 — anti-pattern: Do not estimate food, hotel, or activity prices from knowledge — use live search only
 
 User called this out explicitly mid-session: "We had a rule about using live pricing and not inventing for estimates." Hotel estimates ($80–150/night for Singapore) were significantly too low; food/activity estimates were also unverified. Presenting knowledge-based estimates as planning numbers caused multiple corrections and eroded trust in the budget figures.
 **Why:** Prices change, vary by season, and knowledge-based estimates systematically underestimate honeymoon-quality accommodation costs.
 **How to apply:** All cost figures in travel planning must come from live web search (hotel booking sites, recent travel blogs) or Kiwi (flights). If live data is unavailable, say so explicitly and flag the number as unverified. Never present an invented estimate as a planning budget line.
+
+## 2026-07-03 — feedback: Launch subagents sequentially (one at a time), not in parallel batches
+
+User stopped 4 parallel subagents mid-run and explicitly said "only one subagent at a time." The existing rule (see below) caps at 4 concurrent; actual user preference is strictly sequential: launch one, wait for completion, then launch the next. This applies to travel research sessions specifically.
+**Why:** User killed 4 agents simultaneously — lost visibility and control. Parallel batching risks mass-cancellation that wastes the entire batch.
+**How to apply:** In travel planning, never launch more than 1 subagent at a time. Present each result before launching the next. Only exception: if user explicitly approves parallel launch in that session.
 
 ## 2026-06-28 — anti-pattern: Kiwi subagent briefs must request formatted markdown, not raw tool output
 
