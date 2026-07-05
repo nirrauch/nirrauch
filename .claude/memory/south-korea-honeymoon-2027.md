@@ -104,3 +104,40 @@ SUPERSEDES south-korea-honeymoon-2027.md:22 — "South Korea budget confirmed at
 
 Grand Josun hotel upgrade (+$600 over L7 for 3 Busan nights) pushes total mid-estimate to ~$9,400. Itemized breakdown (2 pax, Singapore stopover path): flights (ORD→SIN Etihad $2,244 + SIN→ICN ~$488 + KTX Seoul→Busan ~$100 + PUS→CJU ~$80 + CJU→ICN ~$120) ~$3,500 | accommodation (2n stopover ~$650 + 4n Seoul Hotel Naru $740 + 3n Busan Grand Josun $1,200 mid + 4n Jeju Hidden Cliff $700) ~$3,290 | food ~$1,400 | ground transport (Jeju rental car, taxis, subway) ~$600 | activities (Gyeongju $130, Hallasan free, KBO baseball $35, admissions) ~$400 | incidentals ~$300 | **Total ~$9,490, headroom ~$510**. Jeju TBD and will tighten further — no more room for hotel upgrades elsewhere without exceeding $10k.
 **How to apply:** Use ~$9,400 as the working total. Flag to user if Jeju planning pushes past $9,700.
+
+## 2026-07-05 — learning: Jeju car rental logistics fully researched
+
+IDP required: **1968 Vienna Convention** (not 1949 Geneva) — get from AAA, ~$25, bring photo; carry with original US license at all times. Recommended booking via **Klook** aggregator (English interface, combines Lotte/SK inventory) or Lotte directly (lotterentacar.com). Compact ~$170–250 for 4 days including insurance. **EVs strongly recommended** — Jeju is a government-designated "EV Island" with charging stations at all major sites including Hidden Cliff Hotel; EV rates sometimes cheaper than ICE. CJU airport (north coast) to Seogwipo/Hidden Cliff (south coast): ~50 min via 516 Road or Route 1132. Google Maps works fully on Jeju (unlike mainland Korea). Late March: Hallasan mountain roads (1100 Road / 516 Road) can have frost/ice at altitude in early morning — check forecast. Book car 4–8 weeks in advance (spring peak, sells out). On arrival: pick up car at airport immediately, drive straight to hotel. Departure (April 2): arrive CJU 90 min before domestic flight; confirm CJU→**ICN** (Incheon), not GMP (Gimpo) — if GMP, add 60–90 min transfer buffer for international connection.
+**How to apply:** Include IDP (AAA) and EV rental recommendation in pre-trip checklist. Klook is the booking path of least resistance for foreign visitors.
+
+## 2026-07-05 — learning: Hallasan booking URL corrected — visithalla.jeju.go.kr
+SUPERSEDES south-korea-honeymoon-2027.md:36 — "Key SK logistics — Hallasan reservation + Busan→Jeju is a flight"
+
+Correct reservation URL is **[visithalla.jeju.go.kr](https://visithalla.jeju.go.kr)** (prior sessions incorrectly referenced k-hike.kr). Opens **February 1, 2027 at 9:00 AM KST** — set an alarm. Gwaneumsa trail (500/day cap) sells out within minutes; Seongpanak (1,000/day cap) is easier to book. Gwaneumsa is the more dramatic trail (steeper, more raw ridgeline views, snow above 1,500 m in late March) — preferred for Nir. Full day required: 5:30 AM departure from Seogwipo, ~9 hrs on trail, return ~7:30 PM. Microspikes/crampons required in late March (rent/buy at trailhead ~₩8,000–10,000). Summit: Baengnokdam crater lake at 1,950 m (South Korea's highest point), no altitude sickness risk. Trail gate closes at 1:00 PM — do not start after 10 AM.
+**How to apply:** Hallasan reservation is the single most time-critical booking for this trip. Calendar the Feb 1 alarm now.
+
+## 2026-07-05 — learning: Jeju key activities, food anchors, and relaxation options researched
+
+**Activities:** Seongsan Ilchulbong (성산일출봉, UNESCO tuff cone, ₩5,000, 1–1.5 hrs) pairs perfectly with Udo Island day trip — ferry from Seongsan Terminal ₩8,900 RT, rent e-bikes on Udo, peanut ice cream. Seopjikoji Cape (섭지코지): volcanic headland + canola flower fields (peak late March, rivals cherry blossoms) + Zaha Hadid pavilion — one of Jeju's best stops. Cheonjiyeon Falls (evening, illuminated until 9 PM, 15-min walk from Seogwipo) — good Day 1 arrival evening. Jeongbang Falls (falls directly into sea, near Seogwipo) — good Day 5 morning stop. Manjanggul Lava Tube: ⚠️ was closed through Aug 2025 — verify status before including.
+
+**Cherry blossoms:** Jeju peaks ~March 28–30 (projected 2027). Best spots: Jeonnong-ro (전농로, 1.5 km King Cherry Blossom canopy tunnel, Jeju City) and Seopjikoji canola fields. Bloom dates vary ±5–7 days — check forecast in early March 2027.
+
+**Food:** Myeongjin Jeonbok (명진전복) is the island's top abalone restaurant — four dishes, northeast coast near Manjanggul, no online reservation, call +82-64-782-9944. Seogwipo Maeil Olle Market (서귀포 매일올레시장) = Sarah's ideal slow morning (abalone porridge, hallabong hotteok, communal bench, genuinely local). Hallabong citrus: late March = tail end of season, get from roadside stands. Black pork dinner: Childonga Jungmun or Giunne Heugdwaeji (Seogwipo, neighborhood restaurants over tourist strip).
+
+**Relaxation:** Hidden Cliff Hotel has the largest infinity pool in South Korea (ocean-view) and on-site spa (ask about ~20% happy hour discount at check-in). O'REVE Hot Spring & Spa (오레브 온천, Seogwipo): infinity pool with hot spring water, Aqua Spa ₩100,000 / Night Spa ₩50,000. Fritz Coffee Company (Seongsan, all-ocean-view seating, top-rated cafe on island) — pairs with Day 3 east coast.
+**How to apply:** Myeongjin Jeonbok and Hallasan spa are the only items requiring advance coordination. Everything else is walk-in or same-day.
+
+## 2026-07-05 — decision: Jeju 5-day itinerary shape established
+
+**Day 1 (Sun Mar 29) — Arrival + Seogwipo orientation:** Pick up car at CJU, drive to Hidden Cliff Hotel (~50 min). Afternoon: infinity pool + settle in. Evening: Cheonjiyeon Falls walk (illuminated, 15 min from Seogwipo center) → black pork dinner (Childonga Jungmun or Giunne Heugdwaeji) → quiet nightcap.
+
+**Day 2 (Mon Mar 30) — Hallasan (full day):** 5:30 AM departure → Gwaneumsa trailhead (~35 min). Summit and back ~9 hrs on trail. Return hotel ~7:30 PM. Evening: hotel spa or room service — legs will be cooked.
+
+**Day 3 (Tue Mar 31) — East coast: Seongsan + Udo + Seopjikoji:** 7:30 AM Seongsan Ilchulbong (morning light, fewer crowds than sunrise) → 9:00 AM breakfast at Haenyeo House at base (fresh seafood + haenyeo performance 1:30/3:00 PM option) → 10:00 AM ferry to Udo Island (e-bikes, peanut ice cream, Lighthouse Park, Seobin Baeksa beach) → 4:00 PM return ferry → 5:00 PM Seopjikoji Cape (canola fields, coastal walk, Zaha Hadid pavilion) → evening dinner Seongsan area or Fritz Coffee Company.
+
+**Day 4 (Wed Apr 1) — West coast + cherry blossoms + relaxation:** Morning: Seogwipo Maeil Olle Market (abalone porridge, market wander) → Jeonnong-ro Jeju City (King Cherry Blossom canopy tunnel) → west coast drive: Hyeopjae Beach (white sand + black lava + Biyangdo views), Sanbangsan Mountain area, Yongmeori Coast walk (30 min cliff path) → O'REVE Hot Spring or One and Only Cafe for golden hour → Cheonjeyeon Falls (3-tiered, 60–90 min) → Seogwipo dinner.
+
+**Day 5 (Thu Apr 2) — Morning only, depart:** Bored Bakers (seaside cafe, fresh pastries) → Jeongbang Falls (20-min stop, falls into sea) → airport by noon (45 min drive). Return car at CJU, arrive 90 min before departure.
+
+Hidden Cliff Hotel rates still not live-confirmed — ₩/night baseline ~$175 is an estimate from prior session research only.
+**How to apply:** Jeju shape is established. Next session action: live-confirm Hidden Cliff Hotel rates March 29–April 2 2027 and research one premium alternative.
